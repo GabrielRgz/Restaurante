@@ -28,125 +28,195 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblnombre = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txbUser = new System.Windows.Forms.TextBox();
-            this.txbPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            panel1 = new Panel();
+            btnSalir = new CustomControls.RJControls.RJButton();
+            btnLogin = new CustomControls.RJControls.RJButton();
+            rjTextBox2 = new CustomControls.RJControls.RJTextBox();
+            rjTextBox1 = new CustomControls.RJControls.RJTextBox();
+            lblPassword = new Label();
+            lblUser = new Label();
+            pictureBox1 = new PictureBox();
+            lblnombre = new Label();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
-            // lblnombre
+            // panel1
             // 
-            this.lblnombre.AutoSize = true;
-            this.lblnombre.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblnombre.ForeColor = System.Drawing.Color.Indigo;
-            this.lblnombre.Location = new System.Drawing.Point(70, 24);
-            this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(320, 30);
-            this.lblnombre.TabIndex = 0;
-            this.lblnombre.Text = "El crustaceo cascarudo";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restaurante.Properties.Resources.crab;
-            this.pictureBox1.Location = new System.Drawing.Point(111, 93);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 136);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(123, 252);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(47, 15);
-            this.lblUser.TabIndex = 2;
-            this.lblUser.Text = "Usuario";
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(125, 321);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(67, 15);
-            this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Contraseña";
-            // 
-            // txbUser
-            // 
-            this.txbUser.Location = new System.Drawing.Point(126, 281);
-            this.txbUser.Name = "txbUser";
-            this.txbUser.Size = new System.Drawing.Size(188, 23);
-            this.txbUser.TabIndex = 4;
-            this.txbUser.Text = "Nombre de usuario";
-            // 
-            // txbPassword
-            // 
-            this.txbPassword.Location = new System.Drawing.Point(128, 348);
-            this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(186, 23);
-            this.txbPassword.TabIndex = 5;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(129, 388);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(185, 23);
-            this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "Iniciar sesion";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            panel1.BackColor = Color.Black;
+            panel1.Controls.Add(btnSalir);
+            panel1.Controls.Add(btnLogin);
+            panel1.Controls.Add(rjTextBox2);
+            panel1.Controls.Add(rjTextBox1);
+            panel1.Controls.Add(lblPassword);
+            panel1.Controls.Add(lblUser);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(lblnombre);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(421, 498);
+            panel1.TabIndex = 0;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(130, 432);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(184, 23);
-            this.btnSalir.TabIndex = 7;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            btnSalir.BackColor = Color.FromArgb(255, 128, 0);
+            btnSalir.BackgroundColor = Color.FromArgb(255, 128, 0);
+            btnSalir.BorderColor = Color.White;
+            btnSalir.BorderRadius = 15;
+            btnSalir.BorderSize = 1;
+            btnSalir.FlatAppearance.BorderSize = 0;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Unispace", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalir.ForeColor = Color.Black;
+            btnSalir.Location = new Point(235, 417);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(150, 40);
+            btnSalir.TabIndex = 19;
+            btnSalir.Text = "Salir";
+            btnSalir.TextColor = Color.Black;
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
+            // 
+            // btnLogin
+            // 
+            btnLogin.BackColor = Color.FromArgb(255, 128, 0);
+            btnLogin.BackgroundColor = Color.FromArgb(255, 128, 0);
+            btnLogin.BorderColor = Color.White;
+            btnLogin.BorderRadius = 15;
+            btnLogin.BorderSize = 1;
+            btnLogin.FlatAppearance.BorderSize = 0;
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.Font = new Font("Unispace", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin.ForeColor = SystemColors.WindowText;
+            btnLogin.Location = new Point(42, 417);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(150, 40);
+            btnLogin.TabIndex = 18;
+            btnLogin.Text = "Iniciar sesión";
+            btnLogin.TextColor = SystemColors.WindowText;
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // rjTextBox2
+            // 
+            rjTextBox2.BackColor = SystemColors.Window;
+            rjTextBox2.BorderColor = Color.FromArgb(255, 128, 0);
+            rjTextBox2.BorderFocusColor = Color.Yellow;
+            rjTextBox2.BorderRadius = 15;
+            rjTextBox2.BorderSize = 2;
+            rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            rjTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
+            rjTextBox2.Location = new Point(92, 362);
+            rjTextBox2.Margin = new Padding(4);
+            rjTextBox2.Multiline = false;
+            rjTextBox2.Name = "rjTextBox2";
+            rjTextBox2.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox2.PasswordChar = false;
+            rjTextBox2.PlaceholderColor = Color.DarkGray;
+            rjTextBox2.PlaceholderText = "                           Contraseña";
+            rjTextBox2.Size = new Size(250, 31);
+            rjTextBox2.TabIndex = 17;
+            rjTextBox2.Texts = "";
+            rjTextBox2.UnderlinedStyle = false;
+            // 
+            // rjTextBox1
+            // 
+            rjTextBox1.BackColor = SystemColors.Window;
+            rjTextBox1.BorderColor = Color.FromArgb(255, 128, 0);
+            rjTextBox1.BorderFocusColor = Color.Yellow;
+            rjTextBox1.BorderRadius = 15;
+            rjTextBox1.BorderSize = 2;
+            rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
+            rjTextBox1.Location = new Point(92, 292);
+            rjTextBox1.Margin = new Padding(4);
+            rjTextBox1.Multiline = false;
+            rjTextBox1.Name = "rjTextBox1";
+            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
+            rjTextBox1.PasswordChar = false;
+            rjTextBox1.PlaceholderColor = Color.DarkGray;
+            rjTextBox1.PlaceholderText = "                   Nombre De usuario";
+            rjTextBox1.Size = new Size(250, 31);
+            rjTextBox1.TabIndex = 16;
+            rjTextBox1.Texts = "";
+            rjTextBox1.UnderlinedStyle = false;
+            rjTextBox1._TextChanged += rjTextBox1__TextChanged;
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Font = new Font("Unispace", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPassword.ForeColor = Color.FromArgb(255, 128, 0);
+            lblPassword.Location = new Point(134, 329);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(163, 29);
+            lblPassword.TabIndex = 11;
+            lblPassword.Text = "Contraseña";
+            // 
+            // lblUser
+            // 
+            lblUser.AutoSize = true;
+            lblUser.Font = new Font("Unispace", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUser.ForeColor = Color.FromArgb(255, 128, 0);
+            lblUser.Location = new Point(159, 259);
+            lblUser.Name = "lblUser";
+            lblUser.Size = new Size(118, 29);
+            lblUser.TabIndex = 10;
+            lblUser.Text = "Usuario";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Black;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(127, 95);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(170, 136);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // lblnombre
+            // 
+            lblnombre.AutoSize = true;
+            lblnombre.Font = new Font("Unispace", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblnombre.ForeColor = Color.FromArgb(255, 128, 0);
+            lblnombre.Location = new Point(42, 32);
+            lblnombre.Name = "lblnombre";
+            lblnombre.Size = new Size(343, 29);
+            lblnombre.TabIndex = 8;
+            lblnombre.Text = "El crustaceo cascarudo";
+            lblnombre.Click += lblnombre_Click_1;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(475, 498);
-            this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txbPassword);
-            this.Controls.Add(this.txbUser);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUser);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblnombre);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
-            this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Azure;
+            ClientSize = new Size(421, 498);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            MaximizeBox = false;
+            Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form1";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private Label lblnombre;
-        private PictureBox pictureBox1;
-        private Label lblUser;
+        private Panel panel1;
         private Label lblPassword;
-        private TextBox txbUser;
-        private TextBox txbPassword;
-        private Button btnLogin;
-        private Button btnSalir;
+        private Label lblUser;
+        private PictureBox pictureBox1;
+        private Label lblnombre;
+        private CustomControls.RJControls.RJTextBox rjTextBox1;
+        private CustomControls.RJControls.RJButton btnSalir;
+        private CustomControls.RJControls.RJButton btnLogin;
+        private CustomControls.RJControls.RJTextBox rjTextBox2;
     }
 }
