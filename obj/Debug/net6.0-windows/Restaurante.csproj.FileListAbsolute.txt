@@ -1,0 +1,8 @@
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.csproj.AssemblyReference.cache
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Login.resources
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Properties.Resources.resources
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.csproj.GenerateResource.cache
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.AssemblyInfoInputs.cache
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.AssemblyInfo.cs
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.csproj.CoreCompileInputs.cache
