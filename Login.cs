@@ -15,6 +15,7 @@ namespace Restaurante
         private void btnSalir_Click(object sender, EventArgs e)
         {
             //cerrar el programa
+            this.Close();
         }
     }
 }

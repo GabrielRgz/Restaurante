@@ -6,3 +6,14 @@ C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Gen
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.AssemblyInfoInputs.cache
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.AssemblyInfo.cs
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Restaurante.exe
+C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Restaurante.deps.json
+C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Restaurante.runtimeconfig.json
+C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Restaurante.dll
+C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Restaurante.pdb
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Principal.resources
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.dll
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\refint\Restaurante.dll
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.pdb
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.genruntimeconfig.cache
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\ref\Restaurante.dll
