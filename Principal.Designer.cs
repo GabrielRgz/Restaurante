@@ -102,6 +102,7 @@
             this.btnPerfil.TabIndex = 7;
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // btnSalir
             // 
@@ -116,6 +117,7 @@
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Cerrar Sesion";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnVentas
             // 
@@ -130,6 +132,7 @@
             this.btnVentas.TabIndex = 5;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // btnProductos
             // 
@@ -144,6 +147,7 @@
             this.btnProductos.TabIndex = 4;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // btnEmpleados
             // 
@@ -158,6 +162,7 @@
             this.btnEmpleados.TabIndex = 3;
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
             // btnInicio
             // 
@@ -172,6 +177,7 @@
             this.btnInicio.TabIndex = 2;
             this.btnInicio.Text = "Inicio";
             this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // panelLogo
             // 
