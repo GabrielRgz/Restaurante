@@ -23,7 +23,6 @@ C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\R
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\Restaurante.dll
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\Restaurante.pdb
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Login.resources
-C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Principal.resources
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Properties.Resources.resources
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.csproj.GenerateResource.cache
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.GeneratedMSBuildEditorConfig.editorconfig
@@ -36,3 +35,5 @@ C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\R
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.genruntimeconfig.cache
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\ref\Restaurante.dll
 C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\CustomControls.RJControls.RJTextBox.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante..resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\GUI_V_2.Principal.resources

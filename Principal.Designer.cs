@@ -1,16 +1,16 @@
-﻿namespace Restaurante
+﻿namespace GUI_V_2
 {
     partial class Principal
     {
         /// <summary>
-        /// Required designer variable.
+        /// Variable del diseñador requerida.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Limpiar los recursos que se estén utilizando.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si los recursos administrados se deben eliminar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,257 +20,339 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido del método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnPerfil = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnVentas = new System.Windows.Forms.Button();
-            this.btnProductos = new System.Windows.Forms.Button();
-            this.btnEmpleados = new System.Windows.Forms.Button();
-            this.btnInicio = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelApp = new System.Windows.Forms.Panel();
-            this.lblBienvenida = new System.Windows.Forms.Label();
-            this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.panelApp.SuspendLayout();
-            this.SuspendLayout();
+            MenuVertical = new Panel();
+            lblcorreo = new Label();
+            lbluser = new Label();
+            pictureBox2 = new PictureBox();
+            lblusuario = new Label();
+            button5 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            btnprod = new Button();
+            btnlogoInicio = new PictureBox();
+            BarraTitulo = new Panel();
+            btnRestaurar = new PictureBox();
+            btnMinimizar = new PictureBox();
+            btnMaximizar = new PictureBox();
+            btnCerrar = new PictureBox();
+            btnMenu = new PictureBox();
+            panelContenedor = new Panel();
+            MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnlogoInicio).BeginInit();
+            BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnRestaurar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnMaximizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnMenu).BeginInit();
+            SuspendLayout();
             // 
-            // panelMenu
+            // MenuVertical
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.Black;
-            this.panelMenu.Controls.Add(this.pictureBox1);
-            this.panelMenu.Controls.Add(this.label2);
-            this.panelMenu.Controls.Add(this.btnPerfil);
-            this.panelMenu.Controls.Add(this.btnSalir);
-            this.panelMenu.Controls.Add(this.btnVentas);
-            this.panelMenu.Controls.Add(this.btnProductos);
-            this.panelMenu.Controls.Add(this.btnEmpleados);
-            this.panelMenu.Controls.Add(this.btnInicio);
-            this.panelMenu.Controls.Add(this.panelLogo);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(240, 641);
-            this.panelMenu.TabIndex = 0;
+            MenuVertical.BackColor = Color.Black;
+            MenuVertical.Controls.Add(lblcorreo);
+            MenuVertical.Controls.Add(lbluser);
+            MenuVertical.Controls.Add(pictureBox2);
+            MenuVertical.Controls.Add(lblusuario);
+            MenuVertical.Controls.Add(button5);
+            MenuVertical.Controls.Add(button3);
+            MenuVertical.Controls.Add(button2);
+            MenuVertical.Controls.Add(btnprod);
+            MenuVertical.Controls.Add(btnlogoInicio);
+            MenuVertical.Dock = DockStyle.Left;
+            MenuVertical.Location = new Point(0, 0);
+            MenuVertical.Margin = new Padding(4, 3, 4, 3);
+            MenuVertical.Name = "MenuVertical";
+            MenuVertical.Size = new Size(250, 750);
+            MenuVertical.TabIndex = 0;
+            MenuVertical.Paint += MenuVertical_Paint;
             // 
-            // pictureBox1
+            // lblcorreo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(70, 487);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            lblcorreo.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblcorreo.AutoSize = true;
+            lblcorreo.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblcorreo.ForeColor = Color.White;
+            lblcorreo.Location = new Point(84, 728);
+            lblcorreo.Margin = new Padding(4, 0, 4, 0);
+            lblcorreo.Name = "lblcorreo";
+            lblcorreo.Size = new Size(53, 17);
+            lblcorreo.TabIndex = 17;
+            lblcorreo.Text = "Correo";
             // 
-            // label2
+            // lbluser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(-24, 452);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(324, 32);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "_______________________________";
+            lbluser.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lbluser.AutoSize = true;
+            lbluser.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lbluser.ForeColor = Color.White;
+            lbluser.Location = new Point(84, 707);
+            lbluser.Margin = new Padding(4, 0, 4, 0);
+            lbluser.Name = "lbluser";
+            lbluser.Size = new Size(54, 17);
+            lbluser.TabIndex = 16;
+            lbluser.Text = "Usuario";
             // 
-            // btnPerfil
+            // pictureBox2
             // 
-            this.btnPerfil.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnPerfil.FlatAppearance.BorderSize = 0;
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPerfil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPerfil.Location = new System.Drawing.Point(0, 571);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(240, 35);
-            this.btnPerfil.TabIndex = 7;
-            this.btnPerfil.Text = "Perfil";
-            this.btnPerfil.UseVisualStyleBackColor = true;
-            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
+            pictureBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1, 669);
+            pictureBox2.Margin = new Padding(4, 3, 4, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(82, 76);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 15;
+            pictureBox2.TabStop = false;
             // 
-            // btnSalir
+            // lblusuario
             // 
-            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalir.Location = new System.Drawing.Point(0, 606);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(240, 35);
-            this.btnSalir.TabIndex = 6;
-            this.btnSalir.Text = "Cerrar Sesion";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            lblusuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblusuario.AutoSize = true;
+            lblusuario.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblusuario.ForeColor = Color.White;
+            lblusuario.Location = new Point(84, 688);
+            lblusuario.Margin = new Padding(4, 0, 4, 0);
+            lblusuario.Name = "lblusuario";
+            lblusuario.Size = new Size(50, 17);
+            lblusuario.TabIndex = 14;
+            lblusuario.Text = "Cargo";
             // 
-            // btnVentas
+            // button5
             // 
-            this.btnVentas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVentas.FlatAppearance.BorderSize = 0;
-            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVentas.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnVentas.Location = new System.Drawing.Point(0, 221);
-            this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(240, 35);
-            this.btnVentas.TabIndex = 5;
-            this.btnVentas.Text = "Ventas";
-            this.btnVentas.UseVisualStyleBackColor = true;
-            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button5.ForeColor = Color.Orange;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.ImageAlign = ContentAlignment.MiddleLeft;
+            button5.Location = new Point(1, 257);
+            button5.Margin = new Padding(4, 3, 4, 3);
+            button5.Name = "button5";
+            button5.Size = new Size(292, 46);
+            button5.TabIndex = 5;
+            button5.Text = "Compras";
+            button5.UseVisualStyleBackColor = true;
             // 
-            // btnProductos
+            // button3
             // 
-            this.btnProductos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProductos.FlatAppearance.BorderSize = 0;
-            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnProductos.Location = new System.Drawing.Point(0, 186);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(240, 35);
-            this.btnProductos.TabIndex = 4;
-            this.btnProductos.Text = "Productos";
-            this.btnProductos.UseVisualStyleBackColor = true;
-            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.ForeColor = Color.Orange;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(1, 205);
+            button3.Margin = new Padding(4, 3, 4, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(292, 46);
+            button3.TabIndex = 3;
+            button3.Text = "Clientes";
+            button3.UseVisualStyleBackColor = true;
             // 
-            // btnEmpleados
+            // button2
             // 
-            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEmpleados.FlatAppearance.BorderSize = 0;
-            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpleados.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEmpleados.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 151);
-            this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(240, 35);
-            this.btnEmpleados.TabIndex = 3;
-            this.btnEmpleados.Text = "Empleados";
-            this.btnEmpleados.UseVisualStyleBackColor = true;
-            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = Color.Orange;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(1, 153);
+            button2.Margin = new Padding(4, 3, 4, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(292, 46);
+            button2.TabIndex = 2;
+            button2.Text = "Ventas";
+            button2.UseVisualStyleBackColor = true;
             // 
-            // btnInicio
+            // btnprod
             // 
-            this.btnInicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInicio.FlatAppearance.BorderSize = 0;
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnInicio.Location = new System.Drawing.Point(0, 116);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(240, 35);
-            this.btnInicio.TabIndex = 2;
-            this.btnInicio.Text = "Inicio";
-            this.btnInicio.UseVisualStyleBackColor = true;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
+            btnprod.FlatAppearance.BorderSize = 0;
+            btnprod.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            btnprod.FlatStyle = FlatStyle.Flat;
+            btnprod.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnprod.ForeColor = Color.Orange;
+            btnprod.Image = (Image)resources.GetObject("btnprod.Image");
+            btnprod.ImageAlign = ContentAlignment.MiddleLeft;
+            btnprod.Location = new Point(4, 101);
+            btnprod.Margin = new Padding(4, 3, 4, 3);
+            btnprod.Name = "btnprod";
+            btnprod.Size = new Size(292, 46);
+            btnprod.TabIndex = 1;
+            btnprod.Text = "Productos";
+            btnprod.UseVisualStyleBackColor = true;
+            btnprod.Click += btnprod_Click;
             // 
-            // panelLogo
+            // btnlogoInicio
             // 
-            this.panelLogo.Controls.Add(this.pbLogo);
-            this.panelLogo.Controls.Add(this.label1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(240, 116);
-            this.panelLogo.TabIndex = 0;
+            btnlogoInicio.Cursor = Cursors.Hand;
+            btnlogoInicio.Image = (Image)resources.GetObject("btnlogoInicio.Image");
+            btnlogoInicio.Location = new Point(10, 3);
+            btnlogoInicio.Margin = new Padding(4, 3, 4, 3);
+            btnlogoInicio.Name = "btnlogoInicio";
+            btnlogoInicio.Size = new Size(232, 88);
+            btnlogoInicio.SizeMode = PictureBoxSizeMode.Zoom;
+            btnlogoInicio.TabIndex = 0;
+            btnlogoInicio.TabStop = false;
+            btnlogoInicio.Click += btnlogoInicio_Click;
             // 
-            // pbLogo
+            // BarraTitulo
             // 
-            this.pbLogo.Image = global::Restaurante.Properties.Resources.crab;
-            this.pbLogo.Location = new System.Drawing.Point(-3, 3);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(240, 99);
-            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
+            BarraTitulo.BackColor = Color.FromArgb(39, 39, 39);
+            BarraTitulo.Controls.Add(btnRestaurar);
+            BarraTitulo.Controls.Add(btnMinimizar);
+            BarraTitulo.Controls.Add(btnMaximizar);
+            BarraTitulo.Controls.Add(btnCerrar);
+            BarraTitulo.Controls.Add(btnMenu);
+            BarraTitulo.Dock = DockStyle.Top;
+            BarraTitulo.Location = new Point(250, 0);
+            BarraTitulo.Margin = new Padding(4, 3, 4, 3);
+            BarraTitulo.Name = "BarraTitulo";
+            BarraTitulo.Size = new Size(1267, 52);
+            BarraTitulo.TabIndex = 1;
+            BarraTitulo.MouseDown += BarraTitulo_MouseDown;
             // 
-            // label1
+            // btnRestaurar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(-24, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "_______________________________";
+            btnRestaurar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnRestaurar.Image = (Image)resources.GetObject("btnRestaurar.Image");
+            btnRestaurar.Location = new Point(1215, 12);
+            btnRestaurar.Name = "btnRestaurar";
+            btnRestaurar.Size = new Size(20, 22);
+            btnRestaurar.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnRestaurar.TabIndex = 30;
+            btnRestaurar.TabStop = false;
+            btnRestaurar.Visible = false;
+            btnRestaurar.Click += btnRestaurar_Click;
+            btnRestaurar.MouseEnter += btnRestaurar_MouseEnter;
+            btnRestaurar.MouseLeave += btnRestaurar_MouseLeave;
             // 
-            // panelApp
+            // btnMinimizar
             // 
-            this.panelApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelApp.Controls.Add(this.lblBienvenida);
-            this.panelApp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelApp.Location = new System.Drawing.Point(240, 0);
-            this.panelApp.Name = "panelApp";
-            this.panelApp.Size = new System.Drawing.Size(854, 641);
-            this.panelApp.TabIndex = 1;
+            btnMinimizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
+            btnMinimizar.Location = new Point(1187, -3);
+            btnMinimizar.Name = "btnMinimizar";
+            btnMinimizar.Padding = new Padding(10, 0, 10, 0);
+            btnMinimizar.Size = new Size(22, 52);
+            btnMinimizar.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnMinimizar.TabIndex = 29;
+            btnMinimizar.TabStop = false;
+            btnMinimizar.Click += btnMinimizar_Click;
+            btnMinimizar.MouseEnter += btnMinimizar_MouseEnter;
+            btnMinimizar.MouseLeave += btnMinimizar_MouseLeave;
             // 
-            // lblBienvenida
+            // btnMaximizar
             // 
-            this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBienvenida.ForeColor = System.Drawing.Color.Khaki;
-            this.lblBienvenida.Location = new System.Drawing.Point(136, 284);
-            this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(586, 86);
-            this.lblBienvenida.TabIndex = 0;
-            this.lblBienvenida.Text = "Bienvenido, \"user1\"";
-            this.lblBienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            btnMaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMaximizar.Image = (Image)resources.GetObject("btnMaximizar.Image");
+            btnMaximizar.Location = new Point(1215, 12);
+            btnMaximizar.Name = "btnMaximizar";
+            btnMaximizar.Size = new Size(20, 22);
+            btnMaximizar.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnMaximizar.TabIndex = 28;
+            btnMaximizar.TabStop = false;
+            btnMaximizar.Click += btnMaximizar_Click;
+            btnMaximizar.MouseEnter += btnMaximizar_MouseEnter;
+            btnMaximizar.MouseLeave += btnMaximizar_MouseLeave;
+            // 
+            // btnCerrar
+            // 
+            btnCerrar.Dock = DockStyle.Right;
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.Location = new Point(1241, 0);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(26, 52);
+            btnCerrar.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnCerrar.TabIndex = 23;
+            btnCerrar.TabStop = false;
+            btnCerrar.Click += iconcerrar_Click_1;
+            btnCerrar.MouseEnter += btnCerrar_MouseEnter;
+            btnCerrar.MouseLeave += btnCerrar_MouseLeave;
+            // 
+            // btnMenu
+            // 
+            btnMenu.Cursor = Cursors.Hand;
+            btnMenu.Image = (Image)resources.GetObject("btnMenu.Image");
+            btnMenu.Location = new Point(9, 7);
+            btnMenu.Margin = new Padding(4, 3, 4, 3);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(41, 40);
+            btnMenu.SizeMode = PictureBoxSizeMode.Zoom;
+            btnMenu.TabIndex = 0;
+            btnMenu.TabStop = false;
+            btnMenu.Click += btnMenu_Click;
+            // 
+            // panelContenedor
+            // 
+            panelContenedor.BackColor = Color.FromArgb(33, 33, 33);
+            panelContenedor.Dock = DockStyle.Fill;
+            panelContenedor.Location = new Point(250, 52);
+            panelContenedor.Margin = new Padding(4, 3, 4, 3);
+            panelContenedor.Name = "panelContenedor";
+            panelContenedor.Size = new Size(1267, 698);
+            panelContenedor.TabIndex = 2;
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1094, 641);
-            this.Controls.Add(this.panelApp);
-            this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
-            this.Name = "Principal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Principal";
-            this.panelMenu.ResumeLayout(false);
-            this.panelMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelLogo.ResumeLayout(false);
-            this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.panelApp.ResumeLayout(false);
-            this.panelApp.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1517, 750);
+            Controls.Add(panelContenedor);
+            Controls.Add(BarraTitulo);
+            Controls.Add(MenuVertical);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Principal";
+            Text = "Form1";
+            Load += Form1_Load;
+            MenuVertical.ResumeLayout(false);
+            MenuVertical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnlogoInicio).EndInit();
+            BarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnRestaurar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnMaximizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnMenu).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panelMenu;
-        private Panel panelLogo;
-        private PictureBox pbLogo;
-        private Panel panelApp;
-        private Button btnPerfil;
-        private Button btnSalir;
-        private Button btnVentas;
-        private Button btnProductos;
-        private Button btnEmpleados;
-        private Button btnInicio;
-        private Label label1;
-        private Label label2;
+        private Panel MenuVertical;
+        private PictureBox btnlogoInicio;
+        private Panel BarraTitulo;
+        private PictureBox btnMenu;
+        private Panel panelContenedor;
+        private Button btnprod;
+        private Button button5;
+        private Button button3;
+        private Button button2;
+        private Label lblcorreo;
+        private Label lbluser;
+        private PictureBox pictureBox2;
+        private Label lblusuario;
+        private PictureBox btnCerrar;
+        private PictureBox btnMaximizar;
+        private PictureBox btnMinimizar;
+        private PictureBox btnRestaurar;
         private PictureBox pictureBox1;
-        private Label lblBienvenida;
     }
 }
+

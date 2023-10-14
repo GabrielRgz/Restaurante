@@ -76,6 +76,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(421, 30);
             panel2.TabIndex = 20;
+            panel2.MouseDown += panel2_MouseDown;
             // 
             // btnMinimize
             // 
@@ -103,7 +104,7 @@
             btnClose.TabIndex = 21;
             btnClose.TabStop = false;
             btnClose.Click += btnClose_Click;
-            btnClose.MouseEnter += btnClose_MouseEnter_1;
+            btnClose.MouseEnter += btnClose_MouseEnter;
             btnClose.MouseLeave += btnClose_MouseLeave;
             // 
             // btnSalir
@@ -189,7 +190,6 @@
             rjTextBox1.TabIndex = 16;
             rjTextBox1.Texts = "";
             rjTextBox1.UnderlinedStyle = false;
-            rjTextBox1._TextChanged += rjTextBox1__TextChanged;
             // 
             // lblPassword
             // 
@@ -234,7 +234,6 @@
             lblnombre.Size = new Size(343, 29);
             lblnombre.TabIndex = 8;
             lblnombre.Text = "El crustaceo cascarudo";
-            lblnombre.Click += lblnombre_Click_1;
             // 
             // Login
             // 
@@ -248,7 +247,6 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
