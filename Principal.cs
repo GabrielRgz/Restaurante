@@ -82,6 +82,7 @@ namespace GUI_V_2
         {
             this.WindowState = FormWindowState.Maximized;
             btnRestaurar.Visible = true;
+            btnRestaurar.Dock = DockStyle.Right;
             btnMaximizar.Visible = false;
 
         }
