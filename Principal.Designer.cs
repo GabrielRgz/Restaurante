@@ -187,7 +187,6 @@
             btnprod.FlatStyle = FlatStyle.Flat;
             btnprod.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnprod.ForeColor = Color.Orange;
-            btnprod.Image = (Image)resources.GetObject("btnprod.Image");
             btnprod.ImageAlign = ContentAlignment.MiddleLeft;
             btnprod.Location = new Point(10, 101);
             btnprod.Margin = new Padding(4, 3, 4, 3);
