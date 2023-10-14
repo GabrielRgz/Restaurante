@@ -138,10 +138,10 @@
             btnCompras.ForeColor = Color.Orange;
             btnCompras.Image = (Image)resources.GetObject("btnCompras.Image");
             btnCompras.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCompras.Location = new Point(10, 257);
+            btnCompras.Location = new Point(0, 226);
             btnCompras.Margin = new Padding(4, 3, 4, 3);
             btnCompras.Name = "btnCompras";
-            btnCompras.Size = new Size(292, 46);
+            btnCompras.Size = new Size(250, 46);
             btnCompras.TabIndex = 5;
             btnCompras.Text = "Compras";
             btnCompras.UseVisualStyleBackColor = true;
@@ -155,10 +155,10 @@
             btnClientes.ForeColor = Color.Orange;
             btnClientes.Image = (Image)resources.GetObject("btnClientes.Image");
             btnClientes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnClientes.Location = new Point(10, 205);
+            btnClientes.Location = new Point(0, 180);
             btnClientes.Margin = new Padding(4, 3, 4, 3);
             btnClientes.Name = "btnClientes";
-            btnClientes.Size = new Size(292, 46);
+            btnClientes.Size = new Size(250, 46);
             btnClientes.TabIndex = 3;
             btnClientes.Text = "Clientes";
             btnClientes.UseVisualStyleBackColor = true;
@@ -172,10 +172,10 @@
             btnVentas.ForeColor = Color.Orange;
             btnVentas.Image = (Image)resources.GetObject("btnVentas.Image");
             btnVentas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnVentas.Location = new Point(10, 153);
+            btnVentas.Location = new Point(0, 134);
             btnVentas.Margin = new Padding(4, 3, 4, 3);
             btnVentas.Name = "btnVentas";
-            btnVentas.Size = new Size(292, 46);
+            btnVentas.Size = new Size(250, 46);
             btnVentas.TabIndex = 2;
             btnVentas.Text = "Ventas";
             btnVentas.UseVisualStyleBackColor = true;
@@ -187,11 +187,12 @@
             btnprod.FlatStyle = FlatStyle.Flat;
             btnprod.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnprod.ForeColor = Color.Orange;
+            btnprod.Image = (Image)resources.GetObject("btnprod.Image");
             btnprod.ImageAlign = ContentAlignment.MiddleLeft;
-            btnprod.Location = new Point(10, 101);
+            btnprod.Location = new Point(0, 88);
             btnprod.Margin = new Padding(4, 3, 4, 3);
             btnprod.Name = "btnprod";
-            btnprod.Size = new Size(292, 46);
+            btnprod.Size = new Size(250, 46);
             btnprod.TabIndex = 1;
             btnprod.Text = "Productos";
             btnprod.UseVisualStyleBackColor = true;
@@ -200,11 +201,13 @@
             // btnlogoInicio
             // 
             btnlogoInicio.Cursor = Cursors.Hand;
+            btnlogoInicio.Dock = DockStyle.Top;
             btnlogoInicio.Image = (Image)resources.GetObject("btnlogoInicio.Image");
-            btnlogoInicio.Location = new Point(10, 3);
+            btnlogoInicio.InitialImage = null;
+            btnlogoInicio.Location = new Point(0, 0);
             btnlogoInicio.Margin = new Padding(4, 3, 4, 3);
             btnlogoInicio.Name = "btnlogoInicio";
-            btnlogoInicio.Size = new Size(232, 88);
+            btnlogoInicio.Size = new Size(250, 88);
             btnlogoInicio.SizeMode = PictureBoxSizeMode.Zoom;
             btnlogoInicio.TabIndex = 0;
             btnlogoInicio.TabStop = false;
@@ -230,10 +233,10 @@
             // 
             btnRestaurar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnRestaurar.Image = (Image)resources.GetObject("btnRestaurar.Image");
-            btnRestaurar.Location = new Point(1134, 12);
+            btnRestaurar.Location = new Point(1221, 0);
             btnRestaurar.Name = "btnRestaurar";
-            btnRestaurar.Size = new Size(20, 22);
-            btnRestaurar.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnRestaurar.Size = new Size(20, 52);
+            btnRestaurar.SizeMode = PictureBoxSizeMode.CenterImage;
             btnRestaurar.TabIndex = 30;
             btnRestaurar.TabStop = false;
             btnRestaurar.Visible = false;
@@ -243,12 +246,12 @@
             // 
             // btnMinimizar
             // 
-            btnMinimizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMinimizar.Dock = DockStyle.Right;
             btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
-            btnMinimizar.Location = new Point(1187, -3);
+            btnMinimizar.Location = new Point(1193, 0);
             btnMinimizar.Name = "btnMinimizar";
             btnMinimizar.Padding = new Padding(10, 0, 10, 0);
-            btnMinimizar.Size = new Size(22, 52);
+            btnMinimizar.Size = new Size(28, 52);
             btnMinimizar.SizeMode = PictureBoxSizeMode.CenterImage;
             btnMinimizar.TabIndex = 29;
             btnMinimizar.TabStop = false;
@@ -258,12 +261,12 @@
             // 
             // btnMaximizar
             // 
-            btnMaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMaximizar.Dock = DockStyle.Right;
             btnMaximizar.Image = (Image)resources.GetObject("btnMaximizar.Image");
-            btnMaximizar.Location = new Point(1215, 12);
+            btnMaximizar.Location = new Point(1221, 0);
             btnMaximizar.Name = "btnMaximizar";
-            btnMaximizar.Size = new Size(20, 22);
-            btnMaximizar.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnMaximizar.Size = new Size(20, 52);
+            btnMaximizar.SizeMode = PictureBoxSizeMode.CenterImage;
             btnMaximizar.TabIndex = 28;
             btnMaximizar.TabStop = false;
             btnMaximizar.Click += btnMaximizar_Click;
@@ -287,7 +290,9 @@
             // btnMenu
             // 
             btnMenu.Cursor = Cursors.Hand;
+            btnMenu.ErrorImage = null;
             btnMenu.Image = (Image)resources.GetObject("btnMenu.Image");
+            btnMenu.InitialImage = null;
             btnMenu.Location = new Point(9, 7);
             btnMenu.Margin = new Padding(4, 3, 4, 3);
             btnMenu.Name = "btnMenu";

@@ -72,11 +72,11 @@ namespace Restaurante
         {
             btnClose.BackColor = Color.White;
         }
-    
+
 
         private void btnClose_MouseLeave(object sender, EventArgs e)
         {
-          btnClose.BackColor = Color.Transparent;
+            btnClose.BackColor = Color.Transparent;
         }
     }
 }
