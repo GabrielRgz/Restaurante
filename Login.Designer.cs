@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             panel1 = new Panel();
+            panel2 = new Panel();
+            btnMinimize = new PictureBox();
+            btnClose = new PictureBox();
             btnSalir = new CustomControls.RJControls.RJButton();
             btnLogin = new CustomControls.RJControls.RJButton();
             rjTextBox2 = new CustomControls.RJControls.RJTextBox();
@@ -39,12 +42,16 @@
             pictureBox1 = new PictureBox();
             lblnombre = new Label();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnMinimize).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnClose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(panel2);
             panel1.Controls.Add(btnSalir);
             panel1.Controls.Add(btnLogin);
             panel1.Controls.Add(rjTextBox2);
@@ -58,6 +65,46 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(421, 498);
             panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(33, 33, 33);
+            panel2.Controls.Add(btnMinimize);
+            panel2.Controls.Add(btnClose);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(421, 30);
+            panel2.TabIndex = 20;
+            // 
+            // btnMinimize
+            // 
+            btnMinimize.Dock = DockStyle.Right;
+            btnMinimize.Image = (Image)resources.GetObject("btnMinimize.Image");
+            btnMinimize.Location = new Point(363, 0);
+            btnMinimize.Name = "btnMinimize";
+            btnMinimize.Padding = new Padding(10, 0, 10, 0);
+            btnMinimize.Size = new Size(32, 30);
+            btnMinimize.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnMinimize.TabIndex = 22;
+            btnMinimize.TabStop = false;
+            btnMinimize.Click += btnMinimize_Click;
+            btnMinimize.MouseEnter += btnMinimize_MouseEnter;
+            btnMinimize.MouseLeave += btnMinimize_MouseLeave;
+            // 
+            // btnClose
+            // 
+            btnClose.Dock = DockStyle.Right;
+            btnClose.Image = (Image)resources.GetObject("btnClose.Image");
+            btnClose.Location = new Point(395, 0);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(26, 30);
+            btnClose.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnClose.TabIndex = 21;
+            btnClose.TabStop = false;
+            btnClose.Click += btnClose_Click;
+            btnClose.MouseEnter += btnClose_MouseEnter_1;
+            btnClose.MouseLeave += btnClose_MouseLeave;
             // 
             // btnSalir
             // 
@@ -182,7 +229,7 @@
             lblnombre.AutoSize = true;
             lblnombre.Font = new Font("Unispace", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblnombre.ForeColor = Color.FromArgb(255, 128, 0);
-            lblnombre.Location = new Point(42, 32);
+            lblnombre.Location = new Point(42, 44);
             lblnombre.Name = "lblnombre";
             lblnombre.Size = new Size(343, 29);
             lblnombre.TabIndex = 8;
@@ -196,13 +243,17 @@
             BackColor = Color.Azure;
             ClientSize = new Size(421, 498);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnMinimize).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnClose).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -218,5 +269,8 @@
         private CustomControls.RJControls.RJButton btnSalir;
         private CustomControls.RJControls.RJButton btnLogin;
         private CustomControls.RJControls.RJTextBox rjTextBox2;
+        private Panel panel2;
+        private PictureBox btnClose;
+        private PictureBox btnMinimize;
     }
 }

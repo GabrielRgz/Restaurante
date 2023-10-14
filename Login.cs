@@ -7,6 +7,7 @@ namespace Restaurante
             InitializeComponent();
 
         }
+
         private void lblnombre_Click_1(object sender, EventArgs e)
         {
 
@@ -27,6 +28,42 @@ namespace Restaurante
             Principal principal = new Principal();
             principal.Show();
             this.Hide();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void btnMinimize_MouseEnter(object sender, EventArgs e)
+        {
+            btnMinimize.BackColor = Color.White;
+        }
+
+        private void btnMinimize_MouseLeave(object sender, EventArgs e)
+        {
+            btnMinimize.BackColor = Color.Transparent;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClose_MouseEnter_1(object sender, EventArgs e)
+        {
+            btnClose.BackColor = Color.White;
+        }
+
+        private void btnClose_MouseLeave(object sender, EventArgs e)
+        {
+            btnClose.BackColor = Color.Transparent;
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
