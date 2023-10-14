@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Restaurante;
 
 namespace GUI_V_2
 {
@@ -21,7 +22,7 @@ namespace GUI_V_2
         {
             if (MenuVertical.Width == 250)
             {
-                MenuVertical.Width = 70;
+                MenuVertical.Width = 77;
             }
             else
                 MenuVertical.Width = 250;
@@ -138,5 +139,13 @@ namespace GUI_V_2
         {
             btnRestaurar.BackColor = Color.Transparent;
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Login loginForm = new Login(); // Crea una instancia del formulario de inicio de sesión
+            loginForm.Show(); // Muestra el formulario de inicio de sesión
+            this.Hide(); // Oculta el formulario actual
+        }
+
     }
 }

@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             MenuVertical = new Panel();
+            lblusuario = new Label();
             lblcorreo = new Label();
             lbluser = new Label();
             pictureBox2 = new PictureBox();
-            lblusuario = new Label();
             button5 = new Button();
             button3 = new Button();
             button2 = new Button();
@@ -46,6 +46,7 @@
             btnCerrar = new PictureBox();
             btnMenu = new PictureBox();
             panelContenedor = new Panel();
+            btnExit = new CustomControls.RJControls.RJButton();
             MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnlogoInicio).BeginInit();
@@ -55,15 +56,16 @@
             ((System.ComponentModel.ISupportInitialize)btnMaximizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMenu).BeginInit();
+            panelContenedor.SuspendLayout();
             SuspendLayout();
             // 
             // MenuVertical
             // 
             MenuVertical.BackColor = Color.Black;
+            MenuVertical.Controls.Add(lblusuario);
             MenuVertical.Controls.Add(lblcorreo);
             MenuVertical.Controls.Add(lbluser);
             MenuVertical.Controls.Add(pictureBox2);
-            MenuVertical.Controls.Add(lblusuario);
             MenuVertical.Controls.Add(button5);
             MenuVertical.Controls.Add(button3);
             MenuVertical.Controls.Add(button2);
@@ -77,13 +79,26 @@
             MenuVertical.TabIndex = 0;
             MenuVertical.Paint += MenuVertical_Paint;
             // 
+            // lblusuario
+            // 
+            lblusuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblusuario.AutoSize = true;
+            lblusuario.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblusuario.ForeColor = Color.White;
+            lblusuario.Location = new Point(74, 699);
+            lblusuario.Margin = new Padding(4, 0, 4, 0);
+            lblusuario.Name = "lblusuario";
+            lblusuario.Size = new Size(50, 17);
+            lblusuario.TabIndex = 14;
+            lblusuario.Text = "Cargo";
+            // 
             // lblcorreo
             // 
             lblcorreo.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblcorreo.AutoSize = true;
             lblcorreo.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblcorreo.ForeColor = Color.White;
-            lblcorreo.Location = new Point(84, 728);
+            lblcorreo.Location = new Point(74, 733);
             lblcorreo.Margin = new Padding(4, 0, 4, 0);
             lblcorreo.Name = "lblcorreo";
             lblcorreo.Size = new Size(53, 17);
@@ -96,7 +111,7 @@
             lbluser.AutoSize = true;
             lbluser.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lbluser.ForeColor = Color.White;
-            lbluser.Location = new Point(84, 707);
+            lbluser.Location = new Point(74, 716);
             lbluser.Margin = new Padding(4, 0, 4, 0);
             lbluser.Name = "lbluser";
             lbluser.Size = new Size(54, 17);
@@ -107,26 +122,13 @@
             // 
             pictureBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1, 669);
+            pictureBox2.Location = new Point(0, 674);
             pictureBox2.Margin = new Padding(4, 3, 4, 3);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(82, 76);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
-            // 
-            // lblusuario
-            // 
-            lblusuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            lblusuario.AutoSize = true;
-            lblusuario.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblusuario.ForeColor = Color.White;
-            lblusuario.Location = new Point(84, 688);
-            lblusuario.Margin = new Padding(4, 0, 4, 0);
-            lblusuario.Name = "lblusuario";
-            lblusuario.Size = new Size(50, 17);
-            lblusuario.TabIndex = 14;
-            lblusuario.Text = "Cargo";
             // 
             // button5
             // 
@@ -137,7 +139,7 @@
             button5.ForeColor = Color.Orange;
             button5.Image = (Image)resources.GetObject("button5.Image");
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(1, 257);
+            button5.Location = new Point(10, 257);
             button5.Margin = new Padding(4, 3, 4, 3);
             button5.Name = "button5";
             button5.Size = new Size(292, 46);
@@ -154,7 +156,7 @@
             button3.ForeColor = Color.Orange;
             button3.Image = (Image)resources.GetObject("button3.Image");
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(1, 205);
+            button3.Location = new Point(10, 205);
             button3.Margin = new Padding(4, 3, 4, 3);
             button3.Name = "button3";
             button3.Size = new Size(292, 46);
@@ -171,7 +173,7 @@
             button2.ForeColor = Color.Orange;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(1, 153);
+            button2.Location = new Point(10, 153);
             button2.Margin = new Padding(4, 3, 4, 3);
             button2.Name = "button2";
             button2.Size = new Size(292, 46);
@@ -188,7 +190,7 @@
             btnprod.ForeColor = Color.Orange;
             btnprod.Image = (Image)resources.GetObject("btnprod.Image");
             btnprod.ImageAlign = ContentAlignment.MiddleLeft;
-            btnprod.Location = new Point(4, 101);
+            btnprod.Location = new Point(10, 101);
             btnprod.Margin = new Padding(4, 3, 4, 3);
             btnprod.Name = "btnprod";
             btnprod.Size = new Size(292, 46);
@@ -300,12 +302,34 @@
             // panelContenedor
             // 
             panelContenedor.BackColor = Color.FromArgb(33, 33, 33);
+            panelContenedor.Controls.Add(btnExit);
             panelContenedor.Dock = DockStyle.Fill;
             panelContenedor.Location = new Point(250, 52);
             panelContenedor.Margin = new Padding(4, 3, 4, 3);
             panelContenedor.Name = "panelContenedor";
             panelContenedor.Size = new Size(1267, 698);
             panelContenedor.TabIndex = 2;
+            // 
+            // btnExit
+            // 
+            btnExit.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnExit.BackColor = Color.FromArgb(255, 128, 0);
+            btnExit.BackgroundColor = Color.FromArgb(255, 128, 0);
+            btnExit.BorderColor = Color.White;
+            btnExit.BorderRadius = 15;
+            btnExit.BorderSize = 1;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.Font = new Font("Unispace", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExit.ForeColor = Color.Black;
+            btnExit.Location = new Point(1105, 646);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(150, 40);
+            btnExit.TabIndex = 20;
+            btnExit.Text = "Cerrar sesión";
+            btnExit.TextColor = Color.Black;
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
             // 
             // Principal
             // 
@@ -330,6 +354,7 @@
             ((System.ComponentModel.ISupportInitialize)btnMaximizar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMenu).EndInit();
+            panelContenedor.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -353,6 +378,7 @@
         private PictureBox btnMinimizar;
         private PictureBox btnRestaurar;
         private PictureBox pictureBox1;
+        private CustomControls.RJControls.RJButton btnExit;
     }
 }
 
