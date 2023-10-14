@@ -72,7 +72,7 @@ namespace GUI_V_2
 
         }
 
-        private void iconcerrar_Click_1(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -126,7 +126,6 @@ namespace GUI_V_2
         {
             btnMinimizar.BackColor = Color.Transparent;
         }
-
 
 
         private void btnRestaurar_MouseEnter(object sender, EventArgs e)
