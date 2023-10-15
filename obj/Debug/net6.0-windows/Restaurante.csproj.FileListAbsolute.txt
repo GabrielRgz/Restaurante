@@ -39,3 +39,6 @@ C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\G
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante..resources
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\GUI_V_2.Principal.resources
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\CustomControls.RJControls.RJTextBox.resources
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Productos.resources
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Ventas.resources
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Inicio.resources

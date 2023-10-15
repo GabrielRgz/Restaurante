@@ -28,8 +28,6 @@ namespace GUI_V_2
                 MenuVertical.Width = 250;
         }
 
-
-
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -41,10 +39,35 @@ namespace GUI_V_2
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private Button currentbtn;
+
+        private void ResaltarBoton(object sender, Color color) 
+        {
+            if (sender != null)
+            {
+                DesactivarBoton();
+                currentbtn = (Button)sender;
+                currentbtn.BackColor = Color.FromArgb(33,33,33) ;
+                currentbtn.ForeColor = color;
+            }
+        }
+
+        private void DesactivarBoton()
+        {
+            if (currentbtn != null)
+            {
+                currentbtn.BackColor = Color.Black;
+                currentbtn.ForeColor = Color.Orange;
+            }
+        }
+
         private void AbrirFormEnPanel(object Formhijo)
         {
             if (this.panelContenedor.Controls.Count > 0)
+            {
                 this.panelContenedor.Controls.RemoveAt(0);
+            }
+
             Form fh = Formhijo as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
@@ -55,12 +78,16 @@ namespace GUI_V_2
 
         private void btnprod_Click(object sender, EventArgs e)
         {
-            // AbrirFormEnPanel(new Productos());
+            ResaltarBoton(sender, btnprod.ForeColor);
+            AbrirFormEnPanel(new Productos());
         }
 
         private void btnlogoInicio_Click(object sender, EventArgs e)
         {
-            //AbrirFormEnPanel(new InicioResumen());
+            if (true)
+            {
+                AbrirFormEnPanel(new Inicio());
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -145,6 +172,17 @@ namespace GUI_V_2
             Login loginForm = new Login(); // Crea una instancia del formulario de inicio de sesión
             loginForm.Show(); // Muestra el formulario de inicio de sesión
             this.Hide(); // Oculta el formulario actual
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            ResaltarBoton(sender, btnVentas.ForeColor);
+            AbrirFormEnPanel(new Ventas());
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Inicio());
         }
     }
 }
