@@ -18,21 +18,6 @@ namespace Restaurante
             InitializeComponent();
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnCerrar_MouseEnter(object sender, EventArgs e)
-        {
-            btnCerrar.BackColor = Color.White;
-        }
-
-        private void btnCerrar_MouseLeave(object sender, EventArgs e)
-        {
-            btnCerrar.BackColor = Color.Transparent;
-        }
-
         private void horaFecha_Tick(object sender, EventArgs e)
         {
             lblHora.Text = DateTime.Now.ToLongTimeString();

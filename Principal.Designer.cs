@@ -124,8 +124,9 @@
             // 
             // pbxUser
             // 
+            this.pbxUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbxUser.Image = ((System.Drawing.Image)(resources.GetObject("pbxUser.Image")));
-            this.pbxUser.Location = new System.Drawing.Point(0, 630);
+            this.pbxUser.Location = new System.Drawing.Point(0, 622);
             this.pbxUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pbxUser.Name = "pbxUser";
             this.pbxUser.Size = new System.Drawing.Size(82, 76);
@@ -162,6 +163,7 @@
             this.btnCompras.TabIndex = 5;
             this.btnCompras.Text = "Compras";
             this.btnCompras.UseVisualStyleBackColor = true;
+            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
             // btnClientes
             // 
@@ -179,6 +181,7 @@
             this.btnClientes.TabIndex = 3;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnVentas
             // 

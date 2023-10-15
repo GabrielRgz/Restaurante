@@ -95,11 +95,6 @@ namespace GUI_V_2
             btnlogoInicio_Click(null, e);
         }
 
-        private void MenuVertical_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -183,6 +178,18 @@ namespace GUI_V_2
         private void Principal_Load(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Inicio());
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            ResaltarBoton(sender, btnVentas.ForeColor);
+            AbrirFormEnPanel(new Clientes());
+        }
+
+        private void btnCompras_Click(object sender, EventArgs e)
+        {
+            ResaltarBoton(sender, btnVentas.ForeColor);
+            AbrirFormEnPanel(new Compras());
         }
     }
 }

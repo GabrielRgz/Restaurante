@@ -32,15 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panelOptions = new System.Windows.Forms.Panel();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.btnAdd = new CustomControls.RJControls.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblBienvenida = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.panelOptions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +57,6 @@
             // panelOptions
             // 
             this.panelOptions.BackColor = System.Drawing.Color.Black;
-            this.panelOptions.Controls.Add(this.btnCerrar);
             this.panelOptions.Controls.Add(this.lblTitulo);
             this.panelOptions.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelOptions.Location = new System.Drawing.Point(0, 0);
@@ -68,45 +64,13 @@
             this.panelOptions.Size = new System.Drawing.Size(1035, 49);
             this.panelOptions.TabIndex = 1;
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCerrar.Location = new System.Drawing.Point(1009, 0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(26, 49);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnCerrar.TabIndex = 24;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            this.btnCerrar.MouseEnter += new System.EventHandler(this.btnCerrar_MouseEnter);
-            this.btnCerrar.MouseLeave += new System.EventHandler(this.btnCerrar_MouseLeave);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnAdd.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAdd.BorderRadius = 0;
-            this.btnAdd.BorderSize = 0;
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(0, 577);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(1035, 42);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Agregar";
-            this.btnAdd.TextColor = System.Drawing.Color.White;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(353, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(281, 84);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(340, 246);
+            this.pictureBox1.Size = new System.Drawing.Size(457, 315);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -118,7 +82,7 @@
             this.lblBienvenida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblBienvenida.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblBienvenida.ForeColor = System.Drawing.Color.Orange;
-            this.lblBienvenida.Location = new System.Drawing.Point(380, 353);
+            this.lblBienvenida.Location = new System.Drawing.Point(375, 428);
             this.lblBienvenida.Name = "lblBienvenida";
             this.lblBienvenida.Size = new System.Drawing.Size(304, 38);
             this.lblBienvenida.TabIndex = 25;
@@ -131,7 +95,7 @@
             this.lblHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblHora.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblHora.ForeColor = System.Drawing.Color.Orange;
-            this.lblHora.Location = new System.Drawing.Point(423, 401);
+            this.lblHora.Location = new System.Drawing.Point(411, 475);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(212, 56);
             this.lblHora.TabIndex = 26;
@@ -145,7 +109,7 @@
             this.lblFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblFecha.ForeColor = System.Drawing.Color.BurlyWood;
-            this.lblFecha.Location = new System.Drawing.Point(484, 457);
+            this.lblFecha.Location = new System.Drawing.Point(472, 531);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(77, 19);
             this.lblFecha.TabIndex = 27;
@@ -167,13 +131,11 @@
             this.Controls.Add(this.lblBienvenida);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelOptions);
-            this.Controls.Add(this.btnAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inicio";
             this.Text = "Productos";
             this.panelOptions.ResumeLayout(false);
             this.panelOptions.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -184,8 +146,6 @@
 
         private Label lblTitulo;
         private Panel panelOptions;
-        private CustomControls.RJControls.RJButton btnAdd;
-        private PictureBox btnCerrar;
         private PictureBox pictureBox1;
         private Label lblBienvenida;
         private Label lblHora;
