@@ -22,7 +22,7 @@ namespace GUI_V_2
         {
             if (MenuVertical.Width == 250)
             {
-                MenuVertical.Width = 75;
+                MenuVertical.Width = 80;
             }
             else
                 MenuVertical.Width = 250;
@@ -38,16 +38,20 @@ namespace GUI_V_2
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
+        private void lblTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
         private Button currentbtn;
 
-        private void ResaltarBoton(object sender, Color color) 
+        private void ResaltarBoton(object sender, Color color)
         {
             if (sender != null)
             {
                 DesactivarBoton();
                 currentbtn = (Button)sender;
-                currentbtn.BackColor = Color.FromArgb(33,33,33) ;
+                currentbtn.BackColor = Color.FromArgb(33, 33, 33);
                 currentbtn.ForeColor = color;
             }
         }
@@ -191,5 +195,18 @@ namespace GUI_V_2
             ResaltarBoton(sender, btnVentas.ForeColor);
             AbrirFormEnPanel(new Compras());
         }
+
+        private void btnCerrarSesion_MouseEnter(object sender, EventArgs e)
+        {
+            btnCerrarSesion.BackColor = Color.FromArgb(33, 33, 33); // Blanco
+
+        }
+
+        private void btnCerrarSesion_MouseLeave(object sender, EventArgs e)
+        {
+            btnCerrarSesion.BackColor = Color.Transparent;
+        }
+
+
     }
 }

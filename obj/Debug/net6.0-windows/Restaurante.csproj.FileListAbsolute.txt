@@ -44,3 +44,8 @@ C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Ven
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Inicio.resources
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Clientes.resources
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Compras.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Clientes.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Compras.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Inicio.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Productos.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Ventas.resources
