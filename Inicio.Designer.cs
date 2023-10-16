@@ -28,117 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            pictureBox1 = new PictureBox();
-            lblBienvenida = new Label();
-            lblHora = new Label();
-            lblFecha = new Label();
-            horaFecha = new System.Windows.Forms.Timer(components);
-            panelOptions = new Panel();
-            lblTitulo = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panelOptions.SuspendLayout();
-            SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblBienvenida = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.panelOptions = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelOptions.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(181, 70);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(650, 335);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(181, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(650, 335);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // lblBienvenida
             // 
-            lblBienvenida.Anchor = AnchorStyles.None;
-            lblBienvenida.AutoSize = true;
-            lblBienvenida.FlatStyle = FlatStyle.Flat;
-            lblBienvenida.Font = new Font("Century Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBienvenida.ForeColor = Color.Orange;
-            lblBienvenida.Location = new Point(350, 408);
-            lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(304, 38);
-            lblBienvenida.TabIndex = 25;
-            lblBienvenida.Text = "BIENVENIDO \"User\"";
+            this.lblBienvenida.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblBienvenida.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBienvenida.ForeColor = System.Drawing.Color.Orange;
+            this.lblBienvenida.Location = new System.Drawing.Point(350, 408);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(304, 38);
+            this.lblBienvenida.TabIndex = 25;
+            this.lblBienvenida.Text = "BIENVENIDO \"User\"";
             // 
             // lblHora
             // 
-            lblHora.Anchor = AnchorStyles.None;
-            lblHora.AutoSize = true;
-            lblHora.FlatStyle = FlatStyle.Flat;
-            lblHora.Font = new Font("Century Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            lblHora.ForeColor = Color.Orange;
-            lblHora.Location = new Point(341, 446);
-            lblHora.Name = "lblHora";
-            lblHora.Size = new Size(212, 56);
-            lblHora.TabIndex = 26;
-            lblHora.Text = "00:00:00";
-            lblHora.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblHora.AutoSize = true;
+            this.lblHora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblHora.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblHora.ForeColor = System.Drawing.Color.Orange;
+            this.lblHora.Location = new System.Drawing.Point(388, 446);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(212, 56);
+            this.lblHora.TabIndex = 26;
+            this.lblHora.Text = "00:00:00";
+            this.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFecha
             // 
-            lblFecha.Anchor = AnchorStyles.None;
-            lblFecha.AutoSize = true;
-            lblFecha.FlatStyle = FlatStyle.Flat;
-            lblFecha.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFecha.ForeColor = Color.BurlyWood;
-            lblFecha.Location = new Point(450, 517);
-            lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(77, 19);
-            lblFecha.TabIndex = 27;
-            lblFecha.Text = "00/00/00";
+            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblFecha.ForeColor = System.Drawing.Color.BurlyWood;
+            this.lblFecha.Location = new System.Drawing.Point(449, 513);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(77, 19);
+            this.lblFecha.TabIndex = 27;
+            this.lblFecha.Text = "00/00/00";
             // 
             // horaFecha
             // 
-            horaFecha.Enabled = true;
-            horaFecha.Tick += horaFecha_Tick;
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
             // 
             // panelOptions
             // 
-            panelOptions.BackColor = Color.Orange;
-            panelOptions.Controls.Add(lblTitulo);
-            panelOptions.Dock = DockStyle.Top;
-            panelOptions.Location = new Point(0, 0);
-            panelOptions.Name = "panelOptions";
-            panelOptions.Size = new Size(1035, 5);
-            panelOptions.TabIndex = 28;
+            this.panelOptions.BackColor = System.Drawing.Color.Orange;
+            this.panelOptions.Controls.Add(this.lblTitulo);
+            this.panelOptions.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelOptions.Location = new System.Drawing.Point(0, 0);
+            this.panelOptions.Name = "panelOptions";
+            this.panelOptions.Size = new System.Drawing.Size(1035, 5);
+            this.panelOptions.TabIndex = 28;
             // 
             // lblTitulo
             // 
-            lblTitulo.AutoSize = true;
-            lblTitulo.Dock = DockStyle.Top;
-            lblTitulo.FlatStyle = FlatStyle.Flat;
-            lblTitulo.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTitulo.ForeColor = Color.White;
-            lblTitulo.Location = new Point(0, 0);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Padding = new Padding(0, 6, 0, 0);
-            lblTitulo.Size = new Size(0, 39);
-            lblTitulo.TabIndex = 0;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.lblTitulo.Size = new System.Drawing.Size(0, 39);
+            this.lblTitulo.TabIndex = 0;
             // 
             // Inicio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(33, 33, 33);
-            ClientSize = new Size(1035, 619);
-            Controls.Add(panelOptions);
-            Controls.Add(lblFecha);
-            Controls.Add(lblHora);
-            Controls.Add(lblBienvenida);
-            Controls.Add(pictureBox1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Inicio";
-            Text = "Productos";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panelOptions.ResumeLayout(false);
-            panelOptions.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.ClientSize = new System.Drawing.Size(1035, 619);
+            this.Controls.Add(this.panelOptions);
+            this.Controls.Add(this.lblFecha);
+            this.Controls.Add(this.lblHora);
+            this.Controls.Add(this.lblBienvenida);
+            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Inicio";
+            this.Text = "Productos";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelOptions.ResumeLayout(false);
+            this.panelOptions.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

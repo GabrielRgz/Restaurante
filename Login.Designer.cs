@@ -29,231 +29,232 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            panel1 = new Panel();
-            panel2 = new Panel();
-            btnMinimize = new PictureBox();
-            btnClose = new PictureBox();
-            btnSalir = new CustomControls.RJControls.RJButton();
-            btnLogin = new CustomControls.RJControls.RJButton();
-            rjTextBox2 = new CustomControls.RJControls.RJTextBox();
-            rjTextBox1 = new CustomControls.RJControls.RJTextBox();
-            lblPassword = new Label();
-            lblUser = new Label();
-            pictureBox1 = new PictureBox();
-            lblnombre = new Label();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnMinimize).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnClose).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new CustomControls.RJControls.RJButton();
+            this.btnLogin = new CustomControls.RJControls.RJButton();
+            this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
+            this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblnombre = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Black;
-            panel1.Controls.Add(panel2);
-            panel1.Controls.Add(btnSalir);
-            panel1.Controls.Add(btnLogin);
-            panel1.Controls.Add(rjTextBox2);
-            panel1.Controls.Add(rjTextBox1);
-            panel1.Controls.Add(lblPassword);
-            panel1.Controls.Add(lblUser);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(lblnombre);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(421, 498);
-            panel1.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Controls.Add(this.rjTextBox2);
+            this.panel1.Controls.Add(this.rjTextBox1);
+            this.panel1.Controls.Add(this.lblPassword);
+            this.panel1.Controls.Add(this.lblUser);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lblnombre);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(421, 498);
+            this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(33, 33, 33);
-            panel2.Controls.Add(btnMinimize);
-            panel2.Controls.Add(btnClose);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(421, 30);
-            panel2.TabIndex = 20;
-            panel2.MouseDown += panel2_MouseDown;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel2.Controls.Add(this.btnMinimize);
+            this.panel2.Controls.Add(this.btnClose);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(421, 30);
+            this.panel2.TabIndex = 20;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // btnMinimize
             // 
-            btnMinimize.Dock = DockStyle.Right;
-            btnMinimize.Image = (Image)resources.GetObject("btnMinimize.Image");
-            btnMinimize.Location = new Point(363, 0);
-            btnMinimize.Name = "btnMinimize";
-            btnMinimize.Padding = new Padding(10, 0, 10, 0);
-            btnMinimize.Size = new Size(32, 30);
-            btnMinimize.SizeMode = PictureBoxSizeMode.CenterImage;
-            btnMinimize.TabIndex = 22;
-            btnMinimize.TabStop = false;
-            btnMinimize.Click += btnMinimize_Click;
-            btnMinimize.MouseEnter += btnMinimize_MouseEnter;
-            btnMinimize.MouseLeave += btnMinimize_MouseLeave;
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Location = new System.Drawing.Point(363, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnMinimize.Size = new System.Drawing.Size(32, 30);
+            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnMinimize.TabIndex = 22;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            this.btnMinimize.MouseEnter += new System.EventHandler(this.btnMinimize_MouseEnter);
+            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
             // 
             // btnClose
             // 
-            btnClose.Dock = DockStyle.Right;
-            btnClose.Image = (Image)resources.GetObject("btnClose.Image");
-            btnClose.Location = new Point(395, 0);
-            btnClose.Name = "btnClose";
-            btnClose.Size = new Size(26, 30);
-            btnClose.SizeMode = PictureBoxSizeMode.CenterImage;
-            btnClose.TabIndex = 21;
-            btnClose.TabStop = false;
-            btnClose.Click += btnClose_Click;
-            btnClose.MouseEnter += btnClose_MouseEnter;
-            btnClose.MouseLeave += btnClose_MouseLeave;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(395, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(26, 30);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnClose.TabIndex = 21;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
+            this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
             // 
             // btnSalir
             // 
-            btnSalir.BackColor = Color.FromArgb(255, 128, 0);
-            btnSalir.BackgroundColor = Color.FromArgb(255, 128, 0);
-            btnSalir.BorderColor = Color.White;
-            btnSalir.BorderRadius = 15;
-            btnSalir.BorderSize = 1;
-            btnSalir.FlatAppearance.BorderSize = 0;
-            btnSalir.FlatStyle = FlatStyle.Flat;
-            btnSalir.Font = new Font("Unispace", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalir.ForeColor = Color.Black;
-            btnSalir.Location = new Point(235, 417);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(150, 40);
-            btnSalir.TabIndex = 19;
-            btnSalir.Text = "Salir";
-            btnSalir.TextColor = Color.Black;
-            btnSalir.UseVisualStyleBackColor = false;
-            btnSalir.Click += btnSalir_Click;
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSalir.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSalir.BorderColor = System.Drawing.Color.White;
+            this.btnSalir.BorderRadius = 15;
+            this.btnSalir.BorderSize = 1;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Unispace", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.ForeColor = System.Drawing.Color.Black;
+            this.btnSalir.Location = new System.Drawing.Point(235, 417);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(150, 40);
+            this.btnSalir.TabIndex = 19;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextColor = System.Drawing.Color.Black;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.FromArgb(255, 128, 0);
-            btnLogin.BackgroundColor = Color.FromArgb(255, 128, 0);
-            btnLogin.BorderColor = Color.White;
-            btnLogin.BorderRadius = 15;
-            btnLogin.BorderSize = 1;
-            btnLogin.FlatAppearance.BorderSize = 0;
-            btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Font = new Font("Unispace", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogin.ForeColor = SystemColors.WindowText;
-            btnLogin.Location = new Point(42, 417);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(150, 40);
-            btnLogin.TabIndex = 18;
-            btnLogin.Text = "Iniciar sesión";
-            btnLogin.TextColor = SystemColors.WindowText;
-            btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += btnLogin_Click;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLogin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLogin.BorderColor = System.Drawing.Color.White;
+            this.btnLogin.BorderRadius = 15;
+            this.btnLogin.BorderSize = 1;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Unispace", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnLogin.Location = new System.Drawing.Point(42, 417);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(150, 40);
+            this.btnLogin.TabIndex = 18;
+            this.btnLogin.Text = "Iniciar sesión";
+            this.btnLogin.TextColor = System.Drawing.SystemColors.WindowText;
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // rjTextBox2
             // 
-            rjTextBox2.BackColor = SystemColors.Window;
-            rjTextBox2.BorderColor = Color.FromArgb(255, 128, 0);
-            rjTextBox2.BorderFocusColor = Color.Yellow;
-            rjTextBox2.BorderRadius = 15;
-            rjTextBox2.BorderSize = 2;
-            rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            rjTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox2.Location = new Point(92, 362);
-            rjTextBox2.Margin = new Padding(4);
-            rjTextBox2.Multiline = false;
-            rjTextBox2.Name = "rjTextBox2";
-            rjTextBox2.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox2.PasswordChar = false;
-            rjTextBox2.PlaceholderColor = Color.DarkGray;
-            rjTextBox2.PlaceholderText = "                           Contraseña";
-            rjTextBox2.Size = new Size(250, 31);
-            rjTextBox2.TabIndex = 17;
-            rjTextBox2.Texts = "";
-            rjTextBox2.UnderlinedStyle = false;
+            this.rjTextBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.rjTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.Yellow;
+            this.rjTextBox2.BorderRadius = 15;
+            this.rjTextBox2.BorderSize = 2;
+            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rjTextBox2.Location = new System.Drawing.Point(92, 337);
+            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox2.Multiline = false;
+            this.rjTextBox2.Name = "rjTextBox2";
+            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjTextBox2.PasswordChar = false;
+            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.rjTextBox2.PlaceholderText = "                           Contraseña";
+            this.rjTextBox2.Size = new System.Drawing.Size(250, 31);
+            this.rjTextBox2.TabIndex = 17;
+            this.rjTextBox2.Texts = "";
+            this.rjTextBox2.UnderlinedStyle = false;
             // 
             // rjTextBox1
             // 
-            rjTextBox1.BackColor = SystemColors.Window;
-            rjTextBox1.BorderColor = Color.FromArgb(255, 128, 0);
-            rjTextBox1.BorderFocusColor = Color.Yellow;
-            rjTextBox1.BorderRadius = 15;
-            rjTextBox1.BorderSize = 2;
-            rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox1.Location = new Point(92, 292);
-            rjTextBox1.Margin = new Padding(4);
-            rjTextBox1.Multiline = false;
-            rjTextBox1.Name = "rjTextBox1";
-            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox1.PasswordChar = false;
-            rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "                   Nombre De usuario";
-            rjTextBox1.Size = new Size(250, 31);
-            rjTextBox1.TabIndex = 16;
-            rjTextBox1.Texts = "";
-            rjTextBox1.UnderlinedStyle = false;
+            this.rjTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.rjTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.Yellow;
+            this.rjTextBox1.BorderRadius = 15;
+            this.rjTextBox1.BorderSize = 2;
+            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rjTextBox1.Location = new System.Drawing.Point(92, 267);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox1.Multiline = false;
+            this.rjTextBox1.Name = "rjTextBox1";
+            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjTextBox1.PasswordChar = false;
+            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.rjTextBox1.PlaceholderText = "                   Nombre De usuario";
+            this.rjTextBox1.Size = new System.Drawing.Size(250, 31);
+            this.rjTextBox1.TabIndex = 16;
+            this.rjTextBox1.Texts = "";
+            this.rjTextBox1.UnderlinedStyle = false;
             // 
             // lblPassword
             // 
-            lblPassword.AutoSize = true;
-            lblPassword.Font = new Font("Unispace", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPassword.ForeColor = Color.FromArgb(255, 128, 0);
-            lblPassword.Location = new Point(134, 329);
-            lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(163, 29);
-            lblPassword.TabIndex = 11;
-            lblPassword.Text = "Contraseña";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Unispace", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblPassword.Location = new System.Drawing.Point(134, 304);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(163, 29);
+            this.lblPassword.TabIndex = 11;
+            this.lblPassword.Text = "Contraseña";
             // 
             // lblUser
             // 
-            lblUser.AutoSize = true;
-            lblUser.Font = new Font("Unispace", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUser.ForeColor = Color.FromArgb(255, 128, 0);
-            lblUser.Location = new Point(159, 259);
-            lblUser.Name = "lblUser";
-            lblUser.Size = new Size(118, 29);
-            lblUser.TabIndex = 10;
-            lblUser.Text = "Usuario";
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Unispace", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblUser.Location = new System.Drawing.Point(159, 234);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(118, 29);
+            this.lblUser.TabIndex = 10;
+            this.lblUser.Text = "Usuario";
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.Black;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(127, 95);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(170, 136);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(127, 95);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(170, 136);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // lblnombre
             // 
-            lblnombre.AutoSize = true;
-            lblnombre.Font = new Font("Unispace", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblnombre.ForeColor = Color.FromArgb(255, 128, 0);
-            lblnombre.Location = new Point(42, 44);
-            lblnombre.Name = "lblnombre";
-            lblnombre.Size = new Size(343, 29);
-            lblnombre.TabIndex = 8;
-            lblnombre.Text = "El crustaceo cascarudo";
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Font = new System.Drawing.Font("Unispace", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblnombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblnombre.Location = new System.Drawing.Point(134, 44);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(163, 29);
+            this.lblnombre.TabIndex = 8;
+            this.lblnombre.Text = "Bienvenido";
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Azure;
-            ClientSize = new Size(421, 498);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            MaximizeBox = false;
-            Name = "Login";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnMinimize).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnClose).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(421, 498);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -35,6 +35,8 @@
             this.btnAdd = new CustomControls.RJControls.RJButton();
             this.panelCentral = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.rjTextBox5 = new CustomControls.RJControls.RJTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
@@ -47,8 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
             this.dataClientes = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.rjTextBox5 = new CustomControls.RJControls.RJTextBox();
             this.panelOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelCentral.SuspendLayout();
@@ -142,6 +142,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(466, 570);
             this.panel1.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Orange;
+            this.label6.Location = new System.Drawing.Point(31, 347);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(151, 33);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Categoria";
+            // 
+            // rjTextBox5
+            // 
+            this.rjTextBox5.BackColor = System.Drawing.SystemColors.Window;
+            this.rjTextBox5.BorderColor = System.Drawing.Color.Peru;
+            this.rjTextBox5.BorderFocusColor = System.Drawing.Color.Gold;
+            this.rjTextBox5.BorderRadius = 0;
+            this.rjTextBox5.BorderSize = 2;
+            this.rjTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rjTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rjTextBox5.Location = new System.Drawing.Point(189, 347);
+            this.rjTextBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox5.Multiline = false;
+            this.rjTextBox5.Name = "rjTextBox5";
+            this.rjTextBox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjTextBox5.PasswordChar = false;
+            this.rjTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.rjTextBox5.PlaceholderText = "";
+            this.rjTextBox5.Size = new System.Drawing.Size(250, 31);
+            this.rjTextBox5.TabIndex = 10;
+            this.rjTextBox5.Texts = "";
+            this.rjTextBox5.UnderlinedStyle = false;
             // 
             // label5
             // 
@@ -333,39 +366,6 @@
             this.dataClientes.RowTemplate.Height = 25;
             this.dataClientes.Size = new System.Drawing.Size(883, 570);
             this.dataClientes.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Orange;
-            this.label6.Location = new System.Drawing.Point(31, 347);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 33);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Categoria";
-            // 
-            // rjTextBox5
-            // 
-            this.rjTextBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox5.BorderColor = System.Drawing.Color.Peru;
-            this.rjTextBox5.BorderFocusColor = System.Drawing.Color.Gold;
-            this.rjTextBox5.BorderRadius = 0;
-            this.rjTextBox5.BorderSize = 2;
-            this.rjTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox5.Location = new System.Drawing.Point(189, 347);
-            this.rjTextBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox5.Multiline = false;
-            this.rjTextBox5.Name = "rjTextBox5";
-            this.rjTextBox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox5.PasswordChar = false;
-            this.rjTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox5.PlaceholderText = "";
-            this.rjTextBox5.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox5.TabIndex = 10;
-            this.rjTextBox5.Texts = "";
-            this.rjTextBox5.UnderlinedStyle = false;
             // 
             // Productos
             // 
