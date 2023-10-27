@@ -14,18 +14,20 @@ namespace GUI_V_2
 {
     public partial class Principal : Form
     {
+        int tema;
+
         public Principal()
         {
             InitializeComponent();
         }
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (MenuVertical.Width == 250)
+            if (panelMenu.Width == 250)
             {
-                MenuVertical.Width = 80;
+                panelMenu.Width = 80;
             }
             else
-                MenuVertical.Width = 250;
+                panelMenu.Width = 250;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -97,6 +99,7 @@ namespace GUI_V_2
         private void Form1_Load(object sender, EventArgs e)
         {
             btnlogoInicio_Click(null, e);
+            tema = 1;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -207,6 +210,21 @@ namespace GUI_V_2
             btnCerrarSesion.BackColor = Color.Transparent;
         }
 
+        private void btnTema_Click(object sender, EventArgs e)
+        {
+            if (tema == 1)
+            {
+                tema = 2;
+            }
+            else if (tema == 2)
+            {
+                tema = 1;
+            }
 
+            Temas.ElegirTema(tema);
+            panelContenedor.BackColor = Temas.PanelContenedor;
+            panelMenu.BackColor = Temas.PanelMenu;
+            BarraTitulo.BackColor = Temas.PanelBarraTitulo;
+        }
     }
 }
