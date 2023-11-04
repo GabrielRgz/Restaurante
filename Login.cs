@@ -8,6 +8,7 @@ namespace Restaurante
 {
     public partial class Login : Form
     {
+        int tema;
         public Login()
         {
             InitializeComponent();

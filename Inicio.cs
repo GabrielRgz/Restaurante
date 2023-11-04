@@ -13,8 +13,15 @@ namespace Restaurante
 {
     public partial class Inicio : Form
     {
+        int tema;
         public Inicio()
         {
+            InitializeComponent();
+        }
+
+        public Inicio(int tema)
+        {
+            this.tema = tema;
             InitializeComponent();
         }
 
@@ -22,6 +29,12 @@ namespace Restaurante
         {
             lblHora.Text = DateTime.Now.ToLongTimeString();
             lblFecha.Text = DateTime.Now.ToShortDateString();
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+            Temas.ElegirTema(tema);
+            this.BackColor = Temas.PanelContenedor;
         }
     }
 }

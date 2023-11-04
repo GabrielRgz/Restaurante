@@ -134,6 +134,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Inicio";
             Text = "Productos";
+            Load += Inicio_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelOptions.ResumeLayout(false);
             panelOptions.PerformLayout();

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             panelMenu = new Panel();
+            btnTema = new Button();
             btnCerrarSesion = new Button();
             lblcorreo = new Label();
             lbluser = new Label();
@@ -48,7 +49,7 @@
             btnCerrar = new PictureBox();
             lblTitulo = new Label();
             panelContenedor = new Panel();
-            btnTema = new Button();
+            btnEvaluacion = new Button();
             panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbxUser).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnlogoInicio).BeginInit();
@@ -63,6 +64,7 @@
             // panelMenu
             // 
             panelMenu.BackColor = Color.Black;
+            panelMenu.Controls.Add(btnEvaluacion);
             panelMenu.Controls.Add(btnTema);
             panelMenu.Controls.Add(btnCerrarSesion);
             panelMenu.Controls.Add(lblcorreo);
@@ -80,6 +82,23 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(250, 750);
             panelMenu.TabIndex = 0;
+            // 
+            // btnTema
+            // 
+            btnTema.FlatAppearance.BorderSize = 0;
+            btnTema.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            btnTema.FlatStyle = FlatStyle.Flat;
+            btnTema.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            btnTema.ForeColor = Color.Orange;
+            btnTema.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTema.Location = new Point(0, 560);
+            btnTema.Margin = new Padding(4, 3, 4, 3);
+            btnTema.Name = "btnTema";
+            btnTema.Size = new Size(250, 56);
+            btnTema.TabIndex = 19;
+            btnTema.Text = "Tema";
+            btnTema.UseVisualStyleBackColor = true;
+            btnTema.Click += btnTema_Click;
             // 
             // btnCerrarSesion
             // 
@@ -353,22 +372,22 @@
             panelContenedor.Size = new Size(1267, 698);
             panelContenedor.TabIndex = 2;
             // 
-            // btnTema
+            // btnEvaluacion
             // 
-            btnTema.FlatAppearance.BorderSize = 0;
-            btnTema.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
-            btnTema.FlatStyle = FlatStyle.Flat;
-            btnTema.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            btnTema.ForeColor = Color.Orange;
-            btnTema.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTema.Location = new Point(0, 560);
-            btnTema.Margin = new Padding(4, 3, 4, 3);
-            btnTema.Name = "btnTema";
-            btnTema.Size = new Size(250, 56);
-            btnTema.TabIndex = 19;
-            btnTema.Text = "Tema";
-            btnTema.UseVisualStyleBackColor = true;
-            btnTema.Click += btnTema_Click;
+            btnEvaluacion.FlatAppearance.BorderSize = 0;
+            btnEvaluacion.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            btnEvaluacion.FlatStyle = FlatStyle.Flat;
+            btnEvaluacion.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEvaluacion.ForeColor = Color.Orange;
+            btnEvaluacion.ImageAlign = ContentAlignment.MiddleLeft;
+            btnEvaluacion.Location = new Point(0, 260);
+            btnEvaluacion.Margin = new Padding(4, 3, 4, 3);
+            btnEvaluacion.Name = "btnEvaluacion";
+            btnEvaluacion.Size = new Size(250, 46);
+            btnEvaluacion.TabIndex = 20;
+            btnEvaluacion.Text = "   Calificar";
+            btnEvaluacion.UseVisualStyleBackColor = true;
+            btnEvaluacion.Click += btnEvaluacion_Click;
             // 
             // Principal
             // 
@@ -418,6 +437,7 @@
         private Button btnCerrarSesion;
         private Label lblTitulo;
         private Button btnTema;
+        private Button btnEvaluacion;
     }
 }
 

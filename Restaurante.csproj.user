@@ -7,6 +7,9 @@
     <Compile Update="Compras.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Evaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PuntoVenta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RJControls\RJButton.cs">

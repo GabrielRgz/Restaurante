@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Restaurante;
+using System.Configuration;
 
 namespace GUI_V_2
 {
@@ -20,6 +21,7 @@ namespace GUI_V_2
         {
             InitializeComponent();
         }
+
         private void btnMenu_Click(object sender, EventArgs e)
         {
             if (panelMenu.Width == 250)
@@ -73,7 +75,6 @@ namespace GUI_V_2
             {
                 this.panelContenedor.Controls.RemoveAt(0);
             }
-
             Form fh = Formhijo as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
@@ -92,7 +93,7 @@ namespace GUI_V_2
         {
             if (true)
             {
-                AbrirFormEnPanel(new Inicio());
+                AbrirFormEnPanel(new Inicio(tema));
             }
         }
 
@@ -225,6 +226,12 @@ namespace GUI_V_2
             panelContenedor.BackColor = Temas.PanelContenedor;
             panelMenu.BackColor = Temas.PanelMenu;
             BarraTitulo.BackColor = Temas.PanelBarraTitulo;
+        }
+
+        private void btnEvaluacion_Click(object sender, EventArgs e)
+        {
+            ResaltarBoton(sender, btnVentas.ForeColor);
+            AbrirFormEnPanel(new Evaluacion());
         }
     }
 }
