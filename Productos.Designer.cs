@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Productos));
             lblTitulo = new Label();
             panelOptions = new Panel();
@@ -36,24 +37,26 @@
             panelCentral = new Panel();
             panel1 = new Panel();
             label6 = new Label();
-            rjTextBox5 = new CustomControls.RJControls.RJTextBox();
+            txbCategoria = new CustomControls.RJControls.RJTextBox();
             label5 = new Label();
             rjButton2 = new CustomControls.RJControls.RJButton();
             rjButton1 = new CustomControls.RJControls.RJButton();
             label4 = new Label();
-            rjTextBox4 = new CustomControls.RJControls.RJTextBox();
+            txbNombre = new CustomControls.RJControls.RJTextBox();
             label3 = new Label();
-            rjTextBox3 = new CustomControls.RJControls.RJTextBox();
+            txbPrecio = new CustomControls.RJControls.RJTextBox();
             label2 = new Label();
-            rjTextBox2 = new CustomControls.RJControls.RJTextBox();
+            txbDescripcion = new CustomControls.RJControls.RJTextBox();
             label1 = new Label();
-            rjTextBox1 = new CustomControls.RJControls.RJTextBox();
+            txbID = new CustomControls.RJControls.RJTextBox();
             dataClientes = new DataGridView();
+            conexionBindingSource = new BindingSource(components);
             panelOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             panelCentral.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataClientes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)conexionBindingSource).BeginInit();
             SuspendLayout();
             // 
             // lblTitulo
@@ -109,6 +112,7 @@
             btnAdd.Text = "Agregar";
             btnAdd.TextColor = Color.White;
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // panelCentral
             // 
@@ -125,18 +129,18 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel1.BackColor = Color.FromArgb(30, 30, 31);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(rjTextBox5);
+            panel1.Controls.Add(txbCategoria);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(rjButton2);
             panel1.Controls.Add(rjButton1);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(rjTextBox4);
+            panel1.Controls.Add(txbNombre);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(rjTextBox3);
+            panel1.Controls.Add(txbPrecio);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(rjTextBox2);
+            panel1.Controls.Add(txbDescripcion);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(rjTextBox1);
+            panel1.Controls.Add(txbID);
             panel1.Location = new Point(920, 18);
             panel1.Name = "panel1";
             panel1.Size = new Size(466, 570);
@@ -153,27 +157,27 @@
             label6.TabIndex = 11;
             label6.Text = "Categoria";
             // 
-            // rjTextBox5
+            // txbCategoria
             // 
-            rjTextBox5.BackColor = SystemColors.Window;
-            rjTextBox5.BorderColor = Color.Peru;
-            rjTextBox5.BorderFocusColor = Color.Gold;
-            rjTextBox5.BorderRadius = 0;
-            rjTextBox5.BorderSize = 2;
-            rjTextBox5.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            rjTextBox5.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox5.Location = new Point(189, 347);
-            rjTextBox5.Margin = new Padding(4);
-            rjTextBox5.Multiline = false;
-            rjTextBox5.Name = "rjTextBox5";
-            rjTextBox5.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox5.PasswordChar = false;
-            rjTextBox5.PlaceholderColor = Color.DarkGray;
-            rjTextBox5.PlaceholderText = "";
-            rjTextBox5.Size = new Size(250, 31);
-            rjTextBox5.TabIndex = 10;
-            rjTextBox5.Texts = "";
-            rjTextBox5.UnderlinedStyle = false;
+            txbCategoria.BackColor = SystemColors.Window;
+            txbCategoria.BorderColor = Color.Peru;
+            txbCategoria.BorderFocusColor = Color.Gold;
+            txbCategoria.BorderRadius = 0;
+            txbCategoria.BorderSize = 2;
+            txbCategoria.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txbCategoria.ForeColor = Color.FromArgb(64, 64, 64);
+            txbCategoria.Location = new Point(189, 347);
+            txbCategoria.Margin = new Padding(4);
+            txbCategoria.Multiline = false;
+            txbCategoria.Name = "txbCategoria";
+            txbCategoria.Padding = new Padding(10, 7, 10, 7);
+            txbCategoria.PasswordChar = false;
+            txbCategoria.PlaceholderColor = Color.DarkGray;
+            txbCategoria.PlaceholderText = "";
+            txbCategoria.Size = new Size(250, 31);
+            txbCategoria.TabIndex = 10;
+            txbCategoria.Texts = "";
+            txbCategoria.UnderlinedStyle = false;
             // 
             // label5
             // 
@@ -203,6 +207,7 @@
             rjButton2.Text = "Eliminar";
             rjButton2.TextColor = Color.White;
             rjButton2.UseVisualStyleBackColor = false;
+            rjButton2.Click += rjButton2_Click;
             // 
             // rjButton1
             // 
@@ -221,6 +226,7 @@
             rjButton1.Text = "Editar";
             rjButton1.TextColor = Color.White;
             rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.Click += rjButton1_Click;
             // 
             // label4
             // 
@@ -233,27 +239,27 @@
             label4.TabIndex = 7;
             label4.Text = "Nombre";
             // 
-            // rjTextBox4
+            // txbNombre
             // 
-            rjTextBox4.BackColor = SystemColors.Window;
-            rjTextBox4.BorderColor = Color.Peru;
-            rjTextBox4.BorderFocusColor = Color.Gold;
-            rjTextBox4.BorderRadius = 0;
-            rjTextBox4.BorderSize = 2;
-            rjTextBox4.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            rjTextBox4.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox4.Location = new Point(189, 174);
-            rjTextBox4.Margin = new Padding(4);
-            rjTextBox4.Multiline = false;
-            rjTextBox4.Name = "rjTextBox4";
-            rjTextBox4.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox4.PasswordChar = false;
-            rjTextBox4.PlaceholderColor = Color.DarkGray;
-            rjTextBox4.PlaceholderText = "";
-            rjTextBox4.Size = new Size(250, 31);
-            rjTextBox4.TabIndex = 6;
-            rjTextBox4.Texts = "";
-            rjTextBox4.UnderlinedStyle = false;
+            txbNombre.BackColor = SystemColors.Window;
+            txbNombre.BorderColor = Color.Peru;
+            txbNombre.BorderFocusColor = Color.Gold;
+            txbNombre.BorderRadius = 0;
+            txbNombre.BorderSize = 2;
+            txbNombre.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txbNombre.ForeColor = Color.FromArgb(64, 64, 64);
+            txbNombre.Location = new Point(189, 174);
+            txbNombre.Margin = new Padding(4);
+            txbNombre.Multiline = false;
+            txbNombre.Name = "txbNombre";
+            txbNombre.Padding = new Padding(10, 7, 10, 7);
+            txbNombre.PasswordChar = false;
+            txbNombre.PlaceholderColor = Color.DarkGray;
+            txbNombre.PlaceholderText = "";
+            txbNombre.Size = new Size(250, 31);
+            txbNombre.TabIndex = 6;
+            txbNombre.Texts = "";
+            txbNombre.UnderlinedStyle = false;
             // 
             // label3
             // 
@@ -266,27 +272,27 @@
             label3.TabIndex = 5;
             label3.Text = "Precio";
             // 
-            // rjTextBox3
+            // txbPrecio
             // 
-            rjTextBox3.BackColor = SystemColors.Window;
-            rjTextBox3.BorderColor = Color.Peru;
-            rjTextBox3.BorderFocusColor = Color.Gold;
-            rjTextBox3.BorderRadius = 0;
-            rjTextBox3.BorderSize = 2;
-            rjTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            rjTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox3.Location = new Point(189, 292);
-            rjTextBox3.Margin = new Padding(4);
-            rjTextBox3.Multiline = false;
-            rjTextBox3.Name = "rjTextBox3";
-            rjTextBox3.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox3.PasswordChar = false;
-            rjTextBox3.PlaceholderColor = Color.DarkGray;
-            rjTextBox3.PlaceholderText = "";
-            rjTextBox3.Size = new Size(250, 31);
-            rjTextBox3.TabIndex = 4;
-            rjTextBox3.Texts = "";
-            rjTextBox3.UnderlinedStyle = false;
+            txbPrecio.BackColor = SystemColors.Window;
+            txbPrecio.BorderColor = Color.Peru;
+            txbPrecio.BorderFocusColor = Color.Gold;
+            txbPrecio.BorderRadius = 0;
+            txbPrecio.BorderSize = 2;
+            txbPrecio.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txbPrecio.ForeColor = Color.FromArgb(64, 64, 64);
+            txbPrecio.Location = new Point(189, 292);
+            txbPrecio.Margin = new Padding(4);
+            txbPrecio.Multiline = false;
+            txbPrecio.Name = "txbPrecio";
+            txbPrecio.Padding = new Padding(10, 7, 10, 7);
+            txbPrecio.PasswordChar = false;
+            txbPrecio.PlaceholderColor = Color.DarkGray;
+            txbPrecio.PlaceholderText = "";
+            txbPrecio.Size = new Size(250, 31);
+            txbPrecio.TabIndex = 4;
+            txbPrecio.Texts = "";
+            txbPrecio.UnderlinedStyle = false;
             // 
             // label2
             // 
@@ -299,27 +305,27 @@
             label2.TabIndex = 3;
             label2.Text = "Descripcion";
             // 
-            // rjTextBox2
+            // txbDescripcion
             // 
-            rjTextBox2.BackColor = SystemColors.Window;
-            rjTextBox2.BorderColor = Color.Peru;
-            rjTextBox2.BorderFocusColor = Color.Gold;
-            rjTextBox2.BorderRadius = 0;
-            rjTextBox2.BorderSize = 2;
-            rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            rjTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox2.Location = new Point(189, 235);
-            rjTextBox2.Margin = new Padding(4);
-            rjTextBox2.Multiline = false;
-            rjTextBox2.Name = "rjTextBox2";
-            rjTextBox2.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox2.PasswordChar = false;
-            rjTextBox2.PlaceholderColor = Color.DarkGray;
-            rjTextBox2.PlaceholderText = "";
-            rjTextBox2.Size = new Size(250, 31);
-            rjTextBox2.TabIndex = 2;
-            rjTextBox2.Texts = "";
-            rjTextBox2.UnderlinedStyle = false;
+            txbDescripcion.BackColor = SystemColors.Window;
+            txbDescripcion.BorderColor = Color.Peru;
+            txbDescripcion.BorderFocusColor = Color.Gold;
+            txbDescripcion.BorderRadius = 0;
+            txbDescripcion.BorderSize = 2;
+            txbDescripcion.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txbDescripcion.ForeColor = Color.FromArgb(64, 64, 64);
+            txbDescripcion.Location = new Point(189, 235);
+            txbDescripcion.Margin = new Padding(4);
+            txbDescripcion.Multiline = false;
+            txbDescripcion.Name = "txbDescripcion";
+            txbDescripcion.Padding = new Padding(10, 7, 10, 7);
+            txbDescripcion.PasswordChar = false;
+            txbDescripcion.PlaceholderColor = Color.DarkGray;
+            txbDescripcion.PlaceholderText = "";
+            txbDescripcion.Size = new Size(250, 31);
+            txbDescripcion.TabIndex = 2;
+            txbDescripcion.Texts = "";
+            txbDescripcion.UnderlinedStyle = false;
             // 
             // label1
             // 
@@ -332,27 +338,28 @@
             label1.TabIndex = 1;
             label1.Text = "ID";
             // 
-            // rjTextBox1
+            // txbID
             // 
-            rjTextBox1.BackColor = SystemColors.Window;
-            rjTextBox1.BorderColor = Color.Peru;
-            rjTextBox1.BorderFocusColor = Color.Gold;
-            rjTextBox1.BorderRadius = 0;
-            rjTextBox1.BorderSize = 2;
-            rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox1.Location = new Point(189, 116);
-            rjTextBox1.Margin = new Padding(4);
-            rjTextBox1.Multiline = false;
-            rjTextBox1.Name = "rjTextBox1";
-            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox1.PasswordChar = false;
-            rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "";
-            rjTextBox1.Size = new Size(250, 31);
-            rjTextBox1.TabIndex = 0;
-            rjTextBox1.Texts = "";
-            rjTextBox1.UnderlinedStyle = false;
+            txbID.BackColor = SystemColors.Window;
+            txbID.BorderColor = Color.Peru;
+            txbID.BorderFocusColor = Color.Gold;
+            txbID.BorderRadius = 0;
+            txbID.BorderSize = 2;
+            txbID.Enabled = false;
+            txbID.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txbID.ForeColor = Color.FromArgb(64, 64, 64);
+            txbID.Location = new Point(189, 116);
+            txbID.Margin = new Padding(4);
+            txbID.Multiline = false;
+            txbID.Name = "txbID";
+            txbID.Padding = new Padding(10, 7, 10, 7);
+            txbID.PasswordChar = false;
+            txbID.PlaceholderColor = Color.DarkGray;
+            txbID.PlaceholderText = "";
+            txbID.Size = new Size(250, 31);
+            txbID.TabIndex = 0;
+            txbID.Texts = "";
+            txbID.UnderlinedStyle = false;
             // 
             // dataClientes
             // 
@@ -360,9 +367,16 @@
             dataClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataClientes.Location = new Point(18, 18);
             dataClientes.Name = "dataClientes";
+            dataClientes.ReadOnly = true;
             dataClientes.RowTemplate.Height = 25;
+            dataClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataClientes.Size = new Size(883, 570);
             dataClientes.TabIndex = 4;
+            dataClientes.CellClick += dataClientes_CellClick;
+            // 
+            // conexionBindingSource
+            // 
+            conexionBindingSource.DataSource = typeof(Conexion);
             // 
             // Productos
             // 
@@ -376,6 +390,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Productos";
             Text = "Productos";
+            Load += Productos_Load;
             panelOptions.ResumeLayout(false);
             panelOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
@@ -383,6 +398,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataClientes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)conexionBindingSource).EndInit();
             ResumeLayout(false);
         }
 
@@ -398,15 +414,16 @@
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton1;
         private Label label4;
-        private CustomControls.RJControls.RJTextBox rjTextBox4;
+        private CustomControls.RJControls.RJTextBox txbNombre;
         private Label label3;
-        private CustomControls.RJControls.RJTextBox rjTextBox3;
+        private CustomControls.RJControls.RJTextBox txbPrecio;
         private Label label2;
-        private CustomControls.RJControls.RJTextBox rjTextBox2;
+        private CustomControls.RJControls.RJTextBox txbDescripcion;
         private Label label1;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
+        private CustomControls.RJControls.RJTextBox txbID;
         private DataGridView dataClientes;
         private Label label6;
-        private CustomControls.RJControls.RJTextBox rjTextBox5;
+        private CustomControls.RJControls.RJTextBox txbCategoria;
+        private BindingSource conexionBindingSource;
     }
 }
