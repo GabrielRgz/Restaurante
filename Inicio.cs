@@ -33,8 +33,8 @@ namespace Restaurante
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-            Temas.ElegirTema(tema);
-            this.BackColor = Temas.PanelContenedor;
+            /*Temas.ElegirTema(tema);
+            this.BackColor = Temas.PanelContenedor;*/
         }
     }
 }
