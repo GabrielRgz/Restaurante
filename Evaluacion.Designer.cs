@@ -111,12 +111,13 @@
             lblHora.FlatStyle = FlatStyle.Flat;
             lblHora.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblHora.ForeColor = Color.Orange;
-            lblHora.Location = new Point(139, 98);
+            lblHora.Location = new Point(23, 105);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(299, 25);
             lblHora.TabIndex = 31;
             lblHora.Text = "Que te parecio la atencion?";
             lblHora.TextAlign = ContentAlignment.MiddleCenter;
+            lblHora.Visible = false;
             // 
             // lblBienvenida
             // 
@@ -135,7 +136,7 @@
             // 
             pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(526, 98);
+            pictureBox1.Location = new Point(332, 98);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(291, 136);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -150,10 +151,11 @@
             panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
-            panel1.Location = new Point(139, 138);
+            panel1.Location = new Point(23, 145);
             panel1.Name = "panel1";
             panel1.Size = new Size(303, 54);
             panel1.TabIndex = 34;
+            panel1.Visible = false;
             // 
             // pictureBox6
             // 
@@ -213,10 +215,11 @@
             panel2.Controls.Add(pictureBox9);
             panel2.Controls.Add(pictureBox10);
             panel2.Controls.Add(pictureBox11);
-            panel2.Location = new Point(138, 277);
+            panel2.Location = new Point(22, 284);
             panel2.Name = "panel2";
             panel2.Size = new Size(303, 54);
             panel2.TabIndex = 36;
+            panel2.Visible = false;
             // 
             // pictureBox7
             // 
@@ -275,12 +278,13 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Orange;
-            label1.Location = new Point(138, 237);
+            label1.Location = new Point(22, 244);
             label1.Name = "label1";
             label1.Size = new Size(288, 25);
             label1.TabIndex = 35;
             label1.Text = "Que te parecio la comida?";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Visible = false;
             // 
             // panel3
             // 
@@ -290,10 +294,11 @@
             panel3.Controls.Add(pictureBox14);
             panel3.Controls.Add(pictureBox15);
             panel3.Controls.Add(pictureBox16);
-            panel3.Location = new Point(138, 408);
+            panel3.Location = new Point(22, 415);
             panel3.Name = "panel3";
             panel3.Size = new Size(303, 54);
             panel3.TabIndex = 38;
+            panel3.Visible = false;
             // 
             // pictureBox12
             // 
@@ -352,12 +357,13 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Orange;
-            label2.Location = new Point(138, 364);
+            label2.Location = new Point(22, 371);
             label2.Name = "label2";
             label2.Size = new Size(299, 25);
             label2.TabIndex = 37;
             label2.Text = "Que te parecen los precios?";
             label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.Visible = false;
             // 
             // label3
             // 
@@ -366,7 +372,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Orange;
-            label3.Location = new Point(526, 246);
+            label3.Location = new Point(332, 246);
             label3.Name = "label3";
             label3.Size = new Size(295, 25);
             label3.TabIndex = 39;
@@ -383,7 +389,7 @@
             rjTextBox1.BorderSize = 2;
             rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox1.Location = new Point(522, 284);
+            rjTextBox1.Location = new Point(328, 284);
             rjTextBox1.Margin = new Padding(4);
             rjTextBox1.Multiline = true;
             rjTextBox1.Name = "rjTextBox1";
@@ -407,7 +413,7 @@
             btnLogin.Cursor = Cursors.Hand;
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Font = new Font("Unispace", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnLogin.ForeColor = SystemColors.WindowText;
             btnLogin.Location = new Point(350, 503);
             btnLogin.Name = "btnLogin";
@@ -416,6 +422,7 @@
             btnLogin.Text = "Enviar";
             btnLogin.TextColor = SystemColors.WindowText;
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // panel4
             // 
