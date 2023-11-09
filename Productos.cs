@@ -21,7 +21,7 @@ namespace Restaurante
             SqlDataAdapter adaptador = new SqlDataAdapter(consulta, con.cadena());
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
-            dataClientes.DataSource = dt;
+            dataProductos.DataSource = dt;
         }
 
         public void Limpiar()
@@ -40,6 +40,7 @@ namespace Restaurante
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            con.Close();
             this.Close();
         }
 
@@ -59,13 +60,13 @@ namespace Restaurante
             ObtenerDatos();
         }
 
-        private void dataClientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txbID.Texts = dataClientes.SelectedCells[0].Value.ToString();
-            txbNombre.Texts = dataClientes.SelectedCells[1].Value.ToString();
-            txbDescripcion.Texts = dataClientes.SelectedCells[2].Value.ToString();
-            txbPrecio.Texts = dataClientes.SelectedCells[3].Value.ToString();
-            txbCategoria.Texts = dataClientes.SelectedCells[4].Value.ToString();
+            txbID.Texts = dataProductos.SelectedCells[0].Value.ToString();
+            txbNombre.Texts = dataProductos.SelectedCells[1].Value.ToString();
+            txbDescripcion.Texts = dataProductos.SelectedCells[2].Value.ToString();
+            txbPrecio.Texts = dataProductos.SelectedCells[3].Value.ToString();
+            txbCategoria.Texts = dataProductos.SelectedCells[4].Value.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -80,8 +81,8 @@ namespace Restaurante
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            string agregar = $"update Platillos set Nombre='{txbNombre.Texts}', Descripcion='{txbDescripcion.Texts}', Precio={txbPrecio.Texts}, Categoria='{txbCategoria.Texts}' where PlatilloID={txbID.Texts}";
-            SqlCommand sc = new SqlCommand(agregar, con.cadena());
+            string editar = $"update Platillos set Nombre='{txbNombre.Texts}', Descripcion='{txbDescripcion.Texts}', Precio={txbPrecio.Texts}, Categoria='{txbCategoria.Texts}' where PlatilloID={txbID.Texts}";
+            SqlCommand sc = new SqlCommand(editar, con.cadena());
             sc.ExecuteNonQuery();
             MessageBox.Show("Registro actualizado");
             ObtenerDatos();
@@ -90,8 +91,8 @@ namespace Restaurante
 
         private void rjButton2_Click(object sender, EventArgs e)
         {
-            string agregar = $"delete from Platillos where  PlatilloID={txbID.Texts}";
-            SqlCommand sc = new SqlCommand(agregar, con.cadena());
+            string borrar = $"delete from Platillos where  PlatilloID={txbID.Texts}";
+            SqlCommand sc = new SqlCommand(borrar, con.cadena());
             sc.ExecuteNonQuery();
             MessageBox.Show("Registro eliminado");
             ObtenerDatos();

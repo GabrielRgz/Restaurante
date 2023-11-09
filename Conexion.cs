@@ -20,10 +20,10 @@ namespace Restaurante
             {
                 string servidor = Dns.GetHostName();
 
-                connection = new SqlConnection("Data Source=" + servidor + "\\SERVIDORSQL;Initial Catalog=MojodojoDB;Integrated Security=True");
+                connection = new SqlConnection("Data Source=DESKTOP-24I77I6\\SQLEXPRESS;Initial Catalog=MojodojoDB;Integrated Security=True");
 
                 connection.Open();
-                MessageBox.Show("conexion si");
+                MessageBox.Show(servidor);
             }
             catch (Exception)
             {

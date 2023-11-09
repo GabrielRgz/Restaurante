@@ -49,13 +49,13 @@
             txbDescripcion = new CustomControls.RJControls.RJTextBox();
             label1 = new Label();
             txbID = new CustomControls.RJControls.RJTextBox();
-            dataClientes = new DataGridView();
+            dataProductos = new DataGridView();
             conexionBindingSource = new BindingSource(components);
             panelOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             panelCentral.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataClientes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataProductos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)conexionBindingSource).BeginInit();
             SuspendLayout();
             // 
@@ -80,14 +80,14 @@
             panelOptions.Dock = DockStyle.Top;
             panelOptions.Location = new Point(0, 0);
             panelOptions.Name = "panelOptions";
-            panelOptions.Size = new Size(1404, 49);
+            panelOptions.Size = new Size(1386, 49);
             panelOptions.TabIndex = 1;
             // 
             // btnCerrar
             // 
             btnCerrar.Dock = DockStyle.Right;
             btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
-            btnCerrar.Location = new Point(1378, 0);
+            btnCerrar.Location = new Point(1360, 0);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(26, 49);
             btnCerrar.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -107,7 +107,7 @@
             btnAdd.ForeColor = Color.White;
             btnAdd.Location = new Point(0, 656);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(1404, 42);
+            btnAdd.Size = new Size(1386, 42);
             btnAdd.TabIndex = 1;
             btnAdd.Text = "Agregar";
             btnAdd.TextColor = Color.White;
@@ -117,11 +117,11 @@
             // panelCentral
             // 
             panelCentral.Controls.Add(panel1);
-            panelCentral.Controls.Add(dataClientes);
+            panelCentral.Controls.Add(dataProductos);
             panelCentral.Dock = DockStyle.Fill;
             panelCentral.Location = new Point(0, 49);
             panelCentral.Name = "panelCentral";
-            panelCentral.Size = new Size(1404, 607);
+            panelCentral.Size = new Size(1386, 607);
             panelCentral.TabIndex = 3;
             // 
             // panel1
@@ -141,7 +141,7 @@
             panel1.Controls.Add(txbDescripcion);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(txbID);
-            panel1.Location = new Point(920, 18);
+            panel1.Location = new Point(902, 18);
             panel1.Name = "panel1";
             panel1.Size = new Size(466, 570);
             panel1.TabIndex = 5;
@@ -361,18 +361,18 @@
             txbID.Texts = "";
             txbID.UnderlinedStyle = false;
             // 
-            // dataClientes
+            // dataProductos
             // 
-            dataClientes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataClientes.Location = new Point(18, 18);
-            dataClientes.Name = "dataClientes";
-            dataClientes.ReadOnly = true;
-            dataClientes.RowTemplate.Height = 25;
-            dataClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataClientes.Size = new Size(883, 570);
-            dataClientes.TabIndex = 4;
-            dataClientes.CellClick += dataClientes_CellClick;
+            dataProductos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataProductos.Location = new Point(18, 18);
+            dataProductos.Name = "dataProductos";
+            dataProductos.ReadOnly = true;
+            dataProductos.RowTemplate.Height = 25;
+            dataProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataProductos.Size = new Size(865, 570);
+            dataProductos.TabIndex = 4;
+            dataProductos.CellClick += dataProductos_CellClick;
             // 
             // conexionBindingSource
             // 
@@ -383,7 +383,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(33, 33, 33);
-            ClientSize = new Size(1404, 698);
+            ClientSize = new Size(1386, 698);
             Controls.Add(panelCentral);
             Controls.Add(panelOptions);
             Controls.Add(btnAdd);
@@ -397,7 +397,7 @@
             panelCentral.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataClientes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataProductos).EndInit();
             ((System.ComponentModel.ISupportInitialize)conexionBindingSource).EndInit();
             ResumeLayout(false);
         }
@@ -421,7 +421,7 @@
         private CustomControls.RJControls.RJTextBox txbDescripcion;
         private Label label1;
         private CustomControls.RJControls.RJTextBox txbID;
-        private DataGridView dataClientes;
+        private DataGridView dataProductos;
         private Label label6;
         private CustomControls.RJControls.RJTextBox txbCategoria;
         private BindingSource conexionBindingSource;
