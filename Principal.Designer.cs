@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             panelMenu = new Panel();
+            btnUsuarios = new Button();
+            btnEvaluacion = new Button();
             btnTema = new Button();
             btnCerrarSesion = new Button();
             lblcorreo = new Label();
@@ -49,7 +51,6 @@
             btnCerrar = new PictureBox();
             lblTitulo = new Label();
             panelContenedor = new Panel();
-            btnEvaluacion = new Button();
             panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbxUser).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnlogoInicio).BeginInit();
@@ -64,6 +65,7 @@
             // panelMenu
             // 
             panelMenu.BackColor = Color.Black;
+            panelMenu.Controls.Add(btnUsuarios);
             panelMenu.Controls.Add(btnEvaluacion);
             panelMenu.Controls.Add(btnTema);
             panelMenu.Controls.Add(btnCerrarSesion);
@@ -82,6 +84,41 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(250, 750);
             panelMenu.TabIndex = 0;
+            // 
+            // btnUsuarios
+            // 
+            btnUsuarios.FlatAppearance.BorderSize = 0;
+            btnUsuarios.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            btnUsuarios.FlatStyle = FlatStyle.Flat;
+            btnUsuarios.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUsuarios.ForeColor = Color.Orange;
+            btnUsuarios.Image = (Image)resources.GetObject("btnUsuarios.Image");
+            btnUsuarios.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUsuarios.Location = new Point(0, 214);
+            btnUsuarios.Margin = new Padding(4, 3, 4, 3);
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.Size = new Size(250, 46);
+            btnUsuarios.TabIndex = 21;
+            btnUsuarios.Text = "Usuarios";
+            btnUsuarios.UseVisualStyleBackColor = true;
+            btnUsuarios.Click += btnUsuarios_Click;
+            // 
+            // btnEvaluacion
+            // 
+            btnEvaluacion.FlatAppearance.BorderSize = 0;
+            btnEvaluacion.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            btnEvaluacion.FlatStyle = FlatStyle.Flat;
+            btnEvaluacion.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEvaluacion.ForeColor = Color.Orange;
+            btnEvaluacion.ImageAlign = ContentAlignment.MiddleLeft;
+            btnEvaluacion.Location = new Point(-4, 318);
+            btnEvaluacion.Margin = new Padding(4, 3, 4, 3);
+            btnEvaluacion.Name = "btnEvaluacion";
+            btnEvaluacion.Size = new Size(250, 46);
+            btnEvaluacion.TabIndex = 20;
+            btnEvaluacion.Text = "   Calificar";
+            btnEvaluacion.UseVisualStyleBackColor = true;
+            btnEvaluacion.Click += btnEvaluacion_Click;
             // 
             // btnTema
             // 
@@ -180,7 +217,7 @@
             btnCompras.ForeColor = Color.Orange;
             btnCompras.Image = (Image)resources.GetObject("btnCompras.Image");
             btnCompras.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCompras.Location = new Point(0, 208);
+            btnCompras.Location = new Point(-4, 266);
             btnCompras.Margin = new Padding(4, 3, 4, 3);
             btnCompras.Name = "btnCompras";
             btnCompras.Size = new Size(250, 46);
@@ -271,7 +308,7 @@
             BarraTitulo.Location = new Point(250, 0);
             BarraTitulo.Margin = new Padding(4, 3, 4, 3);
             BarraTitulo.Name = "BarraTitulo";
-            BarraTitulo.Size = new Size(1267, 52);
+            BarraTitulo.Size = new Size(1136, 52);
             BarraTitulo.TabIndex = 1;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown;
             // 
@@ -294,7 +331,7 @@
             // 
             btnMinimizar.Dock = DockStyle.Right;
             btnMinimizar.Image = (Image)resources.GetObject("btnMinimizar.Image");
-            btnMinimizar.Location = new Point(1193, 0);
+            btnMinimizar.Location = new Point(1062, 0);
             btnMinimizar.Name = "btnMinimizar";
             btnMinimizar.Padding = new Padding(10, 0, 10, 0);
             btnMinimizar.Size = new Size(28, 52);
@@ -323,7 +360,7 @@
             // 
             btnMaximizar.Dock = DockStyle.Right;
             btnMaximizar.Image = (Image)resources.GetObject("btnMaximizar.Image");
-            btnMaximizar.Location = new Point(1221, 0);
+            btnMaximizar.Location = new Point(1090, 0);
             btnMaximizar.Name = "btnMaximizar";
             btnMaximizar.Size = new Size(20, 52);
             btnMaximizar.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -337,7 +374,7 @@
             // 
             btnCerrar.Dock = DockStyle.Right;
             btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
-            btnCerrar.Location = new Point(1241, 0);
+            btnCerrar.Location = new Point(1110, 0);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(26, 52);
             btnCerrar.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -353,7 +390,7 @@
             lblTitulo.FlatStyle = FlatStyle.Flat;
             lblTitulo.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTitulo.ForeColor = Color.White;
-            lblTitulo.Location = new Point(422, 0);
+            lblTitulo.Location = new Point(357, 0);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Padding = new Padding(0, 6, 0, 0);
             lblTitulo.Size = new Size(400, 52);
@@ -369,31 +406,14 @@
             panelContenedor.Location = new Point(250, 52);
             panelContenedor.Margin = new Padding(4, 3, 4, 3);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(1267, 698);
+            panelContenedor.Size = new Size(1136, 698);
             panelContenedor.TabIndex = 2;
-            // 
-            // btnEvaluacion
-            // 
-            btnEvaluacion.FlatAppearance.BorderSize = 0;
-            btnEvaluacion.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
-            btnEvaluacion.FlatStyle = FlatStyle.Flat;
-            btnEvaluacion.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            btnEvaluacion.ForeColor = Color.Orange;
-            btnEvaluacion.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEvaluacion.Location = new Point(0, 260);
-            btnEvaluacion.Margin = new Padding(4, 3, 4, 3);
-            btnEvaluacion.Name = "btnEvaluacion";
-            btnEvaluacion.Size = new Size(250, 46);
-            btnEvaluacion.TabIndex = 20;
-            btnEvaluacion.Text = "   Calificar";
-            btnEvaluacion.UseVisualStyleBackColor = true;
-            btnEvaluacion.Click += btnEvaluacion_Click;
             // 
             // Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1517, 750);
+            ClientSize = new Size(1386, 750);
             Controls.Add(panelContenedor);
             Controls.Add(BarraTitulo);
             Controls.Add(panelMenu);
@@ -438,6 +458,7 @@
         private Label lblTitulo;
         private Button btnTema;
         private Button btnEvaluacion;
+        private Button btnUsuarios;
     }
 }
 

@@ -1,5 +1,7 @@
 using GUI_V_2;
 using System;
+using System.Data.SqlClient;
+using System.Data;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -8,7 +10,15 @@ namespace Restaurante
 {
     public partial class Login : Form
     {
+        Conexion con = new Conexion();
         int tema;
+
+        public void Limpiar()
+        {
+            txbUsuario.Texts = "";
+            txbContrasena.Texts = "";
+        }
+
         public Login()
         {
             InitializeComponent();
@@ -29,11 +39,40 @@ namespace Restaurante
             Application.Exit();
         }
 
+        public bool VerificarCredenciales(string nombreUsuario, string contrasena)
+        {
+            con.Open();
+            bool esValido = false;
+                string query = "SELECT COUNT(*) FROM Usuario WHERE NombreUsuario = @NombreUsuario AND Contrasena = @Contrasena";
+                using (SqlCommand cmd = new SqlCommand(query, con.cadena()))
+                {
+                    cmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
+                    cmd.Parameters.AddWithValue("@Contrasena", contrasena);
+                    int count = (int)cmd.ExecuteScalar();
+                    if (count > 0)
+                    {
+                        esValido = true;
+                    }
+                }
+            return esValido;
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();
+            string usuario = txbUsuario.Texts;
+            string contrasena = txbContrasena.Texts;
+
+            if (VerificarCredenciales(usuario, contrasena))
+            {
+                Principal principal = new Principal();
+                principal.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Verifica tus credenciales de inicio de sesion");
+            }
+            Limpiar();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

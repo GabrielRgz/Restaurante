@@ -233,5 +233,11 @@ namespace GUI_V_2
             ResaltarBoton(sender, btnVentas.ForeColor);
             AbrirFormEnPanel(new Evaluacion());
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            ResaltarBoton(sender, btnVentas.ForeColor);
+            AbrirFormEnPanel(new Usuarios());
+        }
     }
 }

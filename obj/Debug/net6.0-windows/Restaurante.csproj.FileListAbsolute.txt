@@ -61,3 +61,4 @@ C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.csp
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.csproj.CopyComplete
 C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Microsoft.VisualStudio.Interop.dll
 C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Usuarios.resources
