@@ -247,6 +247,7 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

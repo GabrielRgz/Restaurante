@@ -32,11 +32,14 @@ namespace Restaurante
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             lblTitulo = new Label();
             panelOptions = new Panel();
             btnCerrar = new PictureBox();
             btnAdd = new CustomControls.RJControls.RJButton();
-            dataClientes = new DataGridView();
+            dataUsuarios = new DataGridView();
             panelCentral = new Panel();
             panel1 = new Panel();
             label7 = new Label();
@@ -56,7 +59,7 @@ namespace Restaurante
             txbID = new CustomControls.RJControls.RJTextBox();
             panelOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataClientes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataUsuarios).BeginInit();
             panelCentral.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -70,9 +73,9 @@ namespace Restaurante
             lblTitulo.ForeColor = Color.White;
             lblTitulo.Location = new Point(0, 0);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(127, 33);
+            lblTitulo.Size = new Size(118, 33);
             lblTitulo.TabIndex = 0;
-            lblTitulo.Text = "CLIENTES";
+            lblTitulo.Text = "Usuarios";
             // 
             // panelOptions
             // 
@@ -115,23 +118,45 @@ namespace Restaurante
             btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
-            // dataClientes
+            // dataUsuarios
             // 
-            dataClientes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataClientes.Location = new Point(12, 19);
-            dataClientes.Name = "dataClientes";
-            dataClientes.ReadOnly = true;
-            dataClientes.RowTemplate.Height = 25;
-            dataClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataClientes.Size = new Size(854, 570);
-            dataClientes.TabIndex = 2;
-            dataClientes.CellClick += dataClientes_CellClick;
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataUsuarios.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataUsuarios.BackgroundColor = SystemColors.ControlDarkDark;
+            dataUsuarios.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.Orange;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(63, 63, 63);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.Orange;
+            dataGridViewCellStyle3.NullValue = "---";
+            dataGridViewCellStyle3.SelectionBackColor = Color.Orange;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataUsuarios.DefaultCellStyle = dataGridViewCellStyle3;
+            dataUsuarios.Location = new Point(12, 19);
+            dataUsuarios.Name = "dataUsuarios";
+            dataUsuarios.ReadOnly = true;
+            dataUsuarios.RowTemplate.Height = 25;
+            dataUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataUsuarios.Size = new Size(854, 570);
+            dataUsuarios.TabIndex = 2;
+            dataUsuarios.CellClick += dataClientes_CellClick;
             // 
             // panelCentral
             // 
             panelCentral.Controls.Add(panel1);
-            panelCentral.Controls.Add(dataClientes);
+            panelCentral.Controls.Add(dataUsuarios);
             panelCentral.Dock = DockStyle.Fill;
             panelCentral.Location = new Point(0, 49);
             panelCentral.Name = "panelCentral";
@@ -426,7 +451,7 @@ namespace Restaurante
             panelOptions.ResumeLayout(false);
             panelOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataClientes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataUsuarios).EndInit();
             panelCentral.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -439,7 +464,7 @@ namespace Restaurante
         private Panel panelOptions;
         private CustomControls.RJControls.RJButton btnAdd;
         private PictureBox btnCerrar;
-        private DataGridView dataClientes;
+        private DataGridView dataUsuarios;
         private Panel panelCentral;
         private Panel panel1;
         private Label label5;

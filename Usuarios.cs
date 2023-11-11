@@ -20,7 +20,7 @@ namespace Restaurante
             SqlDataAdapter adaptador = new SqlDataAdapter(consulta, con.cadena());
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
-            dataClientes.DataSource = dt;
+            dataUsuarios.DataSource = dt;
         }
 
         public void Limpiar()
@@ -91,12 +91,12 @@ namespace Restaurante
 
         private void dataClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txbID.Texts = dataClientes.SelectedCells[0].Value.ToString();
-            txbRol.Texts = dataClientes.SelectedCells[1].Value.ToString();
-            txbUsuario.Texts = dataClientes.SelectedCells[2].Value.ToString();
-            txbContrasena.Texts = dataClientes.SelectedCells[3].Value.ToString();
-            txbNombre.Texts = dataClientes.SelectedCells[4].Value.ToString();
-            txbApellido.Texts = dataClientes.SelectedCells[5].Value.ToString();
+            txbID.Texts = dataUsuarios.SelectedCells[0].Value.ToString();
+            txbRol.Texts = dataUsuarios.SelectedCells[1].Value.ToString();
+            txbUsuario.Texts = dataUsuarios.SelectedCells[2].Value.ToString();
+            txbContrasena.Texts = dataUsuarios.SelectedCells[3].Value.ToString();
+            txbNombre.Texts = dataUsuarios.SelectedCells[4].Value.ToString();
+            txbApellido.Texts = dataUsuarios.SelectedCells[5].Value.ToString();
         }
     }
 }

@@ -318,6 +318,7 @@
             // dataClientes
             // 
             dataClientes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataClientes.Location = new Point(18, 18);
             dataClientes.Name = "dataClientes";

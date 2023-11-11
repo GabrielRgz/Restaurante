@@ -27,7 +27,11 @@ CREATE TABLE Cliente (
 -- Crear una tabla para las cajas
 CREATE TABLE Usuario (
     UsuarioID INT IDENTITY(1,1) PRIMARY KEY,
-    Nombre VARCHAR(100)
+	Rol int not null,
+    NombreUsuario VARCHAR(30) not null,
+	Contrasena VARCHAR(30) not null,
+	Nombre VARCHAR(100),
+	Apellido VARCHAR(50)
 );
 
 -- Crear una tabla para los pedidos
@@ -74,3 +78,6 @@ CREATE TABLE Reservacion_Cliente (
     FOREIGN KEY (ReservacionID) REFERENCES Reservacion(ReservacionID),
     FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID)
 );
+
+INSERT INTO Usuario(Rol, NombreUsuario, Contrasena) values(1, 'admin', '999')
+select * from Usuario

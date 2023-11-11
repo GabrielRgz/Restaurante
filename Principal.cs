@@ -15,6 +15,7 @@ namespace GUI_V_2
 {
     public partial class Principal : Form
     {
+        public string NombreUsuario { get; set; }
         int tema;
 
         public Principal()
@@ -93,7 +94,9 @@ namespace GUI_V_2
         {
             if (true)
             {
-                AbrirFormEnPanel(new Inicio(tema));
+                Inicio inicio = new Inicio(tema);
+                inicio.NombreUsuario = NombreUsuario;
+                AbrirFormEnPanel(inicio);
             }
         }
 

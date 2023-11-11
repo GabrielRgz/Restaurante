@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace Restaurante
 {
     public partial class Inicio : Form
     {
+        public string NombreUsuario { get; set; }
         int tema;
         public Inicio()
         {
@@ -33,6 +35,7 @@ namespace Restaurante
 
         private void Inicio_Load(object sender, EventArgs e)
         {
+            lblBienvenida.Text = "Bienvenido, " + NombreUsuario;
             /*Temas.ElegirTema(tema);
             this.BackColor = Temas.PanelContenedor;*/
         }

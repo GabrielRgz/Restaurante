@@ -41,19 +41,18 @@ namespace Restaurante
 
         public bool VerificarCredenciales(string nombreUsuario, string contrasena)
         {
-            con.Open();
             bool esValido = false;
-                string query = "SELECT COUNT(*) FROM Usuario WHERE NombreUsuario = @NombreUsuario AND Contrasena = @Contrasena";
-                using (SqlCommand cmd = new SqlCommand(query, con.cadena()))
+            string query = "SELECT COUNT(*) FROM Usuario WHERE NombreUsuario = @NombreUsuario AND Contrasena = @Contrasena";
+            using (SqlCommand cmd = new SqlCommand(query, con.cadena()))
+            {
+                cmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
+                cmd.Parameters.AddWithValue("@Contrasena", contrasena);
+                int count = (int)cmd.ExecuteScalar();
+                if (count > 0)
                 {
-                    cmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
-                    cmd.Parameters.AddWithValue("@Contrasena", contrasena);
-                    int count = (int)cmd.ExecuteScalar();
-                    if (count > 0)
-                    {
-                        esValido = true;
-                    }
+                    esValido = true;
                 }
+            }
             return esValido;
         }
 
@@ -65,6 +64,7 @@ namespace Restaurante
             if (VerificarCredenciales(usuario, contrasena))
             {
                 Principal principal = new Principal();
+                principal.NombreUsuario = usuario;
                 principal.Show();
                 this.Hide();
             }
@@ -89,7 +89,7 @@ namespace Restaurante
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-
+            con.Close();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -117,6 +117,11 @@ namespace Restaurante
         private void btnClose_MouseLeave(object sender, EventArgs e)
         {
             btnClose.BackColor = Color.Transparent;
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            con.Open();
         }
     }
 }

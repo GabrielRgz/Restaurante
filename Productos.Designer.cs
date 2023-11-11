@@ -364,6 +364,7 @@
             // dataProductos
             // 
             dataProductos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataProductos.Location = new Point(18, 18);
             dataProductos.Name = "dataProductos";
