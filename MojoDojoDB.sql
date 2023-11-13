@@ -79,7 +79,7 @@ CREATE TABLE Reservacion_Cliente (
     FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID)
 );
 
-
+GO
 
 
 ----------------------------------------
