@@ -30,6 +30,10 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Productos));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             lblTitulo = new Label();
             panelOptions = new Panel();
             btnCerrar = new PictureBox();
@@ -151,7 +155,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Orange;
-            label6.Location = new Point(31, 347);
+            label6.Location = new Point(59, 354);
             label6.Name = "label6";
             label6.Size = new Size(151, 33);
             label6.TabIndex = 11;
@@ -166,7 +170,7 @@
             txbCategoria.BorderSize = 2;
             txbCategoria.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbCategoria.ForeColor = Color.FromArgb(64, 64, 64);
-            txbCategoria.Location = new Point(189, 347);
+            txbCategoria.Location = new Point(59, 391);
             txbCategoria.Margin = new Padding(4);
             txbCategoria.Multiline = false;
             txbCategoria.Name = "txbCategoria";
@@ -174,7 +178,7 @@
             txbCategoria.PasswordChar = false;
             txbCategoria.PlaceholderColor = Color.DarkGray;
             txbCategoria.PlaceholderText = "";
-            txbCategoria.Size = new Size(250, 31);
+            txbCategoria.Size = new Size(311, 31);
             txbCategoria.TabIndex = 10;
             txbCategoria.Texts = "";
             txbCategoria.UnderlinedStyle = false;
@@ -184,7 +188,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Orange;
-            label5.Location = new Point(162, 13);
+            label5.Location = new Point(164, 0);
             label5.Name = "label5";
             label5.Size = new Size(91, 33);
             label5.TabIndex = 9;
@@ -194,18 +198,18 @@
             // 
             rjButton2.BackColor = Color.DarkOrange;
             rjButton2.BackgroundColor = Color.DarkOrange;
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 0;
-            rjButton2.BorderSize = 0;
+            rjButton2.BorderColor = Color.White;
+            rjButton2.BorderRadius = 15;
+            rjButton2.BorderSize = 1;
             rjButton2.FlatAppearance.BorderSize = 0;
             rjButton2.FlatStyle = FlatStyle.Flat;
-            rjButton2.ForeColor = Color.White;
+            rjButton2.ForeColor = Color.Black;
             rjButton2.Location = new Point(325, 516);
             rjButton2.Name = "rjButton2";
             rjButton2.Size = new Size(127, 42);
             rjButton2.TabIndex = 8;
             rjButton2.Text = "Eliminar";
-            rjButton2.TextColor = Color.White;
+            rjButton2.TextColor = Color.Black;
             rjButton2.UseVisualStyleBackColor = false;
             rjButton2.Click += rjButton2_Click;
             // 
@@ -213,18 +217,18 @@
             // 
             rjButton1.BackColor = Color.DarkOrange;
             rjButton1.BackgroundColor = Color.DarkOrange;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 0;
-            rjButton1.BorderSize = 0;
+            rjButton1.BorderColor = Color.White;
+            rjButton1.BorderRadius = 15;
+            rjButton1.BorderSize = 1;
             rjButton1.FlatAppearance.BorderSize = 0;
             rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.ForeColor = Color.White;
+            rjButton1.ForeColor = Color.Black;
             rjButton1.Location = new Point(13, 516);
             rjButton1.Name = "rjButton1";
             rjButton1.Size = new Size(127, 42);
             rjButton1.TabIndex = 4;
             rjButton1.Text = "Editar";
-            rjButton1.TextColor = Color.White;
+            rjButton1.TextColor = Color.Black;
             rjButton1.UseVisualStyleBackColor = false;
             rjButton1.Click += rjButton1_Click;
             // 
@@ -233,7 +237,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Orange;
-            label4.Location = new Point(59, 172);
+            label4.Location = new Point(59, 101);
             label4.Name = "label4";
             label4.Size = new Size(123, 33);
             label4.TabIndex = 7;
@@ -248,7 +252,7 @@
             txbNombre.BorderSize = 2;
             txbNombre.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbNombre.ForeColor = Color.FromArgb(64, 64, 64);
-            txbNombre.Location = new Point(189, 174);
+            txbNombre.Location = new Point(59, 138);
             txbNombre.Margin = new Padding(4);
             txbNombre.Multiline = false;
             txbNombre.Name = "txbNombre";
@@ -256,7 +260,7 @@
             txbNombre.PasswordChar = false;
             txbNombre.PlaceholderColor = Color.DarkGray;
             txbNombre.PlaceholderText = "";
-            txbNombre.Size = new Size(250, 31);
+            txbNombre.Size = new Size(311, 31);
             txbNombre.TabIndex = 6;
             txbNombre.Texts = "";
             txbNombre.UnderlinedStyle = false;
@@ -266,7 +270,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Orange;
-            label3.Location = new Point(84, 290);
+            label3.Location = new Point(59, 272);
             label3.Name = "label3";
             label3.Size = new Size(98, 33);
             label3.TabIndex = 5;
@@ -281,7 +285,7 @@
             txbPrecio.BorderSize = 2;
             txbPrecio.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbPrecio.ForeColor = Color.FromArgb(64, 64, 64);
-            txbPrecio.Location = new Point(189, 292);
+            txbPrecio.Location = new Point(59, 309);
             txbPrecio.Margin = new Padding(4);
             txbPrecio.Multiline = false;
             txbPrecio.Name = "txbPrecio";
@@ -289,7 +293,7 @@
             txbPrecio.PasswordChar = false;
             txbPrecio.PlaceholderColor = Color.DarkGray;
             txbPrecio.PlaceholderText = "";
-            txbPrecio.Size = new Size(250, 31);
+            txbPrecio.Size = new Size(311, 31);
             txbPrecio.TabIndex = 4;
             txbPrecio.Texts = "";
             txbPrecio.UnderlinedStyle = false;
@@ -299,11 +303,11 @@
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Orange;
-            label2.Location = new Point(13, 233);
+            label2.Location = new Point(59, 189);
             label2.Name = "label2";
             label2.Size = new Size(169, 33);
             label2.TabIndex = 3;
-            label2.Text = "Descripcion";
+            label2.Text = "Descripción";
             // 
             // txbDescripcion
             // 
@@ -314,7 +318,7 @@
             txbDescripcion.BorderSize = 2;
             txbDescripcion.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbDescripcion.ForeColor = Color.FromArgb(64, 64, 64);
-            txbDescripcion.Location = new Point(189, 235);
+            txbDescripcion.Location = new Point(59, 226);
             txbDescripcion.Margin = new Padding(4);
             txbDescripcion.Multiline = false;
             txbDescripcion.Name = "txbDescripcion";
@@ -322,7 +326,7 @@
             txbDescripcion.PasswordChar = false;
             txbDescripcion.PlaceholderColor = Color.DarkGray;
             txbDescripcion.PlaceholderText = "";
-            txbDescripcion.Size = new Size(250, 31);
+            txbDescripcion.Size = new Size(311, 31);
             txbDescripcion.TabIndex = 2;
             txbDescripcion.Texts = "";
             txbDescripcion.UnderlinedStyle = false;
@@ -332,7 +336,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Orange;
-            label1.Location = new Point(141, 114);
+            label1.Location = new Point(59, 29);
             label1.Name = "label1";
             label1.Size = new Size(41, 33);
             label1.TabIndex = 1;
@@ -348,7 +352,7 @@
             txbID.Enabled = false;
             txbID.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbID.ForeColor = Color.FromArgb(64, 64, 64);
-            txbID.Location = new Point(189, 116);
+            txbID.Location = new Point(59, 66);
             txbID.Margin = new Padding(4);
             txbID.Multiline = false;
             txbID.Name = "txbID";
@@ -356,7 +360,7 @@
             txbID.PasswordChar = false;
             txbID.PlaceholderColor = Color.DarkGray;
             txbID.PlaceholderText = "";
-            txbID.Size = new Size(250, 31);
+            txbID.Size = new Size(311, 31);
             txbID.TabIndex = 0;
             txbID.Texts = "";
             txbID.UnderlinedStyle = false;
@@ -365,10 +369,43 @@
             // 
             dataProductos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataProductos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 128, 0);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(192, 64, 0);
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(192, 64, 0);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataProductos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataProductos.EnableHeadersVisualStyles = false;
+            dataProductos.GridColor = Color.Black;
             dataProductos.Location = new Point(18, 18);
             dataProductos.Name = "dataProductos";
             dataProductos.ReadOnly = true;
+            dataProductos.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.Gray;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = Color.LightGray;
+            dataGridViewCellStyle4.ForeColor = Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = Color.Gray;
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            dataProductos.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dataProductos.RowTemplate.Height = 25;
             dataProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataProductos.Size = new Size(865, 570);

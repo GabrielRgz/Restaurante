@@ -62,3 +62,17 @@ C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.csp
 C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Microsoft.VisualStudio.Interop.dll
 C:\Users\zippy\source\repos\Restaurante\bin\Debug\net6.0-windows\Microsoft.VisualStudio.OLE.Interop.dll
 C:\Users\zippy\source\repos\Restaurante\obj\Debug\net6.0-windows\Restaurante.Usuarios.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\Restaurante.dll.config
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\Microsoft.VisualStudio.Interop.dll
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.csproj.AssemblyReference.cache
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Evaluacion.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.PuntoVenta.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.Usuarios.resources
+C:\Users\elgua\OneDrive\Documentos\GitHub\Restaurante\obj\Debug\net6.0-windows\Restaurante.csproj.CopyComplete

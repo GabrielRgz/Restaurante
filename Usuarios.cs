@@ -89,7 +89,7 @@ namespace Restaurante
             ObtenerDatos();
         }
 
-        private void dataClientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txbID.Texts = dataUsuarios.SelectedCells[0].Value.ToString();
             txbRol.Texts = dataUsuarios.SelectedCells[1].Value.ToString();

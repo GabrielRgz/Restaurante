@@ -21,10 +21,10 @@ namespace Restaurante
             {
                 string servidor = Dns.GetHostName();
 
-                connection = new SqlConnection("Data Source=DESKTOP-24I77I6\\SQLEXPRESS;Initial Catalog=MojodojoDB;Integrated Security=True");
+                connection = new SqlConnection("Data Source=DESKTOP-LCJJNOH\\SQLEXPRESS;Initial Catalog=MojodojoDB;Integrated Security=True");
 
                 connection.Open();
-                MessageBox.Show(servidor);
+                //MessageBox.Show(servidor);
             }
             catch (Exception)
             {

@@ -151,36 +151,36 @@
             // 
             rjButton2.BackColor = Color.DarkOrange;
             rjButton2.BackgroundColor = Color.DarkOrange;
-            rjButton2.BorderColor = Color.PaleVioletRed;
-            rjButton2.BorderRadius = 0;
-            rjButton2.BorderSize = 0;
+            rjButton2.BorderColor = Color.White;
+            rjButton2.BorderRadius = 15;
+            rjButton2.BorderSize = 1;
             rjButton2.FlatAppearance.BorderSize = 0;
             rjButton2.FlatStyle = FlatStyle.Flat;
-            rjButton2.ForeColor = Color.White;
+            rjButton2.ForeColor = Color.Black;
             rjButton2.Location = new Point(308, 516);
             rjButton2.Name = "rjButton2";
             rjButton2.Size = new Size(127, 42);
             rjButton2.TabIndex = 8;
             rjButton2.Text = "Eliminar";
-            rjButton2.TextColor = Color.White;
+            rjButton2.TextColor = Color.Black;
             rjButton2.UseVisualStyleBackColor = false;
             // 
             // rjButton1
             // 
             rjButton1.BackColor = Color.DarkOrange;
             rjButton1.BackgroundColor = Color.DarkOrange;
-            rjButton1.BorderColor = Color.PaleVioletRed;
-            rjButton1.BorderRadius = 0;
-            rjButton1.BorderSize = 0;
+            rjButton1.BorderColor = Color.White;
+            rjButton1.BorderRadius = 15;
+            rjButton1.BorderSize = 1;
             rjButton1.FlatAppearance.BorderSize = 0;
             rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.ForeColor = Color.White;
+            rjButton1.ForeColor = Color.Black;
             rjButton1.Location = new Point(13, 516);
             rjButton1.Name = "rjButton1";
             rjButton1.Size = new Size(127, 42);
             rjButton1.TabIndex = 4;
             rjButton1.Text = "Editar";
-            rjButton1.TextColor = Color.White;
+            rjButton1.TextColor = Color.Black;
             rjButton1.UseVisualStyleBackColor = false;
             // 
             // label4
@@ -188,7 +188,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Orange;
-            label4.Location = new Point(9, 196);
+            label4.Location = new Point(46, 156);
             label4.Name = "label4";
             label4.Size = new Size(169, 33);
             label4.TabIndex = 7;
@@ -203,7 +203,7 @@
             rjTextBox4.BorderSize = 2;
             rjTextBox4.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             rjTextBox4.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox4.Location = new Point(185, 198);
+            rjTextBox4.Location = new Point(46, 193);
             rjTextBox4.Margin = new Padding(4);
             rjTextBox4.Multiline = false;
             rjTextBox4.Name = "rjTextBox4";
@@ -211,7 +211,7 @@
             rjTextBox4.PasswordChar = false;
             rjTextBox4.PlaceholderColor = Color.DarkGray;
             rjTextBox4.PlaceholderText = "";
-            rjTextBox4.Size = new Size(250, 31);
+            rjTextBox4.Size = new Size(311, 31);
             rjTextBox4.TabIndex = 6;
             rjTextBox4.Texts = "";
             rjTextBox4.UnderlinedStyle = false;
@@ -221,7 +221,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Orange;
-            label3.Location = new Point(81, 314);
+            label3.Location = new Point(46, 315);
             label3.Name = "label3";
             label3.Size = new Size(97, 33);
             label3.TabIndex = 5;
@@ -236,7 +236,7 @@
             rjTextBox3.BorderSize = 2;
             rjTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             rjTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox3.Location = new Point(185, 316);
+            rjTextBox3.Location = new Point(46, 352);
             rjTextBox3.Margin = new Padding(4);
             rjTextBox3.Multiline = false;
             rjTextBox3.Name = "rjTextBox3";
@@ -244,7 +244,7 @@
             rjTextBox3.PasswordChar = false;
             rjTextBox3.PlaceholderColor = Color.DarkGray;
             rjTextBox3.PlaceholderText = "";
-            rjTextBox3.Size = new Size(250, 31);
+            rjTextBox3.Size = new Size(311, 31);
             rjTextBox3.TabIndex = 4;
             rjTextBox3.Texts = "";
             rjTextBox3.UnderlinedStyle = false;
@@ -254,7 +254,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Orange;
-            label2.Location = new Point(85, 257);
+            label2.Location = new Point(46, 230);
             label2.Name = "label2";
             label2.Size = new Size(93, 33);
             label2.TabIndex = 3;
@@ -269,7 +269,7 @@
             rjTextBox2.BorderSize = 2;
             rjTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             rjTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox2.Location = new Point(185, 259);
+            rjTextBox2.Location = new Point(46, 267);
             rjTextBox2.Margin = new Padding(4);
             rjTextBox2.Multiline = false;
             rjTextBox2.Name = "rjTextBox2";
@@ -277,7 +277,7 @@
             rjTextBox2.PasswordChar = false;
             rjTextBox2.PlaceholderColor = Color.DarkGray;
             rjTextBox2.PlaceholderText = "";
-            rjTextBox2.Size = new Size(250, 31);
+            rjTextBox2.Size = new Size(311, 31);
             rjTextBox2.TabIndex = 2;
             rjTextBox2.Texts = "";
             rjTextBox2.UnderlinedStyle = false;
@@ -287,7 +287,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Orange;
-            label1.Location = new Point(137, 138);
+            label1.Location = new Point(46, 71);
             label1.Name = "label1";
             label1.Size = new Size(41, 33);
             label1.TabIndex = 1;
@@ -302,7 +302,7 @@
             rjTextBox1.BorderSize = 2;
             rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox1.Location = new Point(185, 140);
+            rjTextBox1.Location = new Point(46, 108);
             rjTextBox1.Margin = new Padding(4);
             rjTextBox1.Multiline = false;
             rjTextBox1.Name = "rjTextBox1";
@@ -310,7 +310,7 @@
             rjTextBox1.PasswordChar = false;
             rjTextBox1.PlaceholderColor = Color.DarkGray;
             rjTextBox1.PlaceholderText = "";
-            rjTextBox1.Size = new Size(250, 31);
+            rjTextBox1.Size = new Size(311, 31);
             rjTextBox1.TabIndex = 0;
             rjTextBox1.Texts = "";
             rjTextBox1.UnderlinedStyle = false;

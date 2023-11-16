@@ -35,12 +35,13 @@ namespace Restaurante
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             lblTitulo = new Label();
             panelOptions = new Panel();
             btnCerrar = new PictureBox();
             btnAdd = new CustomControls.RJControls.RJButton();
-            dataUsuarios = new DataGridView();
             panelCentral = new Panel();
+            dataUsuarios = new DataGridView();
             panel1 = new Panel();
             label7 = new Label();
             txbRol = new CustomControls.RJControls.RJTextBox();
@@ -59,8 +60,8 @@ namespace Restaurante
             txbID = new CustomControls.RJControls.RJTextBox();
             panelOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataUsuarios).BeginInit();
             panelCentral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataUsuarios).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -118,50 +119,62 @@ namespace Restaurante
             btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
-            // dataUsuarios
-            // 
-            dataGridViewCellStyle1.BackColor = Color.Transparent;
-            dataUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataUsuarios.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataUsuarios.BackgroundColor = SystemColors.ControlDarkDark;
-            dataUsuarios.BorderStyle = BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.SelectionBackColor = Color.Orange;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(63, 63, 63);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = Color.Orange;
-            dataGridViewCellStyle3.NullValue = "---";
-            dataGridViewCellStyle3.SelectionBackColor = Color.Orange;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            dataUsuarios.DefaultCellStyle = dataGridViewCellStyle3;
-            dataUsuarios.Location = new Point(12, 19);
-            dataUsuarios.Name = "dataUsuarios";
-            dataUsuarios.ReadOnly = true;
-            dataUsuarios.RowTemplate.Height = 25;
-            dataUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataUsuarios.Size = new Size(854, 570);
-            dataUsuarios.TabIndex = 2;
-            dataUsuarios.CellClick += dataClientes_CellClick;
-            // 
             // panelCentral
             // 
-            panelCentral.Controls.Add(panel1);
             panelCentral.Controls.Add(dataUsuarios);
+            panelCentral.Controls.Add(panel1);
             panelCentral.Dock = DockStyle.Fill;
             panelCentral.Location = new Point(0, 49);
             panelCentral.Name = "panelCentral";
             panelCentral.Size = new Size(1338, 607);
             panelCentral.TabIndex = 3;
+            // 
+            // dataUsuarios
+            // 
+            dataUsuarios.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataUsuarios.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 128, 0);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(192, 64, 0);
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(192, 64, 0);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
+            dataUsuarios.EnableHeadersVisualStyles = false;
+            dataUsuarios.GridColor = Color.Black;
+            dataUsuarios.Location = new Point(18, 18);
+            dataUsuarios.Name = "dataUsuarios";
+            dataUsuarios.ReadOnly = true;
+            dataUsuarios.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.Gray;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataUsuarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = Color.LightGray;
+            dataGridViewCellStyle4.ForeColor = Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = Color.Gray;
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            dataUsuarios.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataUsuarios.RowTemplate.Height = 25;
+            dataUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataUsuarios.Size = new Size(880, 589);
+            dataUsuarios.TabIndex = 4;
+            dataUsuarios.CellClick += dataUsuarios_CellClick;
             // 
             // panel1
             // 
@@ -192,7 +205,7 @@ namespace Restaurante
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.Orange;
-            label7.Location = new Point(47, 139);
+            label7.Location = new Point(59, 101);
             label7.Name = "label7";
             label7.Size = new Size(55, 33);
             label7.TabIndex = 13;
@@ -207,7 +220,7 @@ namespace Restaurante
             txbRol.BorderSize = 2;
             txbRol.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbRol.ForeColor = Color.FromArgb(64, 64, 64);
-            txbRol.Location = new Point(109, 141);
+            txbRol.Location = new Point(59, 138);
             txbRol.Margin = new Padding(4);
             txbRol.Multiline = false;
             txbRol.Name = "txbRol";
@@ -215,7 +228,7 @@ namespace Restaurante
             txbRol.PasswordChar = false;
             txbRol.PlaceholderColor = Color.DarkGray;
             txbRol.PlaceholderText = "";
-            txbRol.Size = new Size(250, 31);
+            txbRol.Size = new Size(311, 31);
             txbRol.TabIndex = 12;
             txbRol.Texts = "";
             txbRol.UnderlinedStyle = false;
@@ -225,7 +238,7 @@ namespace Restaurante
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.Orange;
-            label6.Location = new Point(13, 430);
+            label6.Location = new Point(59, 423);
             label6.Name = "label6";
             label6.Size = new Size(125, 33);
             label6.TabIndex = 11;
@@ -240,7 +253,7 @@ namespace Restaurante
             txbApellido.BorderSize = 2;
             txbApellido.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbApellido.ForeColor = Color.FromArgb(64, 64, 64);
-            txbApellido.Location = new Point(143, 432);
+            txbApellido.Location = new Point(59, 460);
             txbApellido.Margin = new Padding(4);
             txbApellido.Multiline = false;
             txbApellido.Name = "txbApellido";
@@ -248,7 +261,7 @@ namespace Restaurante
             txbApellido.PasswordChar = false;
             txbApellido.PlaceholderColor = Color.DarkGray;
             txbApellido.PlaceholderText = "";
-            txbApellido.Size = new Size(250, 31);
+            txbApellido.Size = new Size(311, 31);
             txbApellido.TabIndex = 10;
             txbApellido.Texts = "";
             txbApellido.UnderlinedStyle = false;
@@ -258,7 +271,7 @@ namespace Restaurante
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Orange;
-            label5.Location = new Point(162, 13);
+            label5.Location = new Point(163, 0);
             label5.Name = "label5";
             label5.Size = new Size(91, 33);
             label5.TabIndex = 9;
@@ -268,18 +281,18 @@ namespace Restaurante
             // 
             btnDelete.BackColor = Color.DarkOrange;
             btnDelete.BackgroundColor = Color.DarkOrange;
-            btnDelete.BorderColor = Color.PaleVioletRed;
-            btnDelete.BorderRadius = 0;
-            btnDelete.BorderSize = 0;
+            btnDelete.BorderColor = Color.White;
+            btnDelete.BorderRadius = 15;
+            btnDelete.BorderSize = 1;
             btnDelete.FlatAppearance.BorderSize = 0;
             btnDelete.FlatStyle = FlatStyle.Flat;
-            btnDelete.ForeColor = Color.White;
+            btnDelete.ForeColor = Color.Black;
             btnDelete.Location = new Point(286, 516);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(127, 42);
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Eliminar";
-            btnDelete.TextColor = Color.White;
+            btnDelete.TextColor = Color.Black;
             btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
@@ -287,18 +300,18 @@ namespace Restaurante
             // 
             btnUpdate.BackColor = Color.DarkOrange;
             btnUpdate.BackgroundColor = Color.DarkOrange;
-            btnUpdate.BorderColor = Color.PaleVioletRed;
-            btnUpdate.BorderRadius = 0;
-            btnUpdate.BorderSize = 0;
+            btnUpdate.BorderColor = Color.White;
+            btnUpdate.BorderRadius = 15;
+            btnUpdate.BorderSize = 1;
             btnUpdate.FlatAppearance.BorderSize = 0;
             btnUpdate.FlatStyle = FlatStyle.Flat;
-            btnUpdate.ForeColor = Color.White;
-            btnUpdate.Location = new Point(13, 516);
+            btnUpdate.ForeColor = Color.Black;
+            btnUpdate.Location = new Point(28, 516);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(127, 42);
             btnUpdate.TabIndex = 4;
             btnUpdate.Text = "Editar";
-            btnUpdate.TextColor = Color.White;
+            btnUpdate.TextColor = Color.Black;
             btnUpdate.UseVisualStyleBackColor = false;
             btnUpdate.Click += btnUpdate_Click;
             // 
@@ -307,7 +320,7 @@ namespace Restaurante
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Orange;
-            label4.Location = new Point(93, 188);
+            label4.Location = new Point(59, 187);
             label4.Name = "label4";
             label4.Size = new Size(266, 33);
             label4.TabIndex = 7;
@@ -322,7 +335,7 @@ namespace Restaurante
             txbUsuario.BorderSize = 2;
             txbUsuario.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbUsuario.ForeColor = Color.FromArgb(64, 64, 64);
-            txbUsuario.Location = new Point(109, 238);
+            txbUsuario.Location = new Point(59, 224);
             txbUsuario.Margin = new Padding(4);
             txbUsuario.Multiline = false;
             txbUsuario.Name = "txbUsuario";
@@ -330,7 +343,7 @@ namespace Restaurante
             txbUsuario.PasswordChar = false;
             txbUsuario.PlaceholderColor = Color.DarkGray;
             txbUsuario.PlaceholderText = "";
-            txbUsuario.Size = new Size(250, 31);
+            txbUsuario.Size = new Size(311, 31);
             txbUsuario.TabIndex = 6;
             txbUsuario.Texts = "";
             txbUsuario.UnderlinedStyle = false;
@@ -340,7 +353,7 @@ namespace Restaurante
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Orange;
-            label3.Location = new Point(13, 379);
+            label3.Location = new Point(59, 351);
             label3.Name = "label3";
             label3.Size = new Size(123, 33);
             label3.TabIndex = 5;
@@ -355,7 +368,7 @@ namespace Restaurante
             txbNombre.BorderSize = 2;
             txbNombre.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbNombre.ForeColor = Color.FromArgb(64, 64, 64);
-            txbNombre.Location = new Point(143, 381);
+            txbNombre.Location = new Point(59, 388);
             txbNombre.Margin = new Padding(4);
             txbNombre.Multiline = false;
             txbNombre.Name = "txbNombre";
@@ -363,7 +376,7 @@ namespace Restaurante
             txbNombre.PasswordChar = false;
             txbNombre.PlaceholderColor = Color.DarkGray;
             txbNombre.PlaceholderText = "";
-            txbNombre.Size = new Size(250, 31);
+            txbNombre.Size = new Size(311, 31);
             txbNombre.TabIndex = 4;
             txbNombre.Texts = "";
             txbNombre.UnderlinedStyle = false;
@@ -373,11 +386,11 @@ namespace Restaurante
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Orange;
-            label2.Location = new Point(130, 285);
+            label2.Location = new Point(59, 269);
             label2.Name = "label2";
             label2.Size = new Size(169, 33);
             label2.TabIndex = 3;
-            label2.Text = "Contrasena";
+            label2.Text = "Contraseña";
             // 
             // txbContrasena
             // 
@@ -388,7 +401,7 @@ namespace Restaurante
             txbContrasena.BorderSize = 2;
             txbContrasena.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbContrasena.ForeColor = Color.FromArgb(64, 64, 64);
-            txbContrasena.Location = new Point(109, 322);
+            txbContrasena.Location = new Point(59, 316);
             txbContrasena.Margin = new Padding(4);
             txbContrasena.Multiline = false;
             txbContrasena.Name = "txbContrasena";
@@ -396,7 +409,7 @@ namespace Restaurante
             txbContrasena.PasswordChar = false;
             txbContrasena.PlaceholderColor = Color.DarkGray;
             txbContrasena.PlaceholderText = "";
-            txbContrasena.Size = new Size(250, 31);
+            txbContrasena.Size = new Size(311, 31);
             txbContrasena.TabIndex = 2;
             txbContrasena.Texts = "";
             txbContrasena.UnderlinedStyle = false;
@@ -406,7 +419,7 @@ namespace Restaurante
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Orange;
-            label1.Location = new Point(61, 89);
+            label1.Location = new Point(59, 29);
             label1.Name = "label1";
             label1.Size = new Size(41, 33);
             label1.TabIndex = 1;
@@ -422,7 +435,7 @@ namespace Restaurante
             txbID.Enabled = false;
             txbID.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbID.ForeColor = Color.FromArgb(64, 64, 64);
-            txbID.Location = new Point(109, 91);
+            txbID.Location = new Point(59, 66);
             txbID.Margin = new Padding(4);
             txbID.Multiline = false;
             txbID.Name = "txbID";
@@ -430,7 +443,7 @@ namespace Restaurante
             txbID.PasswordChar = false;
             txbID.PlaceholderColor = Color.DarkGray;
             txbID.PlaceholderText = "";
-            txbID.Size = new Size(250, 31);
+            txbID.Size = new Size(311, 31);
             txbID.TabIndex = 0;
             txbID.Texts = "";
             txbID.UnderlinedStyle = false;
@@ -451,8 +464,8 @@ namespace Restaurante
             panelOptions.ResumeLayout(false);
             panelOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataUsuarios).EndInit();
             panelCentral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataUsuarios).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -464,7 +477,6 @@ namespace Restaurante
         private Panel panelOptions;
         private CustomControls.RJControls.RJButton btnAdd;
         private PictureBox btnCerrar;
-        private DataGridView dataUsuarios;
         private Panel panelCentral;
         private Panel panel1;
         private Label label5;
@@ -482,5 +494,6 @@ namespace Restaurante
         private CustomControls.RJControls.RJTextBox txbApellido;
         private Label label7;
         private CustomControls.RJControls.RJTextBox txbRol;
+        private DataGridView dataUsuarios;
     }
 }

@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             lblTitulo = new Label();
             panelOptions = new Panel();
             btnCerrar = new PictureBox();
@@ -111,10 +115,43 @@
             // 
             dataClientes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataClientes.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 128, 0);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(192, 64, 0);
+            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(192, 64, 0);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataClientes.DefaultCellStyle = dataGridViewCellStyle2;
+            dataClientes.EnableHeadersVisualStyles = false;
+            dataClientes.GridColor = Color.Black;
             dataClientes.Location = new Point(12, 19);
             dataClientes.Name = "dataClientes";
             dataClientes.ReadOnly = true;
+            dataClientes.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.Gray;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = Color.LightGray;
+            dataGridViewCellStyle4.ForeColor = Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = Color.Gray;
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            dataClientes.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dataClientes.RowTemplate.Height = 25;
             dataClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataClientes.Size = new Size(854, 570);
@@ -166,18 +203,18 @@
             // 
             btnDelete.BackColor = Color.DarkOrange;
             btnDelete.BackgroundColor = Color.DarkOrange;
-            btnDelete.BorderColor = Color.PaleVioletRed;
-            btnDelete.BorderRadius = 0;
-            btnDelete.BorderSize = 0;
+            btnDelete.BorderColor = Color.White;
+            btnDelete.BorderRadius = 15;
+            btnDelete.BorderSize = 1;
             btnDelete.FlatAppearance.BorderSize = 0;
             btnDelete.FlatStyle = FlatStyle.Flat;
-            btnDelete.ForeColor = Color.White;
+            btnDelete.ForeColor = Color.Black;
             btnDelete.Location = new Point(286, 516);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(127, 42);
             btnDelete.TabIndex = 8;
             btnDelete.Text = "Eliminar";
-            btnDelete.TextColor = Color.White;
+            btnDelete.TextColor = Color.Black;
             btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
@@ -185,18 +222,18 @@
             // 
             btnUpdate.BackColor = Color.DarkOrange;
             btnUpdate.BackgroundColor = Color.DarkOrange;
-            btnUpdate.BorderColor = Color.PaleVioletRed;
-            btnUpdate.BorderRadius = 0;
-            btnUpdate.BorderSize = 0;
+            btnUpdate.BorderColor = Color.White;
+            btnUpdate.BorderRadius = 15;
+            btnUpdate.BorderSize = 1;
             btnUpdate.FlatAppearance.BorderSize = 0;
             btnUpdate.FlatStyle = FlatStyle.Flat;
-            btnUpdate.ForeColor = Color.White;
+            btnUpdate.ForeColor = Color.Black;
             btnUpdate.Location = new Point(13, 516);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(127, 42);
             btnUpdate.TabIndex = 4;
             btnUpdate.Text = "Editar";
-            btnUpdate.TextColor = Color.White;
+            btnUpdate.TextColor = Color.Black;
             btnUpdate.UseVisualStyleBackColor = false;
             btnUpdate.Click += btnUpdate_Click;
             // 
@@ -205,7 +242,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Orange;
-            label4.Location = new Point(17, 205);
+            label4.Location = new Point(46, 164);
             label4.Name = "label4";
             label4.Size = new Size(123, 33);
             label4.TabIndex = 7;
@@ -220,7 +257,7 @@
             txbNombre.BorderSize = 2;
             txbNombre.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbNombre.ForeColor = Color.FromArgb(64, 64, 64);
-            txbNombre.Location = new Point(147, 207);
+            txbNombre.Location = new Point(46, 201);
             txbNombre.Margin = new Padding(4);
             txbNombre.Multiline = false;
             txbNombre.Name = "txbNombre";
@@ -228,7 +265,7 @@
             txbNombre.PasswordChar = false;
             txbNombre.PlaceholderColor = Color.DarkGray;
             txbNombre.PlaceholderText = "";
-            txbNombre.Size = new Size(250, 31);
+            txbNombre.Size = new Size(311, 31);
             txbNombre.TabIndex = 6;
             txbNombre.Texts = "";
             txbNombre.UnderlinedStyle = false;
@@ -238,7 +275,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Orange;
-            label3.Location = new Point(17, 323);
+            label3.Location = new Point(41, 349);
             label3.Name = "label3";
             label3.Size = new Size(128, 33);
             label3.TabIndex = 5;
@@ -253,7 +290,7 @@
             txbTelefono.BorderSize = 2;
             txbTelefono.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbTelefono.ForeColor = Color.FromArgb(64, 64, 64);
-            txbTelefono.Location = new Point(147, 325);
+            txbTelefono.Location = new Point(46, 386);
             txbTelefono.Margin = new Padding(4);
             txbTelefono.Multiline = false;
             txbTelefono.Name = "txbTelefono";
@@ -261,7 +298,7 @@
             txbTelefono.PasswordChar = false;
             txbTelefono.PlaceholderColor = Color.DarkGray;
             txbTelefono.PlaceholderText = "";
-            txbTelefono.Size = new Size(250, 31);
+            txbTelefono.Size = new Size(311, 31);
             txbTelefono.TabIndex = 4;
             txbTelefono.Texts = "";
             txbTelefono.UnderlinedStyle = false;
@@ -271,7 +308,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Orange;
-            label2.Location = new Point(46, 266);
+            label2.Location = new Point(46, 253);
             label2.Name = "label2";
             label2.Size = new Size(94, 33);
             label2.TabIndex = 3;
@@ -286,7 +323,7 @@
             txbEmail.BorderSize = 2;
             txbEmail.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbEmail.ForeColor = Color.FromArgb(64, 64, 64);
-            txbEmail.Location = new Point(147, 268);
+            txbEmail.Location = new Point(46, 290);
             txbEmail.Margin = new Padding(4);
             txbEmail.Multiline = false;
             txbEmail.Name = "txbEmail";
@@ -294,7 +331,7 @@
             txbEmail.PasswordChar = false;
             txbEmail.PlaceholderColor = Color.DarkGray;
             txbEmail.PlaceholderText = "";
-            txbEmail.Size = new Size(250, 31);
+            txbEmail.Size = new Size(311, 31);
             txbEmail.TabIndex = 2;
             txbEmail.Texts = "";
             txbEmail.UnderlinedStyle = false;
@@ -304,7 +341,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Orange;
-            label1.Location = new Point(99, 147);
+            label1.Location = new Point(46, 71);
             label1.Name = "label1";
             label1.Size = new Size(41, 33);
             label1.TabIndex = 1;
@@ -320,7 +357,7 @@
             txbID.Enabled = false;
             txbID.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbID.ForeColor = Color.FromArgb(64, 64, 64);
-            txbID.Location = new Point(147, 149);
+            txbID.Location = new Point(46, 108);
             txbID.Margin = new Padding(4);
             txbID.Multiline = false;
             txbID.Name = "txbID";
@@ -328,7 +365,7 @@
             txbID.PasswordChar = false;
             txbID.PlaceholderColor = Color.DarkGray;
             txbID.PlaceholderText = "";
-            txbID.Size = new Size(250, 31);
+            txbID.Size = new Size(311, 31);
             txbID.TabIndex = 0;
             txbID.Texts = "";
             txbID.UnderlinedStyle = false;
