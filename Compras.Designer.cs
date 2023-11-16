@@ -210,7 +210,7 @@
             rjTextBox4.Padding = new Padding(10, 7, 10, 7);
             rjTextBox4.PasswordChar = false;
             rjTextBox4.PlaceholderColor = Color.DarkGray;
-            rjTextBox4.PlaceholderText = "";
+            rjTextBox4.PlaceholderText = "Descripcion de la compra";
             rjTextBox4.Size = new Size(311, 31);
             rjTextBox4.TabIndex = 6;
             rjTextBox4.Texts = "";
@@ -243,7 +243,7 @@
             rjTextBox3.Padding = new Padding(10, 7, 10, 7);
             rjTextBox3.PasswordChar = false;
             rjTextBox3.PlaceholderColor = Color.DarkGray;
-            rjTextBox3.PlaceholderText = "";
+            rjTextBox3.PlaceholderText = "Fecha de la compra";
             rjTextBox3.Size = new Size(311, 31);
             rjTextBox3.TabIndex = 4;
             rjTextBox3.Texts = "";
@@ -276,7 +276,7 @@
             rjTextBox2.Padding = new Padding(10, 7, 10, 7);
             rjTextBox2.PasswordChar = false;
             rjTextBox2.PlaceholderColor = Color.DarkGray;
-            rjTextBox2.PlaceholderText = "";
+            rjTextBox2.PlaceholderText = "Costo de la Compra";
             rjTextBox2.Size = new Size(311, 31);
             rjTextBox2.TabIndex = 2;
             rjTextBox2.Texts = "";
@@ -309,7 +309,7 @@
             rjTextBox1.Padding = new Padding(10, 7, 10, 7);
             rjTextBox1.PasswordChar = false;
             rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "";
+            rjTextBox1.PlaceholderText = "ID de la compra";
             rjTextBox1.Size = new Size(311, 31);
             rjTextBox1.TabIndex = 0;
             rjTextBox1.Texts = "";

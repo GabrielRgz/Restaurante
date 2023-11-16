@@ -227,7 +227,7 @@ namespace Restaurante
             txbRol.Padding = new Padding(10, 7, 10, 7);
             txbRol.PasswordChar = false;
             txbRol.PlaceholderColor = Color.DarkGray;
-            txbRol.PlaceholderText = "";
+            txbRol.PlaceholderText = "Rol del Usuario";
             txbRol.Size = new Size(311, 31);
             txbRol.TabIndex = 12;
             txbRol.Texts = "";
@@ -260,7 +260,7 @@ namespace Restaurante
             txbApellido.Padding = new Padding(10, 7, 10, 7);
             txbApellido.PasswordChar = false;
             txbApellido.PlaceholderColor = Color.DarkGray;
-            txbApellido.PlaceholderText = "";
+            txbApellido.PlaceholderText = "Apellido del usuario";
             txbApellido.Size = new Size(311, 31);
             txbApellido.TabIndex = 10;
             txbApellido.Texts = "";
@@ -342,7 +342,7 @@ namespace Restaurante
             txbUsuario.Padding = new Padding(10, 7, 10, 7);
             txbUsuario.PasswordChar = false;
             txbUsuario.PlaceholderColor = Color.DarkGray;
-            txbUsuario.PlaceholderText = "";
+            txbUsuario.PlaceholderText = "Nombre del Usuario";
             txbUsuario.Size = new Size(311, 31);
             txbUsuario.TabIndex = 6;
             txbUsuario.Texts = "";
@@ -375,7 +375,7 @@ namespace Restaurante
             txbNombre.Padding = new Padding(10, 7, 10, 7);
             txbNombre.PasswordChar = false;
             txbNombre.PlaceholderColor = Color.DarkGray;
-            txbNombre.PlaceholderText = "";
+            txbNombre.PlaceholderText = "Nombre del Usuario";
             txbNombre.Size = new Size(311, 31);
             txbNombre.TabIndex = 4;
             txbNombre.Texts = "";
@@ -408,7 +408,7 @@ namespace Restaurante
             txbContrasena.Padding = new Padding(10, 7, 10, 7);
             txbContrasena.PasswordChar = false;
             txbContrasena.PlaceholderColor = Color.DarkGray;
-            txbContrasena.PlaceholderText = "";
+            txbContrasena.PlaceholderText = "Contraseña del Usuario";
             txbContrasena.Size = new Size(311, 31);
             txbContrasena.TabIndex = 2;
             txbContrasena.Texts = "";
@@ -442,7 +442,7 @@ namespace Restaurante
             txbID.Padding = new Padding(10, 7, 10, 7);
             txbID.PasswordChar = false;
             txbID.PlaceholderColor = Color.DarkGray;
-            txbID.PlaceholderText = "";
+            txbID.PlaceholderText = "ID del usuario";
             txbID.Size = new Size(311, 31);
             txbID.TabIndex = 0;
             txbID.Texts = "";

@@ -177,7 +177,7 @@
             txbCategoria.Padding = new Padding(10, 7, 10, 7);
             txbCategoria.PasswordChar = false;
             txbCategoria.PlaceholderColor = Color.DarkGray;
-            txbCategoria.PlaceholderText = "";
+            txbCategoria.PlaceholderText = "Categoria del Producto";
             txbCategoria.Size = new Size(311, 31);
             txbCategoria.TabIndex = 10;
             txbCategoria.Texts = "";
@@ -259,7 +259,7 @@
             txbNombre.Padding = new Padding(10, 7, 10, 7);
             txbNombre.PasswordChar = false;
             txbNombre.PlaceholderColor = Color.DarkGray;
-            txbNombre.PlaceholderText = "";
+            txbNombre.PlaceholderText = "Nombre del producto";
             txbNombre.Size = new Size(311, 31);
             txbNombre.TabIndex = 6;
             txbNombre.Texts = "";
@@ -292,7 +292,7 @@
             txbPrecio.Padding = new Padding(10, 7, 10, 7);
             txbPrecio.PasswordChar = false;
             txbPrecio.PlaceholderColor = Color.DarkGray;
-            txbPrecio.PlaceholderText = "";
+            txbPrecio.PlaceholderText = "Precio del Producto";
             txbPrecio.Size = new Size(311, 31);
             txbPrecio.TabIndex = 4;
             txbPrecio.Texts = "";
@@ -325,7 +325,7 @@
             txbDescripcion.Padding = new Padding(10, 7, 10, 7);
             txbDescripcion.PasswordChar = false;
             txbDescripcion.PlaceholderColor = Color.DarkGray;
-            txbDescripcion.PlaceholderText = "";
+            txbDescripcion.PlaceholderText = "Descripcion del Producto";
             txbDescripcion.Size = new Size(311, 31);
             txbDescripcion.TabIndex = 2;
             txbDescripcion.Texts = "";
@@ -359,7 +359,7 @@
             txbID.Padding = new Padding(10, 7, 10, 7);
             txbID.PasswordChar = false;
             txbID.PlaceholderColor = Color.DarkGray;
-            txbID.PlaceholderText = "";
+            txbID.PlaceholderText = "ID del Producto";
             txbID.Size = new Size(311, 31);
             txbID.TabIndex = 0;
             txbID.Texts = "";
