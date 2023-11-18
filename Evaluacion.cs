@@ -20,6 +20,7 @@ namespace Restaurante
         private void btnLogin_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Gracias por sus comentarios, hasta luego");
+            txbComentarios.Texts = "";
         }
     }
 }

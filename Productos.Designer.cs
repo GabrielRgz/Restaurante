@@ -29,19 +29,17 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Productos));
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             lblTitulo = new Label();
             panelOptions = new Panel();
-            btnCerrar = new PictureBox();
             btnAdd = new CustomControls.RJControls.RJButton();
             panelCentral = new Panel();
             panel1 = new Panel();
+            txbCategoria = new CustomControls.RJControls.RJComboBox();
             label6 = new Label();
-            txbCategoria = new CustomControls.RJControls.RJTextBox();
             label5 = new Label();
             rjButton2 = new CustomControls.RJControls.RJButton();
             rjButton1 = new CustomControls.RJControls.RJButton();
@@ -56,7 +54,6 @@
             dataProductos = new DataGridView();
             conexionBindingSource = new BindingSource(components);
             panelOptions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             panelCentral.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataProductos).BeginInit();
@@ -79,24 +76,12 @@
             // panelOptions
             // 
             panelOptions.BackColor = Color.Black;
-            panelOptions.Controls.Add(btnCerrar);
             panelOptions.Controls.Add(lblTitulo);
             panelOptions.Dock = DockStyle.Top;
             panelOptions.Location = new Point(0, 0);
             panelOptions.Name = "panelOptions";
             panelOptions.Size = new Size(1386, 49);
             panelOptions.TabIndex = 1;
-            // 
-            // btnCerrar
-            // 
-            btnCerrar.Dock = DockStyle.Right;
-            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
-            btnCerrar.Location = new Point(1360, 0);
-            btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(26, 49);
-            btnCerrar.SizeMode = PictureBoxSizeMode.CenterImage;
-            btnCerrar.TabIndex = 24;
-            btnCerrar.TabStop = false;
             // 
             // btnAdd
             // 
@@ -132,8 +117,8 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel1.BackColor = Color.FromArgb(30, 30, 31);
-            panel1.Controls.Add(label6);
             panel1.Controls.Add(txbCategoria);
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(rjButton2);
             panel1.Controls.Add(rjButton1);
@@ -150,6 +135,26 @@
             panel1.Size = new Size(466, 570);
             panel1.TabIndex = 5;
             // 
+            // txbCategoria
+            // 
+            txbCategoria.BackColor = Color.WhiteSmoke;
+            txbCategoria.BorderColor = Color.Peru;
+            txbCategoria.BorderSize = 1;
+            txbCategoria.DropDownStyle = ComboBoxStyle.DropDown;
+            txbCategoria.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txbCategoria.ForeColor = Color.DimGray;
+            txbCategoria.IconColor = Color.Peru;
+            txbCategoria.Items.AddRange(new object[] { "Comida rapida", "Antojitos Mexicanos", "Comida Vegana", "Canibales" });
+            txbCategoria.ListBackColor = Color.FromArgb(230, 228, 245);
+            txbCategoria.ListTextColor = Color.DimGray;
+            txbCategoria.Location = new Point(59, 408);
+            txbCategoria.MinimumSize = new Size(200, 30);
+            txbCategoria.Name = "txbCategoria";
+            txbCategoria.Padding = new Padding(1);
+            txbCategoria.Size = new Size(311, 30);
+            txbCategoria.TabIndex = 12;
+            txbCategoria.Texts = "Categoria";
+            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -160,28 +165,6 @@
             label6.Size = new Size(151, 33);
             label6.TabIndex = 11;
             label6.Text = "Categoria";
-            // 
-            // txbCategoria
-            // 
-            txbCategoria.BackColor = SystemColors.Window;
-            txbCategoria.BorderColor = Color.Peru;
-            txbCategoria.BorderFocusColor = Color.Gold;
-            txbCategoria.BorderRadius = 0;
-            txbCategoria.BorderSize = 2;
-            txbCategoria.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            txbCategoria.ForeColor = Color.FromArgb(64, 64, 64);
-            txbCategoria.Location = new Point(59, 391);
-            txbCategoria.Margin = new Padding(4);
-            txbCategoria.Multiline = false;
-            txbCategoria.Name = "txbCategoria";
-            txbCategoria.Padding = new Padding(10, 7, 10, 7);
-            txbCategoria.PasswordChar = false;
-            txbCategoria.PlaceholderColor = Color.DarkGray;
-            txbCategoria.PlaceholderText = "Categoria del Producto";
-            txbCategoria.Size = new Size(311, 31);
-            txbCategoria.TabIndex = 10;
-            txbCategoria.Texts = "";
-            txbCategoria.UnderlinedStyle = false;
             // 
             // label5
             // 
@@ -431,7 +414,6 @@
             Load += Productos_Load;
             panelOptions.ResumeLayout(false);
             panelOptions.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             panelCentral.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -445,7 +427,6 @@
         private Label lblTitulo;
         private Panel panelOptions;
         private CustomControls.RJControls.RJButton btnAdd;
-        private PictureBox btnCerrar;
         private Panel panelCentral;
         private Panel panel1;
         private Label label5;
@@ -461,7 +442,7 @@
         private CustomControls.RJControls.RJTextBox txbID;
         private DataGridView dataProductos;
         private Label label6;
-        private CustomControls.RJControls.RJTextBox txbCategoria;
         private BindingSource conexionBindingSource;
+        private CustomControls.RJControls.RJComboBox txbCategoria;
     }
 }

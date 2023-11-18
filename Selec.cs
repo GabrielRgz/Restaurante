@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Restaurante
 {
-    public partial class PuntoVenta : Form
+    public partial class Selec : Form
     {
-        Selec selecfrm;
+        public int id;
         Conexion con = new Conexion();
         public void ObtenerDatos()
         {
@@ -23,10 +23,9 @@ namespace Restaurante
             adaptador.Fill(dt);
         }
 
-        public PuntoVenta()
+        public Selec()
         {
             InitializeComponent();
-            selecfrm = new Selec();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -45,17 +44,11 @@ namespace Restaurante
 
         }
 
-        private void lblAdd_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            selecfrm.Show();
-            int idProd = selecfrm.id;
+            this.Hide();
+            //id = ejecutar query select id from Platillo where;
 
-            List<int> ids = new List<int>();
-            ids.Add(idProd);
-            string consulta = "select * from Platillo where id";
-            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, con.cadena());
-            DataTable dt = new DataTable();
-            adaptador.Fill(dt);
         }
     }
 }

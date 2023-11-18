@@ -161,7 +161,7 @@
             txbContrasena.Multiline = false;
             txbContrasena.Name = "txbContrasena";
             txbContrasena.Padding = new Padding(10, 7, 10, 7);
-            txbContrasena.PasswordChar = false;
+            txbContrasena.PasswordChar = true;
             txbContrasena.PlaceholderColor = Color.DarkGray;
             txbContrasena.PlaceholderText = "                           Contraseña";
             txbContrasena.Size = new Size(250, 31);

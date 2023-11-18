@@ -200,7 +200,7 @@ namespace GUI_V_2
         private void btnCompras_Click(object sender, EventArgs e)
         {
             ResaltarBoton(sender, btnVentas.ForeColor);
-            AbrirFormEnPanel(new Compras());
+            AbrirFormEnPanel(new PuntoVenta());
         }
 
         private void btnCerrarSesion_MouseEnter(object sender, EventArgs e)

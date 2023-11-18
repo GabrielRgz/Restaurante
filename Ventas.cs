@@ -34,16 +34,6 @@ namespace Restaurante
             this.Close();
         }
 
-        private void btnCerrar_MouseEnter(object sender, EventArgs e)
-        {
-            btnCerrar.BackColor = Color.White;
-        }
-
-        private void btnCerrar_MouseLeave(object sender, EventArgs e)
-        {
-            btnCerrar.BackColor = Color.Transparent;
-        }
-
         private void Ventas_Load(object sender, EventArgs e)
         {
             con.Open();

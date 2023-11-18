@@ -55,7 +55,7 @@
             pictureBox16 = new PictureBox();
             label2 = new Label();
             label3 = new Label();
-            rjTextBox1 = new CustomControls.RJControls.RJTextBox();
+            txbComentarios = new CustomControls.RJControls.RJTextBox();
             btnLogin = new CustomControls.RJControls.RJButton();
             panel4 = new Panel();
             panelOptions.SuspendLayout();
@@ -379,28 +379,28 @@
             label3.Text = "Comentarios o sugerencias:";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // rjTextBox1
+            // txbComentarios
             // 
-            rjTextBox1.Anchor = AnchorStyles.None;
-            rjTextBox1.BackColor = SystemColors.Window;
-            rjTextBox1.BorderColor = Color.Orange;
-            rjTextBox1.BorderFocusColor = Color.Gold;
-            rjTextBox1.BorderRadius = 15;
-            rjTextBox1.BorderSize = 2;
-            rjTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            rjTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            rjTextBox1.Location = new Point(328, 284);
-            rjTextBox1.Margin = new Padding(4);
-            rjTextBox1.Multiline = true;
-            rjTextBox1.Name = "rjTextBox1";
-            rjTextBox1.Padding = new Padding(10, 7, 10, 7);
-            rjTextBox1.PasswordChar = false;
-            rjTextBox1.PlaceholderColor = Color.DarkGray;
-            rjTextBox1.PlaceholderText = "";
-            rjTextBox1.Size = new Size(295, 178);
-            rjTextBox1.TabIndex = 40;
-            rjTextBox1.Texts = "";
-            rjTextBox1.UnderlinedStyle = false;
+            txbComentarios.Anchor = AnchorStyles.None;
+            txbComentarios.BackColor = SystemColors.Window;
+            txbComentarios.BorderColor = Color.Orange;
+            txbComentarios.BorderFocusColor = Color.Gold;
+            txbComentarios.BorderRadius = 15;
+            txbComentarios.BorderSize = 2;
+            txbComentarios.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txbComentarios.ForeColor = Color.FromArgb(64, 64, 64);
+            txbComentarios.Location = new Point(328, 284);
+            txbComentarios.Margin = new Padding(4);
+            txbComentarios.Multiline = true;
+            txbComentarios.Name = "txbComentarios";
+            txbComentarios.Padding = new Padding(10, 7, 10, 7);
+            txbComentarios.PasswordChar = false;
+            txbComentarios.PlaceholderColor = Color.DarkGray;
+            txbComentarios.PlaceholderText = "";
+            txbComentarios.Size = new Size(295, 178);
+            txbComentarios.TabIndex = 40;
+            txbComentarios.Texts = "";
+            txbComentarios.UnderlinedStyle = false;
             // 
             // btnLogin
             // 
@@ -430,7 +430,7 @@
             panel4.Controls.Add(btnLogin);
             panel4.Controls.Add(lblBienvenida);
             panel4.Controls.Add(panel1);
-            panel4.Controls.Add(rjTextBox1);
+            panel4.Controls.Add(txbComentarios);
             panel4.Controls.Add(label1);
             panel4.Controls.Add(label3);
             panel4.Controls.Add(panel2);
@@ -508,7 +508,7 @@
         private PictureBox pictureBox16;
         private Label label2;
         private Label label3;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
+        private CustomControls.RJControls.RJTextBox txbComentarios;
         private CustomControls.RJControls.RJButton btnLogin;
         private Panel panel4;
     }

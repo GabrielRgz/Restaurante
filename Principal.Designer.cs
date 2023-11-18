@@ -38,7 +38,7 @@
             lbluser = new Label();
             pbxUser = new PictureBox();
             lblusuario = new Label();
-            btnCompras = new Button();
+            btnPuntoVenta = new Button();
             btnClientes = new Button();
             btnVentas = new Button();
             btnprod = new Button();
@@ -73,7 +73,7 @@
             panelMenu.Controls.Add(lbluser);
             panelMenu.Controls.Add(pbxUser);
             panelMenu.Controls.Add(lblusuario);
-            panelMenu.Controls.Add(btnCompras);
+            panelMenu.Controls.Add(btnPuntoVenta);
             panelMenu.Controls.Add(btnClientes);
             panelMenu.Controls.Add(btnVentas);
             panelMenu.Controls.Add(btnprod);
@@ -110,11 +110,12 @@
             btnEvaluacion.FlatStyle = FlatStyle.Flat;
             btnEvaluacion.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
             btnEvaluacion.ForeColor = Color.Orange;
+            btnEvaluacion.Image = (Image)resources.GetObject("btnEvaluacion.Image");
             btnEvaluacion.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEvaluacion.Location = new Point(-4, 318);
+            btnEvaluacion.Location = new Point(13, 266);
             btnEvaluacion.Margin = new Padding(4, 3, 4, 3);
             btnEvaluacion.Name = "btnEvaluacion";
-            btnEvaluacion.Size = new Size(250, 46);
+            btnEvaluacion.Size = new Size(205, 46);
             btnEvaluacion.TabIndex = 20;
             btnEvaluacion.Text = "   Calificar";
             btnEvaluacion.UseVisualStyleBackColor = true;
@@ -208,23 +209,24 @@
             lblusuario.TabIndex = 14;
             lblusuario.Text = "  Cargo";
             // 
-            // btnCompras
+            // btnPuntoVenta
             // 
-            btnCompras.FlatAppearance.BorderSize = 0;
-            btnCompras.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
-            btnCompras.FlatStyle = FlatStyle.Flat;
-            btnCompras.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCompras.ForeColor = Color.Orange;
-            btnCompras.Image = (Image)resources.GetObject("btnCompras.Image");
-            btnCompras.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCompras.Location = new Point(-4, 266);
-            btnCompras.Margin = new Padding(4, 3, 4, 3);
-            btnCompras.Name = "btnCompras";
-            btnCompras.Size = new Size(250, 46);
-            btnCompras.TabIndex = 5;
-            btnCompras.Text = "   Compras";
-            btnCompras.UseVisualStyleBackColor = true;
-            btnCompras.Click += btnCompras_Click;
+            btnPuntoVenta.FlatAppearance.BorderSize = 0;
+            btnPuntoVenta.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
+            btnPuntoVenta.FlatStyle = FlatStyle.Flat;
+            btnPuntoVenta.Font = new Font("Century Gothic", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPuntoVenta.ForeColor = Color.Orange;
+            btnPuntoVenta.Image = (Image)resources.GetObject("btnPuntoVenta.Image");
+            btnPuntoVenta.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPuntoVenta.Location = new Point(-4, 379);
+            btnPuntoVenta.Margin = new Padding(4, 3, 4, 3);
+            btnPuntoVenta.Name = "btnPuntoVenta";
+            btnPuntoVenta.Size = new Size(283, 46);
+            btnPuntoVenta.TabIndex = 5;
+            btnPuntoVenta.Text = "Punto de venta";
+            btnPuntoVenta.UseVisualStyleBackColor = true;
+            btnPuntoVenta.Visible = false;
+            btnPuntoVenta.Click += btnCompras_Click;
             // 
             // btnClientes
             // 
@@ -443,7 +445,7 @@
         private PictureBox btnMenu;
         private Panel panelContenedor;
         private Button btnprod;
-        private Button btnCompras;
+        private Button btnPuntoVenta;
         private Button btnClientes;
         private Button btnVentas;
         private Label lblcorreo;

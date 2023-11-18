@@ -148,6 +148,14 @@
         IpomIpomIpomIpomIpomIpomIpomIpomIpomIpomIpomIprm4aC/AEuxsbYPCuZGAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnEvaluacion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABiSURBVDhPrY4BCsAgDAP9/6c7HLTUM6gVDw5cEmXNzG51mipPHFCDnaT8J+TPOVpJomMZBSRD
+        vx30ALCXj3R8QOJi1g8nDBez+WNF3k0yUHAzqcKM6idlWFWGVf1wy6tHrH2jioqgRJEKlQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
   <data name="pbxUser.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAG05JREFUeF7t
@@ -270,7 +278,7 @@
         Hm5QmcNAI36zdPMiX5R8RGUOYIcd/h/6suDqKv4DRgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnCompras.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPuntoVenta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
         MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAAHrwAAB68Ae5ETfcAAATISURBVGhD7ZhrLGZHGMcfSfWj

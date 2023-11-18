@@ -117,16 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnCerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAALlJREFUOE990jEKAjEQBdDfudjYrbCgYGOt2HoOz2Bp4QW8iccRLKy0EKwFi7WW
-        LbL5rlkzSSbFh2Qyb0ggOGC4ajD9HDFaG8yRC3tOKK87FAsQ2aIxmDU5zLMak7ddmzuq17dAxIKGffTr
-        RX+g4RRixNQQa4jpF0yINcSIDSNxGjFRQV6vg90w2Sc28Zv+1w5xBsVv9rGKXDScRS4pjDPKmyv4zWF8
-        fMH4iT2K5cP+vbAxFWKiLQabFg33Gqkcs/xVAAAAAElFTkSuQmCC
-</value>
-  </data>
   <metadata name="conexionBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
