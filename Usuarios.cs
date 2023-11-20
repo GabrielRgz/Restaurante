@@ -33,6 +33,8 @@ namespace Restaurante
             txbContrasena.Texts = "";
             txbNombre.Texts = "";
             txbApellido.Texts = "";
+            btnRolAdmin.BackColor = Color.Orange;
+            btnRolCaja.BackColor = Color.Orange;
         }
         public Usuarios()
         {
@@ -117,11 +119,15 @@ namespace Restaurante
         private void btnRolAdmin_Click(object sender, EventArgs e)
         {
             rol = 1;
+            btnRolCaja.BackColor = Color.Orange;
+            btnRolAdmin.BackColor = Color.LightGoldenrodYellow;
         }
 
         private void btnRolCaja_Click(object sender, EventArgs e)
         {
             rol = 2;
+            btnRolCaja.BackColor = Color.LightGoldenrodYellow;
+            btnRolAdmin.BackColor = Color.Orange;
         }
     }
 }

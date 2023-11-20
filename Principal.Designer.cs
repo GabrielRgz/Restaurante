@@ -94,7 +94,7 @@
             btnUsuarios.ForeColor = Color.Orange;
             btnUsuarios.Image = (Image)resources.GetObject("btnUsuarios.Image");
             btnUsuarios.ImageAlign = ContentAlignment.MiddleLeft;
-            btnUsuarios.Location = new Point(0, 214);
+            btnUsuarios.Location = new Point(0, 294);
             btnUsuarios.Margin = new Padding(4, 3, 4, 3);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Size = new Size(250, 46);
@@ -112,7 +112,7 @@
             btnEvaluacion.ForeColor = Color.Orange;
             btnEvaluacion.Image = (Image)resources.GetObject("btnEvaluacion.Image");
             btnEvaluacion.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEvaluacion.Location = new Point(0, 318);
+            btnEvaluacion.Location = new Point(0, 190);
             btnEvaluacion.Margin = new Padding(4, 3, 4, 3);
             btnEvaluacion.Name = "btnEvaluacion";
             btnEvaluacion.Size = new Size(250, 46);
@@ -218,7 +218,7 @@
             btnPuntoVenta.ForeColor = Color.Orange;
             btnPuntoVenta.Image = (Image)resources.GetObject("btnPuntoVenta.Image");
             btnPuntoVenta.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPuntoVenta.Location = new Point(0, 266);
+            btnPuntoVenta.Location = new Point(0, 86);
             btnPuntoVenta.Margin = new Padding(4, 3, 4, 3);
             btnPuntoVenta.Name = "btnPuntoVenta";
             btnPuntoVenta.Size = new Size(283, 46);
@@ -236,7 +236,7 @@
             btnClientes.ForeColor = Color.Orange;
             btnClientes.Image = (Image)resources.GetObject("btnClientes.Image");
             btnClientes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnClientes.Location = new Point(0, 162);
+            btnClientes.Location = new Point(4, 242);
             btnClientes.Margin = new Padding(4, 3, 4, 3);
             btnClientes.Name = "btnClientes";
             btnClientes.Size = new Size(250, 46);
@@ -254,7 +254,7 @@
             btnVentas.ForeColor = Color.Orange;
             btnVentas.Image = (Image)resources.GetObject("btnVentas.Image");
             btnVentas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnVentas.Location = new Point(0, 116);
+            btnVentas.Location = new Point(0, 138);
             btnVentas.Margin = new Padding(4, 3, 4, 3);
             btnVentas.Name = "btnVentas";
             btnVentas.Size = new Size(250, 46);
@@ -272,7 +272,7 @@
             btnprod.ForeColor = Color.Orange;
             btnprod.Image = (Image)resources.GetObject("btnprod.Image");
             btnprod.ImageAlign = ContentAlignment.MiddleLeft;
-            btnprod.Location = new Point(0, 70);
+            btnprod.Location = new Point(0, 346);
             btnprod.Margin = new Padding(4, 3, 4, 3);
             btnprod.Name = "btnprod";
             btnprod.Size = new Size(250, 46);
@@ -422,7 +422,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Principal";
             Text = "Form1";
-            Load += Form1_Load;
+            Load += Principal_Load;
             panelMenu.ResumeLayout(false);
             panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pbxUser).EndInit();

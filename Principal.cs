@@ -24,6 +24,12 @@ namespace GUI_V_2
             InitializeComponent();
         }
 
+        public Principal(int id)
+        {
+            InitializeComponent();
+            this.id = id;
+        }
+
         private void btnMenu_Click(object sender, EventArgs e)
         {
             if (panelMenu.Width == 250)
@@ -99,12 +105,6 @@ namespace GUI_V_2
                 inicio.NombreUsuario = NombreUsuario;
                 AbrirFormEnPanel(inicio);
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            btnlogoInicio_Click(null, e);
-            tema = 1;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -190,6 +190,14 @@ namespace GUI_V_2
         private void Principal_Load(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Inicio());
+            btnlogoInicio_Click(null, e);
+            tema = 1;
+
+            if (id != 1)
+            {
+                btnUsuarios.Visible = false;
+                btnprod.Visible = false;
+            }
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
