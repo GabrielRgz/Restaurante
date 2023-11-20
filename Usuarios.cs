@@ -14,6 +14,8 @@ namespace Restaurante
     public partial class Usuarios : Form
     {
         Conexion con = new Conexion();
+        int rol = 0;
+
         public void ObtenerDatos()
         {
             string consulta = "select * from Usuario";
@@ -26,7 +28,7 @@ namespace Restaurante
         public void Limpiar()
         {
             txbID.Texts = "";
-            txbRol.Texts = "";
+            rol = 0;
             txbUsuario.Texts = "";
             txbContrasena.Texts = "";
             txbNombre.Texts = "";
@@ -55,22 +57,36 @@ namespace Restaurante
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string agregar = $"insert into Usuario(Rol, NombreUsuario, Contrasena, Nombre, Apellido) values({txbRol.Texts}, '{txbUsuario.Texts}', '{txbContrasena.Texts}', '{txbNombre.Texts}', '{txbApellido.Texts}')";
-            SqlCommand sc = new SqlCommand(agregar, con.cadena());
-            sc.ExecuteNonQuery();
-            MessageBox.Show("Registro creado");
-            ObtenerDatos();
-            Limpiar();
+            if (rol == 0)
+            {
+                MessageBox.Show("Por favor selecciona un rol de usuario");
+            }
+            else
+            {
+                string agregar = $"insert into Usuario(Rol, NombreUsuario, Contrasena, Nombre, Apellido) values({rol}, '{txbUsuario.Texts}', '{txbContrasena.Texts}', '{txbNombre.Texts}', '{txbApellido.Texts}')";
+                SqlCommand sc = new SqlCommand(agregar, con.cadena());
+                sc.ExecuteNonQuery();
+                MessageBox.Show("Registro creado");
+                ObtenerDatos();
+                Limpiar();
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string editar = $"update Usuario set Rol={txbRol.Texts}, NombreUsuario='{txbUsuario.Texts}', Contrasena='{txbContrasena.Texts}', Nombre='{txbNombre.Texts}', Apellido='{txbApellido.Texts}' where UsuarioID={txbID.Texts}";
-            SqlCommand sc = new SqlCommand(editar, con.cadena());
-            sc.ExecuteNonQuery();
-            MessageBox.Show("Registro actualizado");
-            ObtenerDatos();
-            Limpiar();
+            if (rol == 0)
+            {
+                MessageBox.Show("Por favor selecciona un rol de usuario");
+            }
+            else
+            {
+                string editar = $"update Usuario set Rol={rol}, NombreUsuario='{txbUsuario.Texts}', Contrasena='{txbContrasena.Texts}', Nombre='{txbNombre.Texts}', Apellido='{txbApellido.Texts}' where UsuarioID={txbID.Texts}";
+                SqlCommand sc = new SqlCommand(editar, con.cadena());
+                sc.ExecuteNonQuery();
+                MessageBox.Show("Registro actualizado");
+                ObtenerDatos();
+                Limpiar();
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -92,11 +108,20 @@ namespace Restaurante
         private void dataUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txbID.Texts = dataUsuarios.SelectedCells[0].Value.ToString();
-            txbRol.Texts = dataUsuarios.SelectedCells[1].Value.ToString();
             txbUsuario.Texts = dataUsuarios.SelectedCells[2].Value.ToString();
             txbContrasena.Texts = dataUsuarios.SelectedCells[3].Value.ToString();
             txbNombre.Texts = dataUsuarios.SelectedCells[4].Value.ToString();
             txbApellido.Texts = dataUsuarios.SelectedCells[5].Value.ToString();
+        }
+
+        private void btnRolAdmin_Click(object sender, EventArgs e)
+        {
+            rol = 1;
+        }
+
+        private void btnRolCaja_Click(object sender, EventArgs e)
+        {
+            rol = 2;
         }
     }
 }

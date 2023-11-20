@@ -17,10 +17,11 @@ namespace Restaurante
         Conexion con = new Conexion();
         public void ObtenerDatos()
         {
-            string consulta = "select * from Venta";
+            string consulta = "select * from Platillos";
             SqlDataAdapter adaptador = new SqlDataAdapter(consulta, con.cadena());
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
+            dataProductos.DataSource = dt;
         }
 
         public Selec()

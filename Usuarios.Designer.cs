@@ -43,8 +43,9 @@ namespace Restaurante
             panelCentral = new Panel();
             dataUsuarios = new DataGridView();
             panel1 = new Panel();
+            btnRolCaja = new CustomControls.RJControls.RJButton();
+            btnRolAdmin = new CustomControls.RJControls.RJButton();
             label7 = new Label();
-            txbRol = new CustomControls.RJControls.RJTextBox();
             label6 = new Label();
             txbApellido = new CustomControls.RJControls.RJTextBox();
             label5 = new Label();
@@ -180,8 +181,9 @@ namespace Restaurante
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel1.BackColor = Color.FromArgb(30, 30, 31);
+            panel1.Controls.Add(btnRolCaja);
+            panel1.Controls.Add(btnRolAdmin);
             panel1.Controls.Add(label7);
-            panel1.Controls.Add(txbRol);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(txbApellido);
             panel1.Controls.Add(label5);
@@ -200,6 +202,44 @@ namespace Restaurante
             panel1.Size = new Size(428, 570);
             panel1.TabIndex = 3;
             // 
+            // btnRolCaja
+            // 
+            btnRolCaja.BackColor = Color.DarkOrange;
+            btnRolCaja.BackgroundColor = Color.DarkOrange;
+            btnRolCaja.BorderColor = Color.White;
+            btnRolCaja.BorderRadius = 15;
+            btnRolCaja.BorderSize = 1;
+            btnRolCaja.FlatAppearance.BorderSize = 0;
+            btnRolCaja.FlatStyle = FlatStyle.Flat;
+            btnRolCaja.ForeColor = Color.Black;
+            btnRolCaja.Location = new Point(243, 137);
+            btnRolCaja.Name = "btnRolCaja";
+            btnRolCaja.Size = new Size(127, 42);
+            btnRolCaja.TabIndex = 15;
+            btnRolCaja.Text = "2. Cajero";
+            btnRolCaja.TextColor = Color.Black;
+            btnRolCaja.UseVisualStyleBackColor = false;
+            btnRolCaja.Click += btnRolCaja_Click;
+            // 
+            // btnRolAdmin
+            // 
+            btnRolAdmin.BackColor = Color.DarkOrange;
+            btnRolAdmin.BackgroundColor = Color.DarkOrange;
+            btnRolAdmin.BorderColor = Color.White;
+            btnRolAdmin.BorderRadius = 15;
+            btnRolAdmin.BorderSize = 1;
+            btnRolAdmin.FlatAppearance.BorderSize = 0;
+            btnRolAdmin.FlatStyle = FlatStyle.Flat;
+            btnRolAdmin.ForeColor = Color.Black;
+            btnRolAdmin.Location = new Point(59, 137);
+            btnRolAdmin.Name = "btnRolAdmin";
+            btnRolAdmin.Size = new Size(127, 42);
+            btnRolAdmin.TabIndex = 14;
+            btnRolAdmin.Text = "1. Admin";
+            btnRolAdmin.TextColor = Color.Black;
+            btnRolAdmin.UseVisualStyleBackColor = false;
+            btnRolAdmin.Click += btnRolAdmin_Click;
+            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -210,28 +250,6 @@ namespace Restaurante
             label7.Size = new Size(55, 33);
             label7.TabIndex = 13;
             label7.Text = "Rol";
-            // 
-            // txbRol
-            // 
-            txbRol.BackColor = SystemColors.Window;
-            txbRol.BorderColor = Color.Peru;
-            txbRol.BorderFocusColor = Color.Gold;
-            txbRol.BorderRadius = 0;
-            txbRol.BorderSize = 2;
-            txbRol.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            txbRol.ForeColor = Color.FromArgb(64, 64, 64);
-            txbRol.Location = new Point(59, 138);
-            txbRol.Margin = new Padding(4);
-            txbRol.Multiline = false;
-            txbRol.Name = "txbRol";
-            txbRol.Padding = new Padding(10, 7, 10, 7);
-            txbRol.PasswordChar = false;
-            txbRol.PlaceholderColor = Color.DarkGray;
-            txbRol.PlaceholderText = "Rol del Usuario";
-            txbRol.Size = new Size(311, 31);
-            txbRol.TabIndex = 12;
-            txbRol.Texts = "";
-            txbRol.UnderlinedStyle = false;
             // 
             // label6
             // 
@@ -493,7 +511,8 @@ namespace Restaurante
         private Label label6;
         private CustomControls.RJControls.RJTextBox txbApellido;
         private Label label7;
-        private CustomControls.RJControls.RJTextBox txbRol;
         private DataGridView dataUsuarios;
+        private CustomControls.RJControls.RJButton btnRolCaja;
+        private CustomControls.RJControls.RJButton btnRolAdmin;
     }
 }

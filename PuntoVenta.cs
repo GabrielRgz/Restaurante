@@ -14,7 +14,10 @@ namespace Restaurante
     public partial class PuntoVenta : Form
     {
         Selec selecfrm;
+        public int idUsuario;
         Conexion con = new Conexion();
+        List<int> ids = new List<int>();
+
         public void ObtenerDatos()
         {
             string consulta = "select * from Venta";
@@ -38,6 +41,32 @@ namespace Restaurante
         {
             con.Open();
             ObtenerDatos();
+            txbId.Texts = idUsuario.ToString();
+
+            string getId = "SELECT ClienteID FROM Cliente";
+            try
+            {
+                using (SqlCommand command = new SqlCommand(getId, con.cadena()))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // Asegúrate de que el valor no sea nulo antes de intentar convertirlo
+                            if (!reader.IsDBNull(0))
+                            {
+                                int clienteID = reader.GetInt32(0);
+                                ids.Add(clienteID);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            txbCliente.DataSource = ids;
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -52,10 +81,11 @@ namespace Restaurante
 
             List<int> ids = new List<int>();
             ids.Add(idProd);
-            string consulta = "select * from Platillo where id";
+            string consulta = "select * from Platillos where PlatilloID=" + idProd;
             SqlDataAdapter adaptador = new SqlDataAdapter(consulta, con.cadena());
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
+            dataProductos.DataSource = dt;
         }
     }
 }

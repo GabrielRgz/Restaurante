@@ -61,10 +61,17 @@ namespace Restaurante
             string usuario = txbUsuario.Texts;
             string contrasena = txbContrasena.Texts;
 
+            //Ejecuta comando SELECT y guarda el resultado del ID en la variable id
+            string getId = "SELECT UsuarioID FROM Usuario WHERE NombreUsuario = '" + usuario + "' AND Contrasena = '" + contrasena + "'";
+            SqlCommand sc = new SqlCommand(getId, con.cadena());
+            int id = (int)sc.ExecuteScalar();
+
+            //Si el nombre y contrasena coinciden crea el nuevo form principal y asigna el id y el nombre de usuario para usarse en las forms inicio y punto de venta
             if (VerificarCredenciales(usuario, contrasena))
             {
                 Principal principal = new Principal();
                 principal.NombreUsuario = usuario;
+                principal.id = id;
                 principal.Show();
                 this.Hide();
             }

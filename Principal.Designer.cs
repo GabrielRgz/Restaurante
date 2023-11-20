@@ -112,10 +112,10 @@
             btnEvaluacion.ForeColor = Color.Orange;
             btnEvaluacion.Image = (Image)resources.GetObject("btnEvaluacion.Image");
             btnEvaluacion.ImageAlign = ContentAlignment.MiddleLeft;
-            btnEvaluacion.Location = new Point(13, 266);
+            btnEvaluacion.Location = new Point(0, 318);
             btnEvaluacion.Margin = new Padding(4, 3, 4, 3);
             btnEvaluacion.Name = "btnEvaluacion";
-            btnEvaluacion.Size = new Size(205, 46);
+            btnEvaluacion.Size = new Size(250, 46);
             btnEvaluacion.TabIndex = 20;
             btnEvaluacion.Text = "   Calificar";
             btnEvaluacion.UseVisualStyleBackColor = true;
@@ -218,14 +218,13 @@
             btnPuntoVenta.ForeColor = Color.Orange;
             btnPuntoVenta.Image = (Image)resources.GetObject("btnPuntoVenta.Image");
             btnPuntoVenta.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPuntoVenta.Location = new Point(-4, 379);
+            btnPuntoVenta.Location = new Point(0, 266);
             btnPuntoVenta.Margin = new Padding(4, 3, 4, 3);
             btnPuntoVenta.Name = "btnPuntoVenta";
             btnPuntoVenta.Size = new Size(283, 46);
             btnPuntoVenta.TabIndex = 5;
             btnPuntoVenta.Text = "Punto de venta";
             btnPuntoVenta.UseVisualStyleBackColor = true;
-            btnPuntoVenta.Visible = false;
             btnPuntoVenta.Click += btnCompras_Click;
             // 
             // btnClientes

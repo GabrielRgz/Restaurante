@@ -150,10 +150,9 @@
   </data>
   <data name="btnEvaluacion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAABiSURBVDhPrY4BCsAgDAP9/6c7HLTUM6gVDw5cEmXNzG51mipPHFCDnaT8J+TPOVpJomMZBSRD
-        vx30ALCXj3R8QOJi1g8nDBez+WNF3k0yUHAzqcKM6idlWFWGVf1wy6tHrH2jioqgRJEKlQAAAABJRU5E
-        rkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAABGdBTUEAALGPC/xhBQAAAGJJREFUOE+t
+        jgEKwCAMA/3/pzsctNQzqBUPDlwSZc3MbnWaKk8cUIOdpPwn5M85WkmiYxkFJEO/HfQAsJePdHxA4mLW
+        DycMF7P5Y0XeTTJQcDOpwozqJ2VYVYZV/XDLq0esfaOKiqBEkQqVAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="pbxUser.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -16,6 +16,7 @@ namespace GUI_V_2
     public partial class Principal : Form
     {
         public string NombreUsuario { get; set; }
+        public int id;
         int tema;
 
         public Principal()
@@ -199,8 +200,10 @@ namespace GUI_V_2
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
+            PuntoVenta puntoVenta = new PuntoVenta();
+            puntoVenta.idUsuario = id;
             ResaltarBoton(sender, btnVentas.ForeColor);
-            AbrirFormEnPanel(new PuntoVenta());
+            AbrirFormEnPanel(puntoVenta);
         }
 
         private void btnCerrarSesion_MouseEnter(object sender, EventArgs e)
