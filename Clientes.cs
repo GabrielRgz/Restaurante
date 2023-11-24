@@ -53,7 +53,7 @@ namespace Restaurante
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string agregar = $"insert into Cliente(Nombre, Email, Telefono) values('{txbNombre.Texts}', '{txbEmail.Texts}', {txbTelefono.Texts})";
+            string agregar = $"insert into Cliente(Nombre, Apellido, Email, Telefono) values('{txbNombre.Texts}', '{txbApellido.Texts}', '{txbEmail.Texts}', {txbTelefono.Texts})";
             SqlCommand sc = new SqlCommand(agregar, con.cadena());
             sc.ExecuteNonQuery();
             MessageBox.Show("Registro creado");
@@ -63,7 +63,7 @@ namespace Restaurante
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string editar = $"update Cliente set Nombre='{txbNombre.Texts}', Email='{txbEmail.Texts}', Telefono={txbTelefono.Texts} where ClienteID={txbID.Texts}";
+            string editar = $"update Cliente set Nombre='{txbNombre.Texts}', Apellido='{txbApellido.Texts}', Email='{txbEmail.Texts}', Telefono={txbTelefono.Texts} where ClienteID={txbID.Texts}";
             SqlCommand sc = new SqlCommand(editar, con.cadena());
             sc.ExecuteNonQuery();
             MessageBox.Show("Registro actualizado");

@@ -13,7 +13,7 @@ namespace Restaurante
 {
     public partial class Selec : Form
     {
-        public int id;
+        public int productoid;
         Conexion con = new Conexion();
         public void ObtenerDatos()
         {
@@ -29,6 +29,22 @@ namespace Restaurante
             InitializeComponent();
         }
 
+        //Metodo para pasar datos del producto seleccionado al form de punto de venta
+        private PuntoVenta getFormInstance()
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is PuntoVenta puntoVenta)
+                {
+                    //retorna la instancia activa del form PuntoVenta
+                    return puntoVenta;
+                }
+            }
+
+            //Si no hay instancia activa, retorna null
+            return null;
+        }
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             con.Close();
@@ -40,16 +56,21 @@ namespace Restaurante
             ObtenerDatos();
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            this.Hide();
             //id = ejecutar query select id from Platillo where;
+            PuntoVenta puntoVenta = getFormInstance();
+            if (puntoVenta != null)
+            {
+                //Ejecutar metodo
+                puntoVenta.AgregarProducto(productoid);
+            }
+            this.Close();
+        }
 
+        private void dataProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            productoid = (int)dataProductos.SelectedCells[0].Value;
         }
     }
 }

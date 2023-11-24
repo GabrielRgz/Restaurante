@@ -144,7 +144,7 @@
             txbCategoria.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             txbCategoria.ForeColor = Color.DimGray;
             txbCategoria.IconColor = Color.Peru;
-            txbCategoria.Items.AddRange(new object[] { "Comida rapida", "Antojitos Mexicanos", "Comida Vegana", "Canibales" });
+            txbCategoria.Items.AddRange(new object[] { "Comida rapida", "Antojitos Mexicanos", "Comida Vegana", "None" });
             txbCategoria.ListBackColor = Color.FromArgb(230, 228, 245);
             txbCategoria.ListTextColor = Color.DimGray;
             txbCategoria.Location = new Point(59, 408);

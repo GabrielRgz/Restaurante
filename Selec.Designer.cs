@@ -151,6 +151,7 @@
             dataProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataProductos.Size = new Size(748, 348);
             dataProductos.TabIndex = 5;
+            dataProductos.CellClick += dataProductos_CellClick;
             // 
             // Selec
             // 

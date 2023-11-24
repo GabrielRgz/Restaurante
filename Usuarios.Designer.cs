@@ -173,7 +173,7 @@ namespace Restaurante
             dataUsuarios.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dataUsuarios.RowTemplate.Height = 25;
             dataUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataUsuarios.Size = new Size(880, 589);
+            dataUsuarios.Size = new Size(880, 571);
             dataUsuarios.TabIndex = 4;
             dataUsuarios.CellClick += dataUsuarios_CellClick;
             // 

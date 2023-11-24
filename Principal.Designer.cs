@@ -37,7 +37,7 @@
             lblcorreo = new Label();
             lbluser = new Label();
             pbxUser = new PictureBox();
-            lblusuario = new Label();
+            lblRol = new Label();
             btnPuntoVenta = new Button();
             btnClientes = new Button();
             btnVentas = new Button();
@@ -72,7 +72,7 @@
             panelMenu.Controls.Add(lblcorreo);
             panelMenu.Controls.Add(lbluser);
             panelMenu.Controls.Add(pbxUser);
-            panelMenu.Controls.Add(lblusuario);
+            panelMenu.Controls.Add(lblRol);
             panelMenu.Controls.Add(btnPuntoVenta);
             panelMenu.Controls.Add(btnClientes);
             panelMenu.Controls.Add(btnVentas);
@@ -115,6 +115,7 @@
             btnEvaluacion.Location = new Point(0, 190);
             btnEvaluacion.Margin = new Padding(4, 3, 4, 3);
             btnEvaluacion.Name = "btnEvaluacion";
+            btnEvaluacion.Padding = new Padding(20, 0, 0, 0);
             btnEvaluacion.Size = new Size(250, 46);
             btnEvaluacion.TabIndex = 20;
             btnEvaluacion.Text = "   Calificar";
@@ -140,6 +141,7 @@
             // 
             // btnCerrarSesion
             // 
+            btnCerrarSesion.AutoSize = true;
             btnCerrarSesion.Dock = DockStyle.Bottom;
             btnCerrarSesion.FlatAppearance.BorderSize = 0;
             btnCerrarSesion.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 45, 48);
@@ -177,7 +179,7 @@
             lbluser.AutoSize = true;
             lbluser.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lbluser.ForeColor = Color.White;
-            lbluser.Location = new Point(90, 657);
+            lbluser.Location = new Point(90, 622);
             lbluser.Margin = new Padding(4, 0, 4, 0);
             lbluser.Name = "lbluser";
             lbluser.Size = new Size(54, 17);
@@ -196,18 +198,18 @@
             pbxUser.TabIndex = 15;
             pbxUser.TabStop = false;
             // 
-            // lblusuario
+            // lblRol
             // 
-            lblusuario.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            lblusuario.AutoSize = true;
-            lblusuario.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblusuario.ForeColor = Color.White;
-            lblusuario.Location = new Point(90, 640);
-            lblusuario.Margin = new Padding(4, 0, 4, 0);
-            lblusuario.Name = "lblusuario";
-            lblusuario.Size = new Size(58, 17);
-            lblusuario.TabIndex = 14;
-            lblusuario.Text = "  Cargo";
+            lblRol.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            lblRol.AutoSize = true;
+            lblRol.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblRol.ForeColor = Color.White;
+            lblRol.Location = new Point(85, 651);
+            lblRol.Margin = new Padding(4, 0, 4, 0);
+            lblRol.Name = "lblRol";
+            lblRol.Size = new Size(58, 17);
+            lblRol.TabIndex = 14;
+            lblRol.Text = "  Cargo";
             // 
             // btnPuntoVenta
             // 
@@ -223,9 +225,9 @@
             btnPuntoVenta.Name = "btnPuntoVenta";
             btnPuntoVenta.Size = new Size(283, 46);
             btnPuntoVenta.TabIndex = 5;
-            btnPuntoVenta.Text = "Punto de venta";
+            btnPuntoVenta.Text = "Vender";
             btnPuntoVenta.UseVisualStyleBackColor = true;
-            btnPuntoVenta.Click += btnCompras_Click;
+            btnPuntoVenta.Click += btnPuntoVenta_Click;
             // 
             // btnClientes
             // 
@@ -450,7 +452,7 @@
         private Label lblcorreo;
         private Label lbluser;
         private PictureBox pbxUser;
-        private Label lblusuario;
+        private Label lblRol;
         private PictureBox btnCerrar;
         private PictureBox btnMaximizar;
         private PictureBox btnRestaurar;

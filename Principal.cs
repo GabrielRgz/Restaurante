@@ -10,11 +10,13 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Restaurante;
 using System.Configuration;
+using System.Data.SqlClient;
 
 namespace GUI_V_2
 {
     public partial class Principal : Form
     {
+        Conexion con = new Conexion();
         public string NombreUsuario { get; set; }
         public int id;
         int tema;
@@ -81,7 +83,9 @@ namespace GUI_V_2
         {
             if (this.panelContenedor.Controls.Count > 0)
             {
-                this.panelContenedor.Controls.RemoveAt(0);
+                Form formActivo = panelContenedor.Controls[0] as Form;
+                formActivo.Close();
+                panelContenedor.Controls.Remove(formActivo);
             }
             Form fh = Formhijo as Form;
             fh.TopLevel = false;
@@ -187,31 +191,55 @@ namespace GUI_V_2
             AbrirFormEnPanel(new Ventas());
         }
 
+        private int getRol(int id)
+        {
+            string command = "SELECT Rol FROM Usuario WHERE UsuarioID = " + id;
+            SqlCommand gr = new SqlCommand(command, con.cadena());
+            return (int)gr.ExecuteScalar();
+        }
+
+        private string getNombre(int id)
+        {
+            string nombre = "Nombre";
+            string apellido = "Apellido";
+            string command = "SELECT " + nombre + " FROM Usuario WHERE UsuarioID = " + id;
+            SqlCommand gr = new SqlCommand(command, con.cadena());
+            nombre = (string)gr.ExecuteScalar();
+
+            command = "SELECT " + apellido + " FROM Usuario WHERE UsuarioID = " + id;
+            gr = new SqlCommand(command, con.cadena());
+            apellido = (string)gr.ExecuteScalar();
+            return nombre + " " + apellido;
+        }
+
         private void Principal_Load(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Inicio());
+            con.Open();
             btnlogoInicio_Click(null, e);
             tema = 1;
+            lbluser.Text = getNombre(id);
 
-            if (id != 1)
+            if (getRol(id) != 1)
             {
                 btnUsuarios.Visible = false;
                 btnprod.Visible = false;
+                lblRol.Text = "Cajero";
             }
+            else
+            {
+                btnUsuarios.Visible = true;
+                btnprod.Visible = true;
+                lblRol.Text = "Administrador";
+            }
+            lblcorreo.Visible = false;
+            con.Close();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
             ResaltarBoton(sender, btnVentas.ForeColor);
             AbrirFormEnPanel(new Clientes());
-        }
-
-        private void btnCompras_Click(object sender, EventArgs e)
-        {
-            PuntoVenta puntoVenta = new PuntoVenta();
-            puntoVenta.idUsuario = id;
-            ResaltarBoton(sender, btnVentas.ForeColor);
-            AbrirFormEnPanel(puntoVenta);
         }
 
         private void btnCerrarSesion_MouseEnter(object sender, EventArgs e)
@@ -252,6 +280,14 @@ namespace GUI_V_2
         {
             ResaltarBoton(sender, btnVentas.ForeColor);
             AbrirFormEnPanel(new Usuarios());
+        }
+
+        private void btnPuntoVenta_Click(object sender, EventArgs e)
+        {
+            PuntoVenta puntoVenta = new PuntoVenta();
+            puntoVenta.idUsuario = id;
+            ResaltarBoton(sender, btnVentas.ForeColor);
+            AbrirFormEnPanel(puntoVenta);
         }
     }
 }

@@ -39,6 +39,8 @@
             dataClientes = new DataGridView();
             panelCentral = new Panel();
             panel1 = new Panel();
+            lblApellido = new Label();
+            txbApellido = new CustomControls.RJControls.RJTextBox();
             label5 = new Label();
             btnDelete = new CustomControls.RJControls.RJButton();
             btnUpdate = new CustomControls.RJControls.RJButton();
@@ -78,13 +80,13 @@
             panelOptions.Dock = DockStyle.Top;
             panelOptions.Location = new Point(0, 0);
             panelOptions.Name = "panelOptions";
-            panelOptions.Size = new Size(1338, 49);
+            panelOptions.Size = new Size(1345, 49);
             panelOptions.TabIndex = 1;
             // 
             // btnCerrar
             // 
             btnCerrar.Dock = DockStyle.Right;
-            btnCerrar.Location = new Point(1312, 0);
+            btnCerrar.Location = new Point(1319, 0);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(26, 49);
             btnCerrar.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -102,9 +104,9 @@
             btnAdd.FlatAppearance.BorderSize = 0;
             btnAdd.FlatStyle = FlatStyle.Flat;
             btnAdd.ForeColor = Color.White;
-            btnAdd.Location = new Point(0, 656);
+            btnAdd.Location = new Point(0, 698);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(1338, 42);
+            btnAdd.Size = new Size(1345, 42);
             btnAdd.TabIndex = 1;
             btnAdd.Text = "Agregar";
             btnAdd.TextColor = Color.White;
@@ -154,7 +156,7 @@
             dataClientes.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dataClientes.RowTemplate.Height = 25;
             dataClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataClientes.Size = new Size(854, 570);
+            dataClientes.Size = new Size(861, 612);
             dataClientes.TabIndex = 2;
             dataClientes.CellClick += dataClientes_CellClick;
             // 
@@ -165,13 +167,15 @@
             panelCentral.Dock = DockStyle.Fill;
             panelCentral.Location = new Point(0, 49);
             panelCentral.Name = "panelCentral";
-            panelCentral.Size = new Size(1338, 607);
+            panelCentral.Size = new Size(1345, 649);
             panelCentral.TabIndex = 3;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel1.BackColor = Color.FromArgb(30, 30, 31);
+            panel1.Controls.Add(lblApellido);
+            panel1.Controls.Add(txbApellido);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnUpdate);
@@ -183,10 +187,43 @@
             panel1.Controls.Add(txbEmail);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(txbID);
-            panel1.Location = new Point(886, 19);
+            panel1.Location = new Point(893, 19);
             panel1.Name = "panel1";
-            panel1.Size = new Size(428, 570);
+            panel1.Size = new Size(428, 612);
             panel1.TabIndex = 3;
+            // 
+            // lblApellido
+            // 
+            lblApellido.AutoSize = true;
+            lblApellido.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblApellido.ForeColor = Color.Orange;
+            lblApellido.Location = new Point(46, 233);
+            lblApellido.Name = "lblApellido";
+            lblApellido.Size = new Size(125, 33);
+            lblApellido.TabIndex = 11;
+            lblApellido.Text = "Apellido";
+            // 
+            // txbApellido
+            // 
+            txbApellido.BackColor = SystemColors.Window;
+            txbApellido.BorderColor = Color.Peru;
+            txbApellido.BorderFocusColor = Color.Gold;
+            txbApellido.BorderRadius = 0;
+            txbApellido.BorderSize = 2;
+            txbApellido.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txbApellido.ForeColor = Color.FromArgb(64, 64, 64);
+            txbApellido.Location = new Point(46, 270);
+            txbApellido.Margin = new Padding(4);
+            txbApellido.Multiline = false;
+            txbApellido.Name = "txbApellido";
+            txbApellido.Padding = new Padding(10, 7, 10, 7);
+            txbApellido.PasswordChar = false;
+            txbApellido.PlaceholderColor = Color.DarkGray;
+            txbApellido.PlaceholderText = "Primer apellido del cliente";
+            txbApellido.Size = new Size(311, 31);
+            txbApellido.TabIndex = 10;
+            txbApellido.Texts = "";
+            txbApellido.UnderlinedStyle = false;
             // 
             // label5
             // 
@@ -201,6 +238,7 @@
             // 
             // btnDelete
             // 
+            btnDelete.Anchor = AnchorStyles.None;
             btnDelete.BackColor = Color.DarkOrange;
             btnDelete.BackgroundColor = Color.DarkOrange;
             btnDelete.BorderColor = Color.White;
@@ -209,7 +247,7 @@
             btnDelete.FlatAppearance.BorderSize = 0;
             btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.ForeColor = Color.Black;
-            btnDelete.Location = new Point(286, 516);
+            btnDelete.Location = new Point(289, 537);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(127, 42);
             btnDelete.TabIndex = 8;
@@ -220,6 +258,7 @@
             // 
             // btnUpdate
             // 
+            btnUpdate.Anchor = AnchorStyles.None;
             btnUpdate.BackColor = Color.DarkOrange;
             btnUpdate.BackgroundColor = Color.DarkOrange;
             btnUpdate.BorderColor = Color.White;
@@ -228,7 +267,7 @@
             btnUpdate.FlatAppearance.BorderSize = 0;
             btnUpdate.FlatStyle = FlatStyle.Flat;
             btnUpdate.ForeColor = Color.Black;
-            btnUpdate.Location = new Point(13, 516);
+            btnUpdate.Location = new Point(13, 537);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(127, 42);
             btnUpdate.TabIndex = 4;
@@ -242,7 +281,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Orange;
-            label4.Location = new Point(46, 164);
+            label4.Location = new Point(46, 144);
             label4.Name = "label4";
             label4.Size = new Size(123, 33);
             label4.TabIndex = 7;
@@ -257,7 +296,7 @@
             txbNombre.BorderSize = 2;
             txbNombre.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbNombre.ForeColor = Color.FromArgb(64, 64, 64);
-            txbNombre.Location = new Point(46, 201);
+            txbNombre.Location = new Point(46, 181);
             txbNombre.Margin = new Padding(4);
             txbNombre.Multiline = false;
             txbNombre.Name = "txbNombre";
@@ -275,7 +314,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Orange;
-            label3.Location = new Point(41, 349);
+            label3.Location = new Point(41, 413);
             label3.Name = "label3";
             label3.Size = new Size(128, 33);
             label3.TabIndex = 5;
@@ -290,7 +329,7 @@
             txbTelefono.BorderSize = 2;
             txbTelefono.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbTelefono.ForeColor = Color.FromArgb(64, 64, 64);
-            txbTelefono.Location = new Point(46, 386);
+            txbTelefono.Location = new Point(46, 450);
             txbTelefono.Margin = new Padding(4);
             txbTelefono.Multiline = false;
             txbTelefono.Name = "txbTelefono";
@@ -308,7 +347,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Orange;
-            label2.Location = new Point(46, 253);
+            label2.Location = new Point(46, 317);
             label2.Name = "label2";
             label2.Size = new Size(94, 33);
             label2.TabIndex = 3;
@@ -323,7 +362,7 @@
             txbEmail.BorderSize = 2;
             txbEmail.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbEmail.ForeColor = Color.FromArgb(64, 64, 64);
-            txbEmail.Location = new Point(46, 290);
+            txbEmail.Location = new Point(46, 354);
             txbEmail.Margin = new Padding(4);
             txbEmail.Multiline = false;
             txbEmail.Name = "txbEmail";
@@ -341,7 +380,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Orange;
-            label1.Location = new Point(46, 71);
+            label1.Location = new Point(46, 53);
             label1.Name = "label1";
             label1.Size = new Size(41, 33);
             label1.TabIndex = 1;
@@ -357,7 +396,7 @@
             txbID.Enabled = false;
             txbID.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
             txbID.ForeColor = Color.FromArgb(64, 64, 64);
-            txbID.Location = new Point(46, 108);
+            txbID.Location = new Point(46, 90);
             txbID.Margin = new Padding(4);
             txbID.Multiline = false;
             txbID.Name = "txbID";
@@ -375,7 +414,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(33, 33, 33);
-            ClientSize = new Size(1338, 698);
+            ClientSize = new Size(1345, 740);
             Controls.Add(panelCentral);
             Controls.Add(panelOptions);
             Controls.Add(btnAdd);
@@ -413,5 +452,7 @@
         private CustomControls.RJControls.RJTextBox txbEmail;
         private Label label1;
         private CustomControls.RJControls.RJTextBox txbID;
+        private Label lblApellido;
+        private CustomControls.RJControls.RJTextBox txbApellido;
     }
 }
