@@ -18,6 +18,7 @@ CREATE TABLE Platillos (
 -- Crear una tabla para los clientes
 CREATE TABLE Cliente (
     ClienteID INT IDENTITY(1,1) PRIMARY KEY,
+	Apellido VARCHAR(100),
     Nombre VARCHAR(100),
     Email VARCHAR(100),
     Telefono VARCHAR(15)
@@ -40,14 +41,13 @@ CREATE TABLE Venta (
     ClienteID INT,
     UsuarioID INT, -- Agregar una referencia a la caja
     FechaPedido DATETIME,
-    Estado VARCHAR(20),
+	ImporteTotal DECIMAL(10, 2),
     FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID),
     FOREIGN KEY (UsuarioID) REFERENCES Usuario(UsuarioID)
 );
 
 -- Crear una tabla para los detalles de los pedidos
 CREATE TABLE DetalleVenta (
-    DetalleID INT IDENTITY(1,1) PRIMARY KEY,
     VentaID INT,
     PlatilloID INT,
     Cantidad INT,
@@ -190,10 +190,10 @@ GO
 -----------------------------------------
 
 CREATE PROCEDURE dbo.InsertarVentas
-@ClienteID INT, @UsuarioID INT, @FechaPedido DATETIME, @Estado VARCHAR(20)
+@ClienteID INT, @UsuarioID INT, @FechaPedido DATETIME, @Estado VARCHAR(20), @ImporteTotal DECIMAL(10,2)
 AS
 BEGIN
-    INSERT INTO Venta (ClienteID, UsuarioID, FechaPedido, Estado) VALUES (@ClienteID, @UsuarioID, @FechaPedido, @Estado);
+    INSERT INTO Venta (ClienteID, UsuarioID, FechaPedido, ImporteTotal) VALUES (@ClienteID, @UsuarioID, @FechaPedido, @ImporteTotal);
 END;
 GO
 
@@ -257,4 +257,3 @@ GO
 
 
 INSERT INTO Usuario(Rol, NombreUsuario, Contrasena) values(1, 'admin', '999')
-select * from Usuario
