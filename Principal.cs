@@ -20,16 +20,18 @@ namespace GUI_V_2
         public string NombreUsuario { get; set; }
         public int id;
         int tema;
+        public Login frmLogin;
 
         public Principal()
         {
             InitializeComponent();
         }
 
-        public Principal(int id)
+        public Principal(int id, Login frmLogin)
         {
             InitializeComponent();
             this.id = id;
+            this.frmLogin = frmLogin;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -180,9 +182,9 @@ namespace GUI_V_2
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            Login loginForm = new Login(); // Crea una instancia del formulario de inicio de sesión
-            loginForm.Show(); // Muestra el formulario de inicio de sesión
-            this.Hide(); // Oculta el formulario actual
+            ///Login loginForm = new Login(); // Crea una instancia del formulario de inicio de sesión
+            frmLogin.Show(); // Muestra el formulario de inicio de sesión
+            this.Close(); // Oculta el formulario actual
         }
 
         private void btnVentas_Click(object sender, EventArgs e)
@@ -204,11 +206,17 @@ namespace GUI_V_2
             string apellido = "Apellido";
             string command = "SELECT " + nombre + " FROM Usuario WHERE UsuarioID = " + id;
             SqlCommand gr = new SqlCommand(command, con.cadena());
-            nombre = (string)gr.ExecuteScalar();
+            if (gr.ExecuteScalar() != DBNull.Value)
+            {
+                nombre = (string)gr.ExecuteScalar();
+            }
 
             command = "SELECT " + apellido + " FROM Usuario WHERE UsuarioID = " + id;
             gr = new SqlCommand(command, con.cadena());
-            apellido = (string)gr.ExecuteScalar();
+            if (gr.ExecuteScalar() != DBNull.Value)
+            {
+                apellido = (string)gr.ExecuteScalar();
+            }
             return nombre + " " + apellido;
         }
 

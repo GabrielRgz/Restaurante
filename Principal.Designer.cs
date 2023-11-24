@@ -424,6 +424,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Principal";
             Text = "Form1";
+            WindowState = FormWindowState.Maximized;
             Load += Principal_Load;
             panelMenu.ResumeLayout(false);
             panelMenu.PerformLayout();

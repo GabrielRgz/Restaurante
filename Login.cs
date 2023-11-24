@@ -71,7 +71,7 @@ namespace Restaurante
             if (VerificarCredenciales(usuario, contrasena))
             {
                 int id = (int)sc.ExecuteScalar();
-                Principal principal = new Principal(id);
+                Principal principal = new Principal(id, this);
                 principal.NombreUsuario = usuario;
                 //principal.id = id;
                 principal.Show();

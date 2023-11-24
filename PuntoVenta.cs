@@ -54,9 +54,21 @@ namespace Restaurante
 
         private int getVentaID()
         {
+            //Verificar si hay datos en la tabla Venta
+            string cantidadDatos = "SELECT COUNT(VentaID) FROM Venta";
+            SqlCommand cantidadCmd = new SqlCommand(cantidadDatos, con.cadena());
+            //Obtener el ID del ultimo renglon de la tabla
             string ventaID = "select top 1 VentaID from Venta order by VentaID DESC";
             SqlCommand command = new SqlCommand(ventaID, con.cadena());
-            return (int)command.ExecuteScalar();
+            if ((int)cantidadCmd.ExecuteScalar() == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                return (int)command.ExecuteScalar();
+            }
+
         }
 
         private void PuntoVenta_Load(object sender, EventArgs e)

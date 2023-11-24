@@ -58,6 +58,12 @@ namespace Restaurante
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            //Verificar forms activos
+            /*foreach (var item in Application.OpenForms)
+            {
+                MessageBox.Show(item.ToString());
+            }*/
+
             //id = ejecutar query select id from Platillo where;
             PuntoVenta puntoVenta = getFormInstance();
             if (puntoVenta != null)
