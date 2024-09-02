@@ -1,0 +1,327 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zippy\\source\\repos\\Restaurante\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|C:\\Users\\zippy\\source\\repos\\Restaurante\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|C:\\Users\\zippy\\source\\repos\\Restaurante\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\selec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:selec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|C:\\Users\\zippy\\source\\repos\\Restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\puntoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:puntoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\mojodojodb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:mojodojodb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|C:\\Users\\zippy\\source\\repos\\Restaurante\\puntoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:puntoventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|C:\\Users\\zippy\\source\\repos\\Restaurante\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|C:\\Users\\zippy\\source\\repos\\Restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|C:\\Users\\zippy\\source\\repos\\Restaurante\\selec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:selec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|C:\\Users\\zippy\\source\\repos\\Restaurante\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|c:\\users\\zippy\\source\\repos\\restaurante\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E4A45A7-2CE2-4B78-9CB8-48200C8C8039}|Restaurante.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Principal.cs",
+              "RelativeDocumentMoniker": "Principal.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Principal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:26.414Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Selec.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Selec.cs",
+              "RelativeDocumentMoniker": "Selec.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Selec.cs",
+              "RelativeToolTip": "Selec.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAQwD4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:26.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PuntoVenta.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\PuntoVenta.cs",
+              "RelativeDocumentMoniker": "PuntoVenta.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\PuntoVenta.cs",
+              "RelativeToolTip": "PuntoVenta.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAkwEQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Principal.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Principal.cs",
+              "RelativeDocumentMoniker": "Principal.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Principal.cs",
+              "RelativeToolTip": "Principal.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAADwv8AAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\armando\\Documents\\Restaurante\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\armando\\Documents\\Restaurante\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2023-12-01T06:17:27.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MojoDojoDB.sql",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\MojoDojoDB.sql",
+              "RelativeDocumentMoniker": "MojoDojoDB.sql",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\MojoDojoDB.sql",
+              "RelativeToolTip": "MojoDojoDB.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2023-12-01T06:17:27.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAcwEkAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Conexion.cs",
+              "RelativeDocumentMoniker": "Conexion.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Conexion.cs",
+              "RelativeToolTip": "Conexion.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Selec.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Selec.cs",
+              "RelativeDocumentMoniker": "Selec.cs",
+              "ToolTip": "C:\\Users\\armando\\Documents\\Restaurante\\Selec.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\armando\\Documents\\Restaurante\\Selec.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2023-12-01T06:17:27.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Usuarios.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Usuarios.cs",
+              "RelativeToolTip": "Usuarios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PuntoVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\PuntoVenta.cs",
+              "RelativeDocumentMoniker": "PuntoVenta.cs",
+              "ToolTip": "C:\\Users\\armando\\Documents\\Restaurante\\PuntoVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\armando\\Documents\\Restaurante\\PuntoVenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2023-12-01T06:17:27.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Clientes.cs",
+              "RelativeDocumentMoniker": "Clientes.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Clientes.cs",
+              "RelativeToolTip": "Clientes.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAQwEEAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Productos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Productos.cs",
+              "RelativeDocumentMoniker": "Productos.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Productos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Productos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2023-12-01T06:17:27.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Productos.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Productos.cs",
+              "RelativeDocumentMoniker": "Productos.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Productos.cs",
+              "RelativeToolTip": "Productos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Clientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Clientes.cs",
+              "RelativeDocumentMoniker": "Clientes.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Clientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Clientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2023-12-01T06:17:27.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Evaluacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Evaluacion.cs",
+              "RelativeDocumentMoniker": "Evaluacion.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Evaluacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Evaluacion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.406Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Evaluacion.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Evaluacion.cs",
+              "RelativeDocumentMoniker": "Evaluacion.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Evaluacion.cs",
+              "RelativeToolTip": "Evaluacion.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAuwIcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-01T06:17:27.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Usuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Usuarios.cs",
+              "ToolTip": "C:\\Users\\zippy\\source\\repos\\Restaurante\\Usuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Usuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2023-12-01T06:17:27.41Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

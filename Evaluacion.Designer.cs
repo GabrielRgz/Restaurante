@@ -227,9 +227,9 @@
             panelRB.Controls.Add(panel5);
             panelRB.Controls.Add(panel3);
             panelRB.Controls.Add(panel2);
-            panelRB.Location = new Point(3, 103);
+            panelRB.Location = new Point(3, 74);
             panelRB.Name = "panelRB";
-            panelRB.Size = new Size(582, 384);
+            panelRB.Size = new Size(582, 422);
             panelRB.TabIndex = 42;
             // 
             // panel5
@@ -433,7 +433,6 @@
             lblHora.TabIndex = 123;
             lblHora.Text = "Que te parecio la atencion?";
             lblHora.TextAlign = ContentAlignment.MiddleCenter;
-            lblHora.Visible = false;
             // 
             // panel3
             // 
@@ -450,7 +449,7 @@
             panel3.Controls.Add(rbPrecio3);
             panel3.Controls.Add(rbPrecio1);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(9, 259);
+            panel3.Location = new Point(9, 277);
             panel3.Name = "panel3";
             panel3.Size = new Size(570, 116);
             panel3.TabIndex = 128;
@@ -636,7 +635,6 @@
             label2.TabIndex = 127;
             label2.Text = "Que te parecen los precios?";
             label2.TextAlign = ContentAlignment.MiddleCenter;
-            label2.Visible = false;
             // 
             // panel2
             // 
@@ -653,7 +651,7 @@
             panel2.Controls.Add(rbComida3);
             panel2.Controls.Add(rbComida1);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(39, 131);
+            panel2.Location = new Point(39, 140);
             panel2.Name = "panel2";
             panel2.Size = new Size(526, 122);
             panel2.TabIndex = 127;
@@ -839,7 +837,6 @@
             label1.TabIndex = 126;
             label1.Text = "Que te parecio la comida?";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            label1.Visible = false;
             // 
             // Evaluacion
             // 

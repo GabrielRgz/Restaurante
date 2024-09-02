@@ -136,8 +136,8 @@ namespace Restaurante
                 mail.Body = body;
                 mail.IsBodyHtml = true;
 
-                SmtpClient smtp = new SmtpClient("smtp.office365.com", 587);
-                smtp.Credentials = new NetworkCredential(from, "MojoDojo.241123");
+                SmtpClient smtp = new SmtpClient("smtp-mail.outlook.com", 587);
+                smtp.Credentials = new NetworkCredential(from, "MojoDojo.241123"); //MojoDojo.241123
                 smtp.EnableSsl = true;
 
                 smtp.Send(mail);

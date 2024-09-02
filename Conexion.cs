@@ -21,7 +21,7 @@ namespace Restaurante
             {
                 string servidor = Dns.GetHostName();
 
-                connection = new SqlConnection("Data Source=" + servidor + ";Initial Catalog=MojodojoDB;Integrated Security=True");
+                connection = new SqlConnection("Data Source=" + servidor + "\\SERVIDORSQL" + ";Initial Catalog=MojodojoDB;Integrated Security=True");
 
                 connection.Open();
                 //MessageBox.Show(servidor);
