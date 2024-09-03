@@ -34,6 +34,7 @@
             lblBienvenida = new Label();
             btnEnviar = new CustomControls.RJControls.RJButton();
             panel4 = new Panel();
+            btnSalir = new CustomControls.RJControls.RJButton();
             panel1 = new Panel();
             txbComentarios = new CustomControls.RJControls.RJTextBox();
             label3 = new Label();
@@ -106,12 +107,12 @@
             lblTitulo.AutoSize = true;
             lblTitulo.Dock = DockStyle.Top;
             lblTitulo.FlatStyle = FlatStyle.Flat;
-            lblTitulo.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitulo.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             lblTitulo.ForeColor = Color.White;
             lblTitulo.Location = new Point(0, 0);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Padding = new Padding(0, 6, 0, 0);
-            lblTitulo.Size = new Size(0, 39);
+            lblTitulo.Size = new Size(0, 37);
             lblTitulo.TabIndex = 0;
             // 
             // lblBienvenida
@@ -119,11 +120,11 @@
             lblBienvenida.Anchor = AnchorStyles.Top;
             lblBienvenida.AutoSize = true;
             lblBienvenida.FlatStyle = FlatStyle.Flat;
-            lblBienvenida.Font = new Font("Century Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            lblBienvenida.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             lblBienvenida.ForeColor = Color.Orange;
             lblBienvenida.Location = new Point(304, 20);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(369, 38);
+            lblBienvenida.Size = new Size(369, 37);
             lblBienvenida.TabIndex = 30;
             lblBienvenida.Text = "Evalua nuestro servicio";
             // 
@@ -151,6 +152,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(btnSalir);
             panel4.Controls.Add(panel1);
             panel4.Controls.Add(panelRB);
             panel4.Controls.Add(btnEnviar);
@@ -160,6 +162,28 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(1019, 575);
             panel4.TabIndex = 42;
+            // 
+            // btnSalir
+            // 
+            btnSalir.Anchor = AnchorStyles.Bottom;
+            btnSalir.BackColor = Color.FromArgb(255, 128, 0);
+            btnSalir.BackgroundColor = Color.FromArgb(255, 128, 0);
+            btnSalir.BorderColor = Color.White;
+            btnSalir.BorderRadius = 15;
+            btnSalir.BorderSize = 1;
+            btnSalir.Cursor = Cursors.Hand;
+            btnSalir.FlatAppearance.BorderSize = 0;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalir.ForeColor = SystemColors.WindowText;
+            btnSalir.Location = new Point(3, 10);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(106, 47);
+            btnSalir.TabIndex = 44;
+            btnSalir.Text = "Regresar";
+            btnSalir.TextColor = SystemColors.WindowText;
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // panel1
             // 
@@ -200,11 +224,11 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.FlatStyle = FlatStyle.Flat;
-            label3.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Orange;
             label3.Location = new Point(34, 149);
             label3.Name = "label3";
-            label3.Size = new Size(295, 25);
+            label3.Size = new Size(306, 25);
             label3.TabIndex = 42;
             label3.Text = "Comentarios o sugerencias:";
             label3.TextAlign = ContentAlignment.MiddleCenter;
@@ -257,11 +281,11 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.FlatStyle = FlatStyle.Flat;
-            label5.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.Orange;
             label5.Location = new Point(24, 51);
             label5.Name = "label5";
-            label5.Size = new Size(102, 23);
+            label5.Size = new Size(100, 24);
             label5.TabIndex = 135;
             label5.Text = "Muy malo";
             label5.TextAlign = ContentAlignment.MiddleCenter;
@@ -271,11 +295,11 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.FlatStyle = FlatStyle.Flat;
-            label4.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Orange;
             label4.Location = new Point(390, 51);
             label4.Name = "label4";
-            label4.Size = new Size(113, 23);
+            label4.Size = new Size(115, 24);
             label4.TabIndex = 134;
             label4.Text = "Muy bueno";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -284,11 +308,11 @@
             // 
             lblAtencion5.Anchor = AnchorStyles.None;
             lblAtencion5.AutoSize = true;
-            lblAtencion5.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAtencion5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblAtencion5.ForeColor = Color.Orange;
             lblAtencion5.Location = new Point(344, 85);
             lblAtencion5.Name = "lblAtencion5";
-            lblAtencion5.Size = new Size(22, 24);
+            lblAtencion5.Size = new Size(24, 25);
             lblAtencion5.TabIndex = 133;
             lblAtencion5.Text = "5";
             // 
@@ -296,11 +320,11 @@
             // 
             lblAtencion4.Anchor = AnchorStyles.None;
             lblAtencion4.AutoSize = true;
-            lblAtencion4.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAtencion4.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblAtencion4.ForeColor = Color.Orange;
             lblAtencion4.Location = new Point(288, 85);
             lblAtencion4.Name = "lblAtencion4";
-            lblAtencion4.Size = new Size(22, 24);
+            lblAtencion4.Size = new Size(24, 25);
             lblAtencion4.TabIndex = 132;
             lblAtencion4.Text = "4";
             // 
@@ -308,11 +332,11 @@
             // 
             lblAtencion3.Anchor = AnchorStyles.None;
             lblAtencion3.AutoSize = true;
-            lblAtencion3.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAtencion3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblAtencion3.ForeColor = Color.Orange;
             lblAtencion3.Location = new Point(236, 85);
             lblAtencion3.Name = "lblAtencion3";
-            lblAtencion3.Size = new Size(22, 24);
+            lblAtencion3.Size = new Size(24, 25);
             lblAtencion3.TabIndex = 131;
             lblAtencion3.Text = "3";
             // 
@@ -320,11 +344,11 @@
             // 
             lblAtencion2.Anchor = AnchorStyles.None;
             lblAtencion2.AutoSize = true;
-            lblAtencion2.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAtencion2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblAtencion2.ForeColor = Color.Orange;
             lblAtencion2.Location = new Point(182, 85);
             lblAtencion2.Name = "lblAtencion2";
-            lblAtencion2.Size = new Size(22, 24);
+            lblAtencion2.Size = new Size(24, 25);
             lblAtencion2.TabIndex = 130;
             lblAtencion2.Text = "2";
             // 
@@ -332,11 +356,11 @@
             // 
             lblAtencion1.Anchor = AnchorStyles.None;
             lblAtencion1.AutoSize = true;
-            lblAtencion1.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAtencion1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblAtencion1.ForeColor = Color.Orange;
             lblAtencion1.Location = new Point(131, 85);
             lblAtencion1.Name = "lblAtencion1";
-            lblAtencion1.Size = new Size(22, 24);
+            lblAtencion1.Size = new Size(24, 25);
             lblAtencion1.TabIndex = 129;
             lblAtencion1.Text = "1";
             // 
@@ -425,11 +449,11 @@
             lblHora.Anchor = AnchorStyles.None;
             lblHora.AutoSize = true;
             lblHora.FlatStyle = FlatStyle.Flat;
-            lblHora.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHora.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblHora.ForeColor = Color.Orange;
             lblHora.Location = new Point(112, 2);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(299, 25);
+            lblHora.Size = new Size(303, 25);
             lblHora.TabIndex = 123;
             lblHora.Text = "Que te parecio la atencion?";
             lblHora.TextAlign = ContentAlignment.MiddleCenter;
@@ -459,11 +483,11 @@
             label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
             label9.FlatStyle = FlatStyle.Flat;
-            label9.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.Orange;
             label9.Location = new Point(3, 50);
             label9.Name = "label9";
-            label9.Size = new Size(158, 23);
+            label9.Size = new Size(160, 24);
             label9.TabIndex = 139;
             label9.Text = "Muy inconforme";
             label9.TextAlign = ContentAlignment.MiddleCenter;
@@ -473,11 +497,11 @@
             label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.FlatStyle = FlatStyle.Flat;
-            label7.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Orange;
             label7.Location = new Point(425, 54);
             label7.Name = "label7";
-            label7.Size = new Size(142, 23);
+            label7.Size = new Size(143, 24);
             label7.TabIndex = 138;
             label7.Text = "Muy conforme";
             label7.TextAlign = ContentAlignment.MiddleCenter;
@@ -486,11 +510,11 @@
             // 
             lblPrecios5.Anchor = AnchorStyles.None;
             lblPrecios5.AutoSize = true;
-            lblPrecios5.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPrecios5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblPrecios5.ForeColor = Color.Orange;
             lblPrecios5.Location = new Point(378, 87);
             lblPrecios5.Name = "lblPrecios5";
-            lblPrecios5.Size = new Size(22, 24);
+            lblPrecios5.Size = new Size(24, 25);
             lblPrecios5.TabIndex = 137;
             lblPrecios5.Text = "5";
             // 
@@ -498,11 +522,11 @@
             // 
             lblPrecios4.Anchor = AnchorStyles.None;
             lblPrecios4.AutoSize = true;
-            lblPrecios4.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPrecios4.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblPrecios4.ForeColor = Color.Orange;
             lblPrecios4.Location = new Point(322, 87);
             lblPrecios4.Name = "lblPrecios4";
-            lblPrecios4.Size = new Size(22, 24);
+            lblPrecios4.Size = new Size(24, 25);
             lblPrecios4.TabIndex = 136;
             lblPrecios4.Text = "4";
             // 
@@ -510,11 +534,11 @@
             // 
             lblPrecios3.Anchor = AnchorStyles.None;
             lblPrecios3.AutoSize = true;
-            lblPrecios3.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPrecios3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblPrecios3.ForeColor = Color.Orange;
             lblPrecios3.Location = new Point(270, 87);
             lblPrecios3.Name = "lblPrecios3";
-            lblPrecios3.Size = new Size(22, 24);
+            lblPrecios3.Size = new Size(24, 25);
             lblPrecios3.TabIndex = 135;
             lblPrecios3.Text = "3";
             // 
@@ -522,11 +546,11 @@
             // 
             lblPrecios2.Anchor = AnchorStyles.None;
             lblPrecios2.AutoSize = true;
-            lblPrecios2.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPrecios2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblPrecios2.ForeColor = Color.Orange;
             lblPrecios2.Location = new Point(216, 87);
             lblPrecios2.Name = "lblPrecios2";
-            lblPrecios2.Size = new Size(22, 24);
+            lblPrecios2.Size = new Size(24, 25);
             lblPrecios2.TabIndex = 134;
             lblPrecios2.Text = "2";
             // 
@@ -534,11 +558,11 @@
             // 
             lblPrecios1.Anchor = AnchorStyles.None;
             lblPrecios1.AutoSize = true;
-            lblPrecios1.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPrecios1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblPrecios1.ForeColor = Color.Orange;
             lblPrecios1.Location = new Point(165, 87);
             lblPrecios1.Name = "lblPrecios1";
-            lblPrecios1.Size = new Size(22, 24);
+            lblPrecios1.Size = new Size(24, 25);
             lblPrecios1.TabIndex = 133;
             lblPrecios1.Text = "1";
             // 
@@ -627,11 +651,11 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.FlatStyle = FlatStyle.Flat;
-            label2.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Orange;
             label2.Location = new Point(146, 6);
             label2.Name = "label2";
-            label2.Size = new Size(299, 25);
+            label2.Size = new Size(309, 25);
             label2.TabIndex = 127;
             label2.Text = "Que te parecen los precios?";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -661,11 +685,11 @@
             label8.Anchor = AnchorStyles.None;
             label8.AutoSize = true;
             label8.FlatStyle = FlatStyle.Flat;
-            label8.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.Orange;
             label8.Location = new Point(24, 60);
             label8.Name = "label8";
-            label8.Size = new Size(102, 23);
+            label8.Size = new Size(100, 24);
             label8.TabIndex = 138;
             label8.Text = "Muy malo";
             label8.TextAlign = ContentAlignment.MiddleCenter;
@@ -675,11 +699,11 @@
             label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.FlatStyle = FlatStyle.Flat;
-            label6.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.Orange;
             label6.Location = new Point(390, 59);
             label6.Name = "label6";
-            label6.Size = new Size(113, 23);
+            label6.Size = new Size(115, 24);
             label6.TabIndex = 137;
             label6.Text = "Muy bueno";
             label6.TextAlign = ContentAlignment.MiddleCenter;
@@ -688,11 +712,11 @@
             // 
             lblComida5.Anchor = AnchorStyles.None;
             lblComida5.AutoSize = true;
-            lblComida5.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblComida5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblComida5.ForeColor = Color.Orange;
             lblComida5.Location = new Point(343, 89);
             lblComida5.Name = "lblComida5";
-            lblComida5.Size = new Size(22, 24);
+            lblComida5.Size = new Size(24, 25);
             lblComida5.TabIndex = 136;
             lblComida5.Text = "5";
             // 
@@ -700,11 +724,11 @@
             // 
             lblComida4.Anchor = AnchorStyles.None;
             lblComida4.AutoSize = true;
-            lblComida4.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblComida4.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblComida4.ForeColor = Color.Orange;
             lblComida4.Location = new Point(287, 89);
             lblComida4.Name = "lblComida4";
-            lblComida4.Size = new Size(22, 24);
+            lblComida4.Size = new Size(24, 25);
             lblComida4.TabIndex = 135;
             lblComida4.Text = "4";
             // 
@@ -712,11 +736,11 @@
             // 
             lblComida3.Anchor = AnchorStyles.None;
             lblComida3.AutoSize = true;
-            lblComida3.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblComida3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblComida3.ForeColor = Color.Orange;
             lblComida3.Location = new Point(235, 89);
             lblComida3.Name = "lblComida3";
-            lblComida3.Size = new Size(22, 24);
+            lblComida3.Size = new Size(24, 25);
             lblComida3.TabIndex = 134;
             lblComida3.Text = "3";
             // 
@@ -724,11 +748,11 @@
             // 
             lblComida2.Anchor = AnchorStyles.None;
             lblComida2.AutoSize = true;
-            lblComida2.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblComida2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblComida2.ForeColor = Color.Orange;
             lblComida2.Location = new Point(181, 89);
             lblComida2.Name = "lblComida2";
-            lblComida2.Size = new Size(22, 24);
+            lblComida2.Size = new Size(24, 25);
             lblComida2.TabIndex = 133;
             lblComida2.Text = "2";
             // 
@@ -736,11 +760,11 @@
             // 
             lblComida1.Anchor = AnchorStyles.None;
             lblComida1.AutoSize = true;
-            lblComida1.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblComida1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblComida1.ForeColor = Color.Orange;
             lblComida1.Location = new Point(130, 89);
             lblComida1.Name = "lblComida1";
-            lblComida1.Size = new Size(22, 24);
+            lblComida1.Size = new Size(24, 25);
             lblComida1.TabIndex = 132;
             lblComida1.Text = "1";
             // 
@@ -829,7 +853,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Orange;
             label1.Location = new Point(111, 10);
             label1.Name = "label1";
@@ -920,5 +944,6 @@
         private CustomControls.RJControls.RJRadioButton rbPrecio3;
         private CustomControls.RJControls.RJRadioButton rbPrecio1;
         private Label label2;
+        private CustomControls.RJControls.RJButton btnSalir;
     }
 }

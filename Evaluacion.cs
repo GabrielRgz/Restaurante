@@ -15,10 +15,17 @@ namespace Restaurante
     public partial class Evaluacion : Form
     {
         string atencion, comida, precio;
+        Login frmLogin;
 
         public Evaluacion()
         {
             InitializeComponent();
+        }
+
+        public Evaluacion(Login frmLogin)
+        {
+            InitializeComponent();
+            this.frmLogin = frmLogin;
         }
 
         private void rbAtencion1_CheckedChanged(object sender, EventArgs e)
@@ -148,6 +155,12 @@ namespace Restaurante
                 mensaje = "Por favor verifica tu conexion a internet e intenta nuevamente.";
             }
             return mensaje;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            frmLogin.Show(); // Muestra el formulario de inicio de sesión
+            this.Close();
         }
     }
 }

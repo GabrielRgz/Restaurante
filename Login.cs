@@ -65,7 +65,7 @@ namespace Restaurante
             string getId = "SELECT UsuarioID FROM Usuario WHERE NombreUsuario = '" + usuario + "' AND Contrasena = '" + contrasena + "'";
             SqlCommand sc = new SqlCommand(getId, con.cadena());
 
-            
+
 
             //Si el nombre y contrasena coinciden crea el nuevo form principal y asigna el id y el nombre de usuario para usarse en las forms inicio y punto de venta
             if (VerificarCredenciales(usuario, contrasena))
@@ -131,6 +131,14 @@ namespace Restaurante
         private void Login_Load(object sender, EventArgs e)
         {
             con.Open();
+        }
+
+        private void btnEvaluacion_Click(object sender, EventArgs e)
+        {
+            Evaluacion evaluacion = new Evaluacion(this);
+            //principal.id = id;
+            evaluacion.Show();
+            this.Hide();
         }
     }
 }

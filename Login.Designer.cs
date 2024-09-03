@@ -41,6 +41,7 @@
             lblUser = new Label();
             pictureBox1 = new PictureBox();
             lblnombre = new Label();
+            btnEvaluacion = new CustomControls.RJControls.RJButton();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnMinimize).BeginInit();
@@ -51,6 +52,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(btnEvaluacion);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(btnSalir);
             panel1.Controls.Add(btnLogin);
@@ -63,7 +65,7 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(421, 498);
+            panel1.Size = new Size(421, 538);
             panel1.TabIndex = 0;
             // 
             // panel2
@@ -235,12 +237,32 @@
             lblnombre.TabIndex = 8;
             lblnombre.Text = "Bienvenido";
             // 
+            // btnEvaluacion
+            // 
+            btnEvaluacion.BackColor = Color.FromArgb(255, 128, 0);
+            btnEvaluacion.BackgroundColor = Color.FromArgb(255, 128, 0);
+            btnEvaluacion.BorderColor = Color.White;
+            btnEvaluacion.BorderRadius = 15;
+            btnEvaluacion.BorderSize = 1;
+            btnEvaluacion.FlatAppearance.BorderSize = 0;
+            btnEvaluacion.FlatStyle = FlatStyle.Flat;
+            btnEvaluacion.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEvaluacion.ForeColor = Color.Black;
+            btnEvaluacion.Location = new Point(103, 473);
+            btnEvaluacion.Name = "btnEvaluacion";
+            btnEvaluacion.Size = new Size(208, 40);
+            btnEvaluacion.TabIndex = 21;
+            btnEvaluacion.Text = "Evaluacion de servicio";
+            btnEvaluacion.TextColor = Color.Black;
+            btnEvaluacion.UseVisualStyleBackColor = false;
+            btnEvaluacion.Click += btnEvaluacion_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
-            ClientSize = new Size(421, 498);
+            ClientSize = new Size(421, 538);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
@@ -271,5 +293,6 @@
         private Panel panel2;
         private PictureBox btnClose;
         private PictureBox btnMinimize;
+        private CustomControls.RJControls.RJButton btnEvaluacion;
     }
 }
